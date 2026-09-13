@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f3f2f2">
+<title>Réviseur de QCM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app" class="app">
+  <aside class="pane-list" id="pane-list"></aside>
+  <main class="pane-main" id="pane-main"></main>
+  <aside class="pane-side" id="pane-side"></aside>
+</div>
+<nav class="tabbar" id="tabbar"></nav>
+<div class="toast" id="toast" hidden></div>
+<input type="file" id="file-input" accept=".json,application/json" multiple hidden>
+<script src="app.js"></script>
+</body>
+</html>
