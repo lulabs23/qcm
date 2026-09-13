@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="stylesheet" href="_ds/modernist-b46c54d6-ef31-41b4-9915-2771a25c7c51/styles.css">
+<script src="_ds/modernist-b46c54d6-ef31-41b4-9915-2771a25c7c51/_ds_bundle.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#f3f2f2}
+a{color:#ae1800}a:hover{color:#201e1d}
+button{font-family:"Archivo",system-ui,sans-serif}
+</style>
+</helmet>
+
+<section style="padding:40px 44px 36px;border-bottom:2px solid var(--color-text)" id="t1">
+<div style="display:flex;align-items:baseline;gap:10px;margin:0 0 6px">
+  <a href="#t1" style="font:700 10px/1 ui-monospace,Menlo,monospace;padding:4px 7px;background:var(--color-text);color:var(--color-bg);text-decoration:none">1</a>
+  <span style="font:700 13px/1.2 var(--font-heading);color:var(--color-text)">Prototype iPhone + version ordinateur</span>
+</div>
+<p style="margin:0 0 24px;max-width:64ch;font:400 13px/1.55 var(--font-body);color:var(--color-neutral-800)">Cliquable de bout en bout : accueil en grille, import de fichier .json, question plein écran (tap puis Valider, glissement entre questions), bilan en fiche de résultats dépliable, plus les onglets Progression et Réglages. <a href="#1b">1b</a> est la même application au-delà de 900 px de large : trois colonnes (liste, question, correction et fiche de session) au lieu d'écrans successifs. Les deux frames partagent un même état de démonstration : la navigation et les réponses faites dans l'une se reflètent dans l'autre.</p>
+
+<div style="display:flex;flex-wrap:wrap;gap:32px;align-items:flex-start">
+
+<div id="1a" style="flex:none;display:flex;flex-direction:column;gap:10px;scroll-margin-top:16px">
+<div style="display:flex;align-items:baseline;gap:8px;font:400 11px/1.3 var(--font-body);color:var(--color-neutral-700)"><a href="#1a" style="font:700 10.5px/1 ui-monospace,Menlo,monospace;padding:4px 7px;background:var(--color-accent);color:#fff;text-decoration:none">1a</a>Prototype complet, cliquable</div>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402px,874px">
+<div style="position:relative;height:874px;display:flex;flex-direction:column;background:var(--color-bg);color:var(--color-text);font-family:var(--font-body);overflow:hidden">
+
+  <sc-if value="{{ isAccueil }}" hint-placeholder-val="{{ true }}">
+  <div style="height:100%;display:flex;flex-direction:column">
+    <div style="padding:54px 20px 14px;border-bottom:2px solid var(--color-text);display:flex;align-items:flex-end;justify-content:space-between;gap:12px">
+      <div>
+        
+        <h1 style="margin:9px 0 0;font:800 27px/1.02 var(--font-heading);letter-spacing:-.025em">Mes QCM</h1>
+      </div>
+      <sc-if value="{{ statsVisible }}" hint-placeholder-val="{{ true }}">
+      <span style="font:800 15px/1 var(--font-heading);color:var(--color-neutral-700)">{{ scoreMoyen }}</span>
+      </sc-if>
+    </div>
+    <div style="flex:1;overflow-y:auto;display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:146px;align-content:start">
+      <sc-for list="{{ quizzes }}" as="q" hint-placeholder-count="4">
+        <button onClick="{{ q.onOpen }}" style="{{ q.cellStyle }}">
+          <span style="display:block">
+            <span style="{{ q.kickerStyle }}">{{ q.kicker }}</span>
+            <span style="display:block;margin-top:8px;font:700 15px/1.2 var(--font-heading);letter-spacing:-.01em">{{ q.titre }}</span>
+          </span>
+          <span style="display:flex;align-items:baseline;justify-content:space-between;gap:8px">
+            <span style="{{ q.scoreStyle }}">{{ q.score }}</span>
+            <span style="{{ q.sousStyle }}">{{ q.sous }}</span>
+          </span>
+        </button>
+      </sc-for>
+      <button onClick="{{ ouvrirImport }}" style="padding:14px;background:none;border:0;border-bottom:1px solid var(--color-neutral-300);text-align:left;display:grid;align-content:center;cursor:pointer" style-hover="background:var(--color-neutral-100)">
+        <span style="font:700 13.5px/1.3 var(--font-heading);color:var(--color-accent)">+ Importer<br>un fichier .json</span>
+      </button>
+    </div>
+    <div style="{{ tabsStyle }}">
+      <button onClick="{{ goAccueil }}" style="{{ tabQcm }}">QCM</button>
+      <button onClick="{{ goProgression }}" style="{{ tabProg }}">Progression</button>
+      <button onClick="{{ goReglages }}" style="{{ tabRegl }}">Réglages</button>
+    </div>
+  </div>
+  </sc-if>
+
+  <sc-if value="{{ isProgression }}" hint-placeholder-val="{{ false }}">
+  <div style="height:100%;display:flex;flex-direction:column">
+    <div style="padding:54px 20px 16px;border-bottom:2px solid var(--color-text)">
+      <div style="font:600 10px/1 var(--font-heading);letter-spacing:.15em;text-transform:uppercase;color:var(--color-accent)">Progression</div>
+      <div style="display:flex;align-items:baseline;gap:10px;margin-top:10px">
+        <span style="font:800 46px/1 var(--font-heading);letter-spacing:-.04em">{{ scoreMoyen }}</span><span style="font:600 13px/1.2 var(--font-heading);color:var(--color-neutral-600)">de réussite sur<br>{{ totalJouees }} questions jouées</span>
+        
+      </div>
+    </div>
+    <div style="flex:1;overflow-y:auto">
+      <div style="padding:16px 20px 8px;font:600 10px/1 var(--font-heading);letter-spacing:.13em;text-transform:uppercase;color:var(--color-neutral-700)">Par matière</div>
+      <sc-for list="{{ matieres }}" as="m" hint-placeholder-count="3">
+        <div style="padding:13px 20px;border-top:1px solid var(--color-neutral-300)">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+            <span style="font:600 13.5px/1.25 var(--font-heading)">{{ m.nom }}</span>
+            <span style="font:800 13.5px/1 var(--font-heading)">{{ m.pct }}</span>
+          </div>
+          <div style="margin-top:8px;height:6px;background:var(--color-neutral-300)">
+            <div style="{{ m.barStyle }}"></div>
+          </div>
+        </div>
+      </sc-for>
+      <div style="padding:20px 20px 8px;font:600 10px/1 var(--font-heading);letter-spacing:.13em;text-transform:uppercase;color:var(--color-neutral-700);border-top:2px solid var(--color-text)">Dernières sessions</div>
+      <sc-for list="{{ sessions }}" as="h" hint-placeholder-count="4">
+        <div style="display:flex;justify-content:space-between;gap:12px;padding:12px 20px;border-top:1px solid var(--color-neutral-300)">
+          <span style="font:400 12.5px/1.35 var(--font-body);color:var(--color-neutral-800)">{{ h.quand }} · {{ h.titre }}</span>
+          <span style="font:800 12.5px/1.35 var(--font-heading)">{{ h.score }}</span>
+        </div>
+      </sc-for>
+      <div style="height:30px"></div>
+    </div>
+    <div style="{{ tabsStyle }}">
+      <button onClick="{{ goAccueil }}" style="{{ tabQcm }}">QCM</button>
+      <button onClick="{{ goProgression }}" style="{{ tabProg }}">Progression</button>
+      <button onClick="{{ goReglages }}" style="{{ tabRegl }}">Réglages</button>
+    </div>
+  </div>
+  </sc-if>
+
+  <sc-if value="{{ isReglages }}" hint-placeholder-val="{{ false }}">
+  <div style="height:100%;display:flex;flex-direction:column">
+    <div style="padding:54px 20px 16px;border-bottom:2px solid var(--color-text)">
+      <div style="font:600 10px/1 var(--font-heading);letter-spacing:.15em;text-transform:uppercase;color:var(--color-accent)">Réglages</div>
+      <h1 style="margin:10px 0 0;font:800 27px/1.05 var(--font-heading);letter-spacing:-.025em">Comment je révise</h1>
+    </div>
+    <div style="flex:1;overflow-y:auto">
+      <button onClick="{{ toggleCorrection }}" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--color-neutral-300);padding:15px 20px;cursor:pointer">
+        <span style="{{ swCorrection }}">{{ swCorrectionMarque }}</span>
+        <span style="flex:1"><span style="display:block;font:600 14px/1.3 var(--font-heading)">Correction immédiate</span></span>
+      </button>
+      <button onClick="{{ toggleMelange }}" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--color-neutral-300);padding:15px 20px;cursor:pointer">
+        <span style="{{ swMelange }}">{{ swMelangeMarque }}</span>
+        <span style="flex:1"><span style="display:block;font:600 14px/1.3 var(--font-heading)">Mélanger questions et propositions</span></span>
+      </button>
+      <button onClick="{{ toggleSwipe }}" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--color-neutral-300);padding:15px 20px;cursor:pointer">
+        <span style="{{ swSwipe }}">{{ swSwipeMarque }}</span>
+        <span style="flex:1"><span style="display:block;font:600 14px/1.3 var(--font-heading)">Glisser pour changer de question</span><span style="display:block;margin-top:3px;font:400 11.5px/1.35 var(--font-body);color:var(--color-neutral-700)">Vers la gauche après validation, vers la droite pour revoir</span></span>
+      </button>
+      <div style="padding:16px 20px;border-bottom:1px solid var(--color-neutral-300)">
+        <div style="font:600 14px/1.3 var(--font-heading)">Taille du texte</div>
+        <div style="margin-top:10px;display:grid;grid-template-columns:1fr 1fr 1fr;border:1px solid var(--color-text)">
+          <button onClick="{{ setTailleS }}" style="{{ tailleS }}">Compact</button>
+          <button onClick="{{ setTailleM }}" style="{{ tailleM }}">Normal</button>
+          <button onClick="{{ setTailleL }}" style="{{ tailleL }}">Grand</button>
+        </div>
+      </div>
+      <div style="padding:15px 20px;border-bottom:1px solid var(--color-neutral-300);font:600 14px/1.3 var(--font-heading)">Exporter tous mes QCM</div>
+      <div style="padding:15px 20px;border-bottom:1px solid var(--color-neutral-300);font:600 14px/1.3 var(--font-heading);color:var(--color-accent-700)">Effacer l'historique de révision</div>
+      
+    </div>
+    <div style="{{ tabsStyle }}">
+      <button onClick="{{ goAccueil }}" style="{{ tabQcm }}">QCM</button>
+      <button onClick="{{ goProgression }}" style="{{ tabProg }}">Progression</button>
+      <button onClick="{{ goReglages }}" style="{{ tabRegl }}">Réglages</button>
+    </div>
+  </div>
+  </sc-if>
+
+  <sc-if value="{{ isSession }}" hint-placeholder-val="{{ false }}">
+  <div style="height:100%;display:flex;flex-direction:column">
+    <div style="padding:50px 20px 0;display:flex;align-items:flex-start;justify-content:space-between;gap:12px">
+      <div style="font:800 92px/.82 var(--font-heading);letter-spacing:-.06em;color:var(--color-accent)">{{ numero }}</div>
+      <div style="text-align:right;padding-top:10px">
+        <div style="font:600 10px/1.4 var(--font-heading);letter-spacing:.12em;text-transform:uppercase;color:var(--color-neutral-600)">sur {{ totalDeck }}<br>{{ sessionMode }}</div>
+        <button onClick="{{ retour }}" style="margin-top:6px;background:none;border:0;padding:0;font:600 12px/1 var(--font-heading);letter-spacing:.04em;text-transform:uppercase;color:var(--color-neutral-700);cursor:pointer" style-hover="color:var(--color-accent)">Arrêter</button>
+      </div>
+    </div>
+    <div onPointerDown="{{ onDown }}" onPointerMove="{{ onMove }}" onPointerUp="{{ onUp }}" onPointerCancel="{{ onUp }}" style="flex:1;overflow-y:auto;touch-action:pan-y">
+      <div style="{{ swipeStyle }}">
+        <div style="height:2px;background:var(--color-text)"></div>
+        <div style="margin-top:14px;font:600 10px/1.4 var(--font-heading);letter-spacing:.15em;text-transform:uppercase;color:var(--color-neutral-700)">{{ theme }} · {{ consigne }}</div>
+        <h2 style="margin:14px 0 0;font:800 27px/1.14 var(--font-heading);letter-spacing:-.03em;text-wrap:pretty">{{ enonce }}</h2>
+        <div style="margin-top:26px">
+          <sc-for list="{{ options }}" as="o" hint-placeholder-count="4">
+            <button onClick="{{ o.onPick }}" style="{{ o.lineStyle }}">
+              <span style="{{ o.letterStyle }}">{{ o.lettre }}</span>
+              <span style="{{ o.textStyle }}">{{ o.texte }}</span>
+            </button>
+          </sc-for>
+        </div>
+        <sc-if value="{{ correctionVisible }}" hint-placeholder-val="{{ false }}">
+        <div style="{{ correctionStyle }}">
+          <div style="{{ verdictStyle }}">{{ verdict }}</div>
+          <p style="margin:7px 0 0;font:400 13px/1.5 var(--font-body);color:var(--color-neutral-800);text-wrap:pretty">{{ explication }}</p>
+        </div>
+        </sc-if>
+        <p style="margin:16px 0 0;font:400 11px/1.4 var(--font-body);color:var(--color-neutral-600)">{{ swipeAide }}</p>
+      </div>
+    </div>
+    <div style="border-top:2px solid var(--color-text);padding:13px 20px 32px;background:var(--color-bg)">
+      <button onClick="{{ onAction }}" style="{{ actionStyle }}">{{ actionLabel }}</button>
+    </div>
+  </div>
+  </sc-if>
+
+  <sc-if value="{{ isBilan }}" hint-placeholder-val="{{ false }}">
+  <div style="height:100%;display:flex;flex-direction:column">
+    <div style="padding:54px 20px 20px;background:var(--color-accent);color:#fff">
+      <div style="font:600 10px/1 var(--font-heading);letter-spacing:.15em;text-transform:uppercase">{{ lancerTitre }}</div>
+      <div style="display:flex;align-items:baseline;gap:12px;margin-top:12px">
+        <span style="font:800 62px/1 var(--font-heading);letter-spacing:-.05em">{{ bScore }}</span>
+        <span style="font:700 16px/1 var(--font-heading)">{{ bTotal }}</span>
+      </div>
+      <p style="margin:10px 0 0;font:500 14px/1.35 var(--font-body);max-width:30ch;text-wrap:pretty">{{ bCommentaire }}</p>
+    </div>
+    <div style="flex:1;overflow-y:auto">
+      <div style="display:grid;grid-template-columns:28px 1fr 58px;gap:10px;padding:11px 20px;border-bottom:2px solid var(--color-text);font:600 9.5px/1.2 var(--font-heading);letter-spacing:.12em;text-transform:uppercase;color:var(--color-neutral-700)">
+        <span>Nº</span><span>{{ revueTitre }}</span><span>État</span>
+      </div>
+      <sc-for list="{{ fiche }}" as="f" hint-placeholder-count="4">
+        <button onClick="{{ f.onToggle }}" style="{{ f.rowStyle }}">
+          <span style="{{ f.numStyle }}">{{ f.num }}</span>
+          <span style="{{ f.qStyle }}">{{ f.enonce }}</span>
+          <span style="{{ f.etatStyle }}">{{ f.etat }}</span>
+        </button>
+        <sc-if value="{{ f.ouvert }}" hint-placeholder-val="{{ false }}">
+        <div style="padding:14px 20px;border-bottom:1px solid var(--color-neutral-300);background:var(--color-surface)">
+          <sc-if value="{{ f.aTienne }}" hint-placeholder-val="{{ true }}">
+          <div style="font:400 12.5px/1.4 var(--font-body);color:var(--color-accent-700)">Ta réponse : {{ f.tienne }}</div>
+          </sc-if>
+          <div style="margin-top:4px;font:600 12.5px/1.4 var(--font-body)">Bonne réponse : {{ f.bonne }}</div>
+          <p style="margin:8px 0 0;font:400 12.5px/1.5 var(--font-body);color:var(--color-neutral-800);text-wrap:pretty">{{ f.expl }}</p>
+        </div>
+        </sc-if>
+      </sc-for>
+      <div style="padding:16px 20px;font:400 12.5px/1.5 var(--font-body);color:var(--color-neutral-700)">Touche une ligne pour lire la correction détaillée.</div>
+    </div>
+    <div style="border-top:2px solid var(--color-text);padding:13px 20px 32px;display:flex;flex-direction:column;gap:9px;background:var(--color-bg)">
+      <button onClick="{{ rejouerErreurs }}" style="display:flex;align-items:center;justify-content:flex-start;width:100%;min-height:48px;padding:0 16px;background:var(--color-accent);color:#fff;border:0;font:700 15px/1 var(--font-heading);cursor:pointer" style-hover="background:var(--color-accent-600)">{{ rejouerLabel }}</button>
+      <button onClick="{{ retour }}" style="display:flex;align-items:center;justify-content:flex-start;width:100%;min-height:40px;padding:0 16px;background:none;color:var(--color-text);border:1px solid var(--color-divider);font:600 13px/1 var(--font-heading);cursor:pointer" style-hover="background:var(--color-neutral-200)">Revenir à la liste</button>
+    </div>
+  </div>
+  </sc-if>
+
+  <sc-if value="{{ sheetOuverte }}" hint-placeholder-val="{{ false }}">
+  <div style="position:absolute;inset:0;z-index:40;background:rgba(32,30,29,.45);display:flex;flex-direction:column;justify-content:flex-end">
+    <button onClick="{{ fermerSheet }}" style="flex:1;background:none;border:0;cursor:pointer"></button>
+    <div style="background:var(--color-bg);border-top:2px solid var(--color-text);max-height:700px;overflow-y:auto">
+
+      <sc-if value="{{ sheetImport }}" hint-placeholder-val="{{ false }}">
+      <div style="padding:20px 20px 32px">
+        <div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px">
+          <h3 style="margin:0;font:800 21px/1.1 var(--font-heading);letter-spacing:-.02em">Importer un QCM</h3>
+          <button onClick="{{ fermerSheet }}" style="background:none;border:0;padding:0;font:600 12px/1 var(--font-heading);text-transform:uppercase;letter-spacing:.05em;color:var(--color-neutral-700);cursor:pointer" style-hover="color:var(--color-accent)">Fermer</button>
+        </div>
+        <div style="margin-top:16px;display:flex;gap:12px;border-top:1px solid var(--color-neutral-300);padding:13px 0">
+          <span style="flex:0 0 auto;width:22px;font:800 13px/1.3 var(--font-heading);color:var(--color-accent)">01</span>
+          <span style="flex:1;font:400 12.5px/1.45 var(--font-body);color:var(--color-neutral-800)">Demande le QCM à Claude au format du réviseur, puis enregistre sa réponse en fichier .json.</span>
+        </div>
+        <div style="display:flex;gap:12px;border-top:1px solid var(--color-neutral-300);padding:13px 0">
+          <span style="flex:0 0 auto;width:22px;font:800 13px/1.3 var(--font-heading);color:var(--color-accent)">02</span>
+          <span style="flex:1;font:400 12.5px/1.45 var(--font-body);color:var(--color-neutral-800)">Choisis le fichier dans Fichiers ou iCloud Drive.</span>
+        </div>
+        <div style="display:flex;gap:12px;border-top:1px solid var(--color-neutral-300);border-bottom:1px solid var(--color-neutral-300);padding:13px 0">
+          <span style="flex:0 0 auto;width:22px;font:800 13px/1.3 var(--font-heading);color:var(--color-accent)">03</span>
+          <span style="flex:1;font:400 12.5px/1.45 var(--font-body);color:var(--color-neutral-800)">Vérifie ce qui a été lu, puis ajoute à ta liste.</span>
+        </div>
+        <button onClick="{{ choisirFichier }}" style="margin-top:16px;display:flex;align-items:center;justify-content:flex-start;width:100%;min-height:48px;padding:0 16px;background:var(--color-accent);color:#fff;border:0;font:700 15px/1 var(--font-heading);cursor:pointer" style-hover="background:var(--color-accent-600)">Choisir un fichier .json</button>
+        <button onClick="{{ ouvrirFormat }}" style="margin-top:8px;display:flex;align-items:center;justify-content:flex-start;width:100%;min-height:44px;padding:0 16px;background:none;color:var(--color-text);border:1px solid var(--color-divider);font:600 13px/1 var(--font-heading);cursor:pointer" style-hover="background:var(--color-neutral-200)">Voir le format attendu</button>
+        <sc-if value="{{ fichierChoisi }}" hint-placeholder-val="{{ false }}">
+        <div style="margin-top:18px;border-top:2px solid var(--color-text);padding-top:14px">
+          <div style="display:flex;justify-content:space-between;gap:12px;align-items:baseline">
+            <span style="font:700 13px/1.3 var(--font-heading)">{{ fichierNom }}</span>
+            <span style="font:400 11.5px/1.3 var(--font-body);color:var(--color-neutral-600)">{{ fichierPoids }}</span>
+          </div>
+          <div style="margin-top:12px;padding:12px 14px;background:var(--color-surface);border-left:3px solid var(--color-text)">
+            <div style="font:600 12px/1.4 var(--font-heading)">{{ detection }}</div>
+            <div style="margin-top:4px;font:400 11.5px/1.4 var(--font-body);color:var(--color-neutral-700)">{{ detectionDetail }}</div>
+          </div>
+          <button onClick="{{ ajouter }}" style="margin-top:12px;display:flex;align-items:center;justify-content:flex-start;width:100%;min-height:48px;padding:0 16px;background:var(--color-text);color:var(--color-bg);border:0;font:700 15px/1 var(--font-heading);cursor:pointer" style-hover="background:var(--color-neutral-800)">Ajouter à ma liste</button>
+        </div>
+        </sc-if>
+      </div>
+      </sc-if>
+
+      <sc-if value="{{ sheetLancer }}" hint-placeholder-val="{{ false }}">
+      <div style="padding:20px 20px 32px">
+        <div style="display:flex;gap:18px;align-items:flex-start">
+          <div style="flex:1">
+            <div style="font:600 10px/1 var(--font-heading);letter-spacing:.15em;text-transform:uppercase;color:var(--color-accent)">{{ lancerMatiere }}</div>
+            <h3 style="margin:9px 0 0;font:800 21px/1.15 var(--font-heading);letter-spacing:-.02em">{{ lancerTitre }}</h3>
+            <p style="margin:7px 0 0;font:400 12.5px/1.4 var(--font-body);color:var(--color-neutral-700)">{{ lancerIntro }}</p>
+          </div>
+          <div style="flex:0 0 auto;width:78px">
+            <div style="position:relative;width:78px;height:78px">
+              <svg viewBox="0 0 78 78" width="78" height="78">
+                <circle cx="39" cy="39" r="34" fill="none" stroke="var(--color-neutral-300)" stroke-width="5"></circle>
+                <circle cx="39" cy="39" r="34" fill="none" stroke="var(--color-accent)" stroke-width="5" stroke-dasharray="{{ ringDash }}" transform="rotate(-90 39 39)"></circle>
+              </svg>
+              <div style="position:absolute;inset:0;display:grid;place-items:center">
+                <span style="font:800 17px/1 var(--font-heading)">{{ ringLabel }}</span>
+              </div>
+            </div>
+            <div style="margin-top:6px;font:600 9px/1.2 var(--font-heading);letter-spacing:.1em;text-transform:uppercase;color:var(--color-neutral-700);text-align:center">Meilleur score</div>
+          </div>
+        </div>
+        <button onClick="{{ toggleExamen }}" style="margin-top:18px;display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;border-top:1px solid var(--color-neutral-300);padding:13px 0;cursor:pointer">
+          <span style="{{ caseExamenStyle }}">{{ caseExamenMarque }}</span>
+          <span style="flex:1;font:500 14px/1.3 var(--font-body)">Mode examen <span style="color:var(--color-neutral-600)">— aucun retour avant la fin</span></span>
+        </button>
+        <button onClick="{{ toggleMelange }}" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;border-top:1px solid var(--color-neutral-300);border-bottom:1px solid var(--color-neutral-300);padding:13px 0;cursor:pointer">
+          <span style="{{ caseStyle }}">{{ caseMarque }}</span>
+          <span style="flex:1;font:500 14px/1.3 var(--font-body)">Mélanger questions et propositions</span>
+        </button>
+        <button onClick="{{ toggleRatees }}" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--color-neutral-300);padding:13px 0;cursor:pointer">
+          <span style="{{ caseRateesStyle }}">{{ caseRateesMarque }}</span>
+          <span style="flex:1;font:500 14px/1.3 var(--font-body)">Ne reprendre que mes questions ratées <span style="color:var(--color-neutral-600)">({{ nbRateesQuiz }})</span></span>
+        </button>
+        <button onClick="{{ demarrer }}" style="margin-top:18px;display:flex;align-items:center;justify-content:flex-start;width:100%;min-height:48px;padding:0 16px;background:var(--color-accent);color:#fff;border:0;font:700 15px/1 var(--font-heading);cursor:pointer" style-hover="background:var(--color-accent-600)">{{ demarrerLabel }}</button>
+      </div>
+      </sc-if>
+
+      <sc-if value="{{ sheetFormat }}" hint-placeholder-val="{{ false }}">
+      <div style="padding:20px 20px 32px">
+        <h3 style="margin:0;font:800 21px/1.1 var(--font-heading);letter-spacing:-.02em">Format attendu</h3>
+        <p style="margin:8px 0 0;font:400 12.5px/1.5 var(--font-body);color:var(--color-neutral-700)">Colle cette phrase dans une conversation, enregistre la réponse en .json, reviens l'importer.</p>
+        <div style="margin-top:14px;padding:14px;background:var(--color-surface);border-left:3px solid var(--color-accent);font:500 13px/1.5 var(--font-body)">« Génère un QCM de 10 questions sur [thème], au format JSON du réviseur : titre, matiere, questions[] avec enonce, propositions[], reponses[] en index, explication, theme. »</div>
+        <div style="margin-top:14px;padding:14px;background:var(--color-surface);font:400 10.5px/1.55 ui-monospace,Menlo,monospace;color:var(--color-neutral-800);white-space:pre-wrap">{{ modele }}</div>
+        <button onClick="{{ fermerSheet }}" style="margin-top:16px;display:flex;align-items:center;justify-content:flex-start;width:100%;min-height:44px;padding:0 16px;background:var(--color-text);color:var(--color-bg);border:0;font:700 14px/1 var(--font-heading);cursor:pointer" style-hover="background:var(--color-neutral-800)">Copier la phrase</button>
+      </div>
+      </sc-if>
+
+    </div>
+  </div>
+  </sc-if>
+
+  <sc-if value="{{ toast }}" hint-placeholder-val="{{ false }}">
+  <div style="position:absolute;left:20px;right:20px;bottom:120px;z-index:60;background:var(--color-text);color:var(--color-bg);padding:12px 14px;font:600 13px/1.3 var(--font-heading)">{{ toast }}</div>
+  </sc-if>
+
+</div>
+</x-import>
+</div>
+
+<div id="1b" style="flex:none;display:flex;flex-direction:column;gap:10px;scroll-margin-top:16px">
+<div style="display:flex;align-items:baseline;gap:8px;font:400 11px/1.3 var(--font-body);color:var(--color-neutral-700)"><a href="#1b" style="font:700 10.5px/1 ui-monospace,Menlo,monospace;padding:4px 7px;background:var(--color-accent);color:#fff;text-decoration:none">1b</a>Même app sur ordinateur — mise en page adoptée au-delà de 900 px de large</div>
+<x-import component-from-global-scope="ChromeWindow" from="./browser-window.jsx" width="1240" height="800" url="reviseur.app" hint-size="1240px,800px">
+<div style="height:100%;display:grid;grid-template-columns:300px minmax(0,1fr) 320px;background:var(--color-bg);color:var(--color-text);font-family:var(--font-body);overflow:hidden">
+
+  <div style="border-right:2px solid var(--color-text);display:flex;flex-direction:column;overflow:hidden">
+    <div style="padding:20px;border-bottom:2px solid var(--color-text)">
+      <div style="font:600 10px/1 var(--font-heading);letter-spacing:.15em;text-transform:uppercase;color:var(--color-accent)">M2 CCA — IAE Caen</div>
+      <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-top:9px">
+        <span style="font:800 22px/1 var(--font-heading);letter-spacing:-.025em">Mes QCM</span>
+        <span style="font:800 14px/1 var(--font-heading);color:var(--color-neutral-700)">{{ scoreMoyen }}</span>
+      </div>
+    </div>
+    <div style="flex:1;overflow-y:auto">
+      <sc-for list="{{ quizzesDesk }}" as="q" hint-placeholder-count="4">
+        <button onClick="{{ q.onOpen }}" style="{{ q.rowStyle }}">
+          <span style="display:block">
+            <span style="{{ q.kickerStyle }}">{{ q.kicker }}</span>
+            <span style="display:block;margin-top:6px;font:700 14px/1.25 var(--font-heading)">{{ q.titre }}</span>
+            <span style="{{ q.sousStyle }}">{{ q.sous }}</span>
+          </span>
+          <span style="{{ q.scoreStyle }}">{{ q.score }}</span>
+        </button>
+      </sc-for>
+    </div>
+    <div style="border-top:2px solid var(--color-text);padding:14px 20px">
+      <button onClick="{{ ouvrirImport }}" style="display:flex;align-items:center;width:100%;min-height:44px;padding:0 14px;background:var(--color-accent);color:#fff;border:0;font:700 14px/1 var(--font-heading);cursor:pointer" style-hover="background:var(--color-accent-600)">Importer un fichier .json</button>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--color-neutral-300)">
+      <button onClick="{{ goProgression }}" style="{{ tabProg }}">Progression</button>
+      <button onClick="{{ goReglages }}" style="{{ tabRegl }}">Réglages</button>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;overflow:hidden">
+
+  <sc-if value="{{ dImport }}" hint-placeholder-val="{{ false }}">
+  <div style="height:100%;display:flex;flex-direction:column;overflow:hidden">
+    <div style="padding:26px 36px 18px;border-bottom:2px solid var(--color-text);display:flex;align-items:flex-end;justify-content:space-between;gap:16px">
+      <div>
+        <div style="font:600 10px/1 var(--font-heading);letter-spacing:.15em;text-transform:uppercase;color:var(--color-accent)">Import</div>
+        <h2 style="margin:10px 0 0;font:800 28px/1.05 var(--font-heading);letter-spacing:-.03em">Ajouter un QCM généré par Claude</h2>
+      </div>
+      <button onClick="{{ fermerSheet }}" style="background:none;border:0;padding:0;font:600 12px/1 var(--font-heading);text-transform:uppercase;letter-spacing:.05em;color:var(--color-neutral-700);cursor:pointer" style-hover="color:var(--color-accent)">Fermer</button>
+    </div>
+    <div style="flex:1;overflow-y:auto;padding:22px 36px 28px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-content:start">
+      <div>
+        <div style="display:flex;gap:12px;border-bottom:1px solid var(--color-neutral-300);padding:12px 0">
+          <span style="flex:0 0 auto;width:22px;font:800 13px/1.3 var(--font-heading);color:var(--color-accent)">01</span>
+          <span style="flex:1;font:400 13px/1.5 var(--font-body);color:var(--color-neutral-800)">Demande le QCM à Claude au format du réviseur, puis enregistre la réponse en fichier .json.</span>
+        </div>
+        <div style="display:flex;gap:12px;border-bottom:1px solid var(--color-neutral-300);padding:12px 0">
+          <span style="flex:0 0 auto;width:22px;font:800 13px/1.3 var(--font-heading);color:var(--color-accent)">02</span>
+          <span style="flex:1;font:400 13px/1.5 var(--font-body);color:var(--color-neutral-800)">Dépose le fichier ici, ou parcours ton disque.</span>
+        </div>
+        <div style="display:flex;gap:12px;border-bottom:1px solid var(--color-neutral-300);padding:12px 0">
+          <span style="flex:0 0 auto;width:22px;font:800 13px/1.3 var(--font-heading);color:var(--color-accent)">03</span>
+          <span style="flex:1;font:400 13px/1.5 var(--font-body);color:var(--color-neutral-800)">Vérifie ce qui a été lu, puis ajoute à ta liste.</span>
+        </div>
+        <div style="margin-top:20px;border:2px dashed var(--color-text);padding:24px 20px">
+          <div style="font:800 17px/1.15 var(--font-heading);letter-spacing:-.02em">Dépose le fichier .json</div>
+          <div style="margin-top:8px;font:400 12.5px/1.5 var(--font-body);color:var(--color-neutral-700)">Plusieurs QCM dans un même fichier sont acceptés.</div>
+          <button onClick="{{ choisirFichier }}" style="margin-top:14px;display:flex;align-items:center;min-height:44px;padding:0 16px;background:var(--color-accent);color:#fff;border:0;font:700 14px/1 var(--font-heading);cursor:pointer" style-hover="background:var(--color-accent-600)">Parcourir les fichiers</button>
+        </div>
+        <sc-if value="{{ fichierChoisi }}" hint-placeholder-val="{{ false }}">
+        <div style="margin-top:18px;border-top:2px solid var(--color-text);padding-top:14px">
+          <div style="display:flex;justify-content:space-between;gap:12px;align-items:baseline">
+            <span style="font:700 13px/1.3 var(--font-heading)">{{ fichierNom }}</span>
+            <span style="font:400 11.5px/1.3 var(--font-body);color:var(--color-neutral-600)">{{ fichierPoids }}</span>
+          </div>
+          <div style="margin-top:12px;padding:12px 14px;background:var(--color-surface);border-left:3px solid var(--color-text)">
+            <div style="font:600 12.5px/1.4 var(--font-heading)">{{ detection }}</div>
+            <div style="margin-top:4px;font:400 12px/1.45 var(--font-body);color:var(--color-neutral-700)">{{ detectionDetail }}</div>
+          </div>
+          <button onClick="{{ ajouter }}" style="margin-top:12px;display:flex;align-items:center;min-height:46px;padding:0 18px;background:var(--color-text);color:var(--color-bg);border:0;font:700 15px/1 var(--font-heading);cursor:pointer" style-hover="background:var(--color-neutral-800)">Ajouter à ma liste</button>
+        </div>
+        </sc-if>
+      </div>
+      <div>
+        <div style="font:600 10px/1 var(--font-heading);letter-spacing:.13em;text-transform:uppercase;color:var(--color-neutral-700)">Format attendu</div>
+        <div style="margin-top:12px;padding:14px;background:var(--color-surface);border-left:3px solid var(--color-accent);font:500 13px/1.5 var(--font-body)">« Génère un QCM de 10 questions sur [thème], au format JSON du réviseur : titre, matiere, questions[] avec enonce, propositions[], reponses[] en index, explication, theme. »</div>
+        <div style="margin-top:12px;padding:14px;background:var(--color-surface);font:400 11px/1.6 ui-monospace,Menlo,monospace;color:var(--color-neutral-800);white-space:pre-wrap">{{ modele }}</div>
+      </div>
+    </div>
+  </div>
+  </sc-if>
+
+  <sc-if value="{{ dLancer }}" hint-placeholder-val="{{ false }}">
+  <div style="height:100%;display:flex;flex-direction:column;overflow:hidden">
+    <div style="padding:26px 36px 18px;border-bottom:2px solid var(--color-text)">
+      <div style="font:600 10px/1 var(--font-heading);letter-spacing:.15em;text-transform:uppercase;color:var(--color-accent)">{{ lancerMatiere }}</div>
+      <h2 style="margin:10px 0 0;font:800 30px/1.05 var(--font-heading);letter-spacing:-.03em">{{ lancerTitre }}</h2>
+      <p style="margin:8px 0 0;font:400 13px/1.4 var(--font-body);color:var(--color-neutral-700)">{{ lancerIntro }}</p>
+    </div>
+    <div style="flex:1;overflow-y:auto;padding:22px 36px 28px;max-width:560px">
+      <button onClick="{{ toggleExamen }}" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;border-top:1px solid var(--color-neutral-300);padding:14px 0;cursor:pointer">
+        <span style="{{ caseExamenStyle }}">{{ caseExamenMarque }}</span>
+        <span style="flex:1;font:500 14.5px/1.3 var(--font-body)">Mode examen <span style="color:var(--color-neutral-600)">— aucun retour avant la fin</span></span>
+      </button>
+      <button onClick="{{ toggleMelange }}" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;border-top:1px solid var(--color-neutral-300);padding:14px 0;cursor:pointer">
+        <span style="{{ caseStyle }}">{{ caseMarque }}</span>
+        <span style="flex:1;font:500 14.5px/1.3 var(--font-body)">Mélanger questions et propositions</span>
+      </button>
+      <button onClick="{{ toggleRatees }}" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;border-top:1px solid var(--color-neutral-300);border-bottom:1px solid var(--color-neutral-300);padding:14px 0;cursor:pointer">
+        <span style="{{ caseRateesStyle }}">{{ caseRateesMarque }}</span>
+        <span style="flex:1;font:500 14.5px/1.3 var(--font-body)">Ne reprendre que mes questions ratées <span style="color:var(--color-neutral-600)">({{ nbRateesQuiz }})</span></span>
+      </button>
+      <div style="margin-top:22px;display:flex;gap:12px;align-items:center">
+        <button onClick="{{ demarrer }}" style="min-height:48px;padding:0 22px;background:var(--color-accent);color:#fff;border:0;font:700 15px/1 var(--font-heading);cursor:pointer" style-hover="background:var(--color-accent-600)">{{ demarrerLabel }}</button>
+        <button onClick="{{ fermerSheet }}" style="min-height:48px;padding:0 18px;background:none;border:1px solid var(--color-divider);font:600 13px/1 var(--font-heading);color:var(--color-text);cursor:pointer" style-hover="background:var(--color-neutral-200)">Annuler</button>
+      </div>
+    </div>
+  </div>
+  </sc-if>
+
+  <sc-if value="{{ dProg }}" hint-placeholder-val="{{ false }}">
+  <div style="height:100%;display:flex;flex-direction:column;overflow:hidden">
+    <div style="padding:26px 36px 20px;border-bottom:2px solid var(--color-text);display:flex;align-items:baseline;gap:14px">
+      <span style="font:800 52px/1 var(--font-heading);letter-spacing:-.04em">{{ scoreMoyen }}</span>
+      <span style="font:600 13px/1.35 var(--font-heading);color:var(--color-neutral-600)">de réussite sur<br>{{ totalJouees }} questions jouées</span>
+    </div>
+    <div style="flex:1;overflow-y:auto;padding:0 0 24px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)">
+      <div style="border-right:1px solid var(--color-neutral-300)">
+        <div style="padding:16px 24px 8px;font:600 10px/1 var(--font-heading);letter-spacing:.13em;text-transform:uppercase;color:var(--color-neutral-700)">Par matière</div>
+        <sc-for list="{{ matieres }}" as="m" hint-placeholder-count="4">
+          <div style="padding:13px 24px;border-top:1px solid var(--color-neutral-300)">
+            <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+              <span style="font:600 13.5px/1.25 var(--font-heading)">{{ m.nom }}</span>
+              <span style="font:800 13.5px/1 var(--font-heading)">{{ m.pct }}</span>
+            </div>
+            <div style="margin-top:8px;height:6px;background:var(--color-neutral-300)"><div style="{{ m.barStyle }}"></div></div>
+          </div>
+        </sc-for>
+      </div>
+      <div>
+        <div style="padding:16px 24px 8px;font:600 10px/1 var(--font-heading);letter-spacing:.13em;text-transform:uppercase;color:var(--color-neutral-700)">Dernières sessions</div>
+        <sc-for list="{{ sessions }}" as="h" hint-placeholder-count="4">
+          <div style="display:flex;justify-content:space-between;gap:12px;padding:13px 24px;border-top:1px solid var(--color-neutral-300)">
+            <span style="font:400 12.5px/1.35 var(--font-body);color:var(--color-neutral-800)">{{ h.quand }} · {{ h.titre }}</span>
+            <span style="font:800 12.5px/1.35 var(--font-heading)">{{ h.score }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+    <div style="border-top:2px solid var(--color-text);padding:16px 36px">
+      <button onClick="{{ goAccueil }}" style="min-height:44px;padding:0 18px;background:none;border:1px solid var(--color-divider);font:600 13px/1 var(--font-heading);color:var(--color-text);cursor:pointer" style-hover="background:var(--color-neutral-200)">Revenir à la session</button>
+    </div>
+  </div>
+  </sc-if>
+
+  <sc-if value="{{ dReglages }}" hint-placeholder-val="{{ false }}">
+  <div style="height:100%;display:flex;flex-direction:column;overflow:hidden">
+    <div style="padding:26px 36px 18px;border-bottom:2px solid var(--color-text)">
+      <div style="font:600 10px/1 var(--font-heading);letter-spacing:.15em;text-transform:uppercase;color:var(--color-accent)">Réglages</div>
+      <h2 style="margin:10px 0 0;font:800 28px/1.05 var(--font-heading);letter-spacing:-.03em">Comment je révise</h2>
+    </div>
+    <div style="flex:1;overflow-y:auto;padding:0 36px 24px;max-width:620px">
+      <button onClick="{{ toggleCorrection }}" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--color-neutral-300);padding:16px 0;cursor:pointer">
+        <span style="{{ swCorrection }}">{{ swCorrectionMarque }}</span>
+        <span style="flex:1"><span style="display:block;font:600 14.5px/1.3 var(--font-heading)">Correction immédiate</span><span style="display:block;margin-top:3px;font:400 12px/1.4 var(--font-body);color:var(--color-neutral-700)">Désactivé = mode examen par défaut</span></span>
+      </button>
+      <button onClick="{{ toggleMelange }}" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--color-neutral-300);padding:16px 0;cursor:pointer">
+        <span style="{{ swMelange }}">{{ swMelangeMarque }}</span>
+        <span style="flex:1;font:600 14.5px/1.3 var(--font-heading)">Mélanger questions et propositions</span>
+      </button>
+      <div style="padding:16px 0;border-bottom:1px solid var(--color-neutral-300)">
+        <div style="font:600 14.5px/1.3 var(--font-heading)">Taille du texte</div>
+        <div style="margin-top:10px;display:grid;grid-template-columns:repeat(3,150px);border:1px solid var(--color-text);width:max-content">
+          <button onClick="{{ setTailleS }}" style="{{ tailleS }}">Compact</button>
+          <button onClick="{{ setTailleM }}" style="{{ tailleM }}">Normal</button>
+          <button onClick="{{ setTailleL }}" style="{{ tailleL }}">Grand</button>
+        </div>
+      </div>
+      <div style="padding:16px 0;border-bottom:1px solid var(--color-neutral-300);font:600 14.5px/1.3 var(--font-heading)">Exporter tous mes QCM</div>
+      <div style="padding:16px 0;border-bottom:1px solid var(--color-neutral-300);font:600 14.5px/1.3 var(--font-heading);color:var(--color-accent-700)">Effacer l'historique de révision</div>
+      <p style="margin:18px 0 0;font:400 12px/1.5 var(--font-body);color:var(--color-neutral-600)">Version 1.0 — aucune donnée ne quitte l'appareil.</p>
+    </div>
+    <div style="border-top:2px solid var(--color-text);padding:16px 36px">
+      <button onClick="{{ goAccueil }}" style="min-height:44px;padding:0 18px;background:none;border:1px solid var(--color-divider);font:600 13px/1 var(--font-heading);color:var(--color-text);cursor:pointer" style-hover="background:var(--color-neutral-200)">Revenir à la session</button>
+    </div>
+  </div>
+  </sc-if>
+
+  <sc-if value="{{ dBilan }}" hint-placeholder-val="{{ false }}">
+  <div style="height:100%;display:flex;flex-direction:column;overflow:hidden">
+    <div style="padding:28px 36px 22px;background:var(--color-accent);color:#fff">
+      <div style="font:600 10px/1 var(--font-heading);letter-spacing:.15em;text-transform:uppercase">{{ lancerTitre }}</div>
+      <div style="display:flex;align-items:baseline;gap:14px;margin-top:12px">
+        <span style="font:800 66px/1 var(--font-heading);letter-spacing:-.05em">{{ bScore }}</span>
+        <span style="font:700 17px/1 var(--font-heading)">{{ bTotal }}</span>
+      </div>
+      <p style="margin:10px 0 0;font:500 14.5px/1.35 var(--font-body);max-width:44ch;text-wrap:pretty">{{ bCommentaire }}</p>
+    </div>
+    <div style="flex:1;overflow-y:auto">
+      <div style="display:grid;grid-template-columns:34px 1fr 70px;gap:12px;padding:12px 36px;border-bottom:2px solid var(--color-text);font:600 9.5px/1.2 var(--font-heading);letter-spacing:.12em;text-transform:uppercase;color:var(--color-neutral-700)">
+        <span>Nº</span><span>{{ revueTitre }}</span><span>État</span>
+      </div>
+      <sc-for list="{{ fiche }}" as="f" hint-placeholder-count="4">
+        <button onClick="{{ f.onToggle }}" style="{{ f.bilanRowStyle }}">
+          <span style="{{ f.numStyle }}">{{ f.num }}</span>
+          <span style="{{ f.qStyle }}">{{ f.enonce }}</span>
+          <span style="{{ f.etatStyle }}">{{ f.etat }}</span>
+        </button>
+        <sc-if value="{{ f.ouvert }}" hint-placeholder-val="{{ false }}">
+        <div style="padding:14px 36px;border-bottom:1px solid var(--color-neutral-300);background:var(--color-surface)">
+          <sc-if value="{{ f.aTienne }}" hint-placeholder-val="{{ true }}">
+          <div style="font:400 12.5px/1.4 var(--font-body);color:var(--color-accent-700)">Ta réponse : {{ f.tienne }}</div>
+          </sc-if>
+          <div style="margin-top:4px;font:600 12.5px/1.4 var(--font-body)">Bonne réponse : {{ f.bonne }}</div>
+          <p style="margin:8px 0 0;max-width:80ch;font:400 12.5px/1.5 var(--font-body);color:var(--color-neutral-800);text-wrap:pretty">{{ f.expl }}</p>
+        </div>
+        </sc-if>
+      </sc-for>
+    </div>
+    <div style="border-top:2px solid var(--color-text);padding:16px 36px;display:flex;gap:12px">
+      <button onClick="{{ rejouerErreurs }}" style="min-height:48px;padding:0 22px;background:var(--color-accent);color:#fff;border:0;font:700 15px/1 var(--font-heading);cursor:pointer" style-hover="background:var(--color-accent-600)">{{ rejouerLabel }}</button>
+      <button onClick="{{ retour }}" style="min-height:48px;padding:0 18px;background:none;border:1px solid var(--color-divider);font:600 13px/1 var(--font-heading);color:var(--color-text);cursor:pointer" style-hover="background:var(--color-neutral-200)">Revenir à la liste</button>
+    </div>
+  </div>
+  </sc-if>
+
+  <sc-if value="{{ dSession }}" hint-placeholder-val="{{ true }}">
+  <div style="height:100%;display:flex;flex-direction:column;overflow:hidden">
+    <div style="padding:26px 36px 0;display:flex;align-items:flex-start;justify-content:space-between;gap:20px">
+      <div style="font:800 74px/.82 var(--font-heading);letter-spacing:-.06em;color:var(--color-accent)">{{ numero }}</div>
+      <div style="text-align:right">
+        <div style="font:600 10px/1.5 var(--font-heading);letter-spacing:.12em;text-transform:uppercase;color:var(--color-neutral-600)">sur {{ totalDeck }} · {{ sessionMode }}</div>
+        <div style="margin-top:8px;width:180px;height:3px;background:var(--color-neutral-300);margin-left:auto"><div style="{{ progressStyle }}"></div></div>
+      </div>
+    </div>
+    <div style="flex:1;overflow-y:auto;padding:16px 36px 24px">
+      <div style="height:2px;background:var(--color-text)"></div>
+      <div style="margin-top:14px;font:600 10px/1.4 var(--font-heading);letter-spacing:.15em;text-transform:uppercase;color:var(--color-neutral-700)">{{ theme }} · {{ consigne }}</div>
+      <h2 style="margin:14px 0 0;max-width:24ch;font:800 34px/1.12 var(--font-heading);letter-spacing:-.03em;text-wrap:pretty">{{ enonce }}</h2>
+      <div style="margin-top:26px;max-width:62ch">
+        <sc-for list="{{ options }}" as="o" hint-placeholder-count="4">
+          <button onClick="{{ o.onPick }}" style="{{ o.lineStyle }}">
+            <span style="{{ o.letterStyle }}">{{ o.lettre }}</span>
+            <span style="{{ o.textStyle }}">{{ o.texte }}</span>
+          </button>
+        </sc-for>
+      </div>
+      <p style="margin:14px 0 0;font:400 11.5px/1.4 var(--font-body);color:var(--color-neutral-600)">Raccourcis : A–D pour choisir, Entrée pour valider, ← → pour naviguer.</p>
+    </div>
+    <div style="border-top:2px solid var(--color-text);padding:16px 36px;display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+      <button onClick="{{ onAction }}" style="{{ actionStyleDesk }}">{{ actionLabel }}</button>
+      <button onClick="{{ retour }}" style="min-height:48px;padding:0 18px;background:none;border:1px solid var(--color-divider);font:600 13px/1 var(--font-heading);color:var(--color-text);cursor:pointer" style-hover="background:var(--color-neutral-200)">Arrêter la session</button>
+      <sc-if value="{{ dAccueilHint }}" hint-placeholder-val="{{ false }}">
+      <span style="font:400 12px/1.4 var(--font-body);color:var(--color-neutral-600)">Aperçu — choisis un QCM à gauche pour lancer une vraie session.</span>
+      </sc-if>
+    </div>
+  </div>
+  </sc-if>
+
+  </div>
+
+  <div style="border-left:2px solid var(--color-text);display:flex;flex-direction:column;overflow:hidden;background:var(--color-surface)">
+    <div style="padding:20px;border-bottom:2px solid var(--color-text);display:flex;gap:16px;align-items:center">
+      <div style="position:relative;width:72px;height:72px;flex:0 0 auto">
+        <svg viewBox="0 0 78 78" width="72" height="72">
+          <circle cx="39" cy="39" r="34" fill="none" stroke="var(--color-neutral-300)" stroke-width="5"></circle>
+          <circle cx="39" cy="39" r="34" fill="none" stroke="var(--color-accent)" stroke-width="5" stroke-dasharray="{{ ringDash }}" transform="rotate(-90 39 39)"></circle>
+        </svg>
+        <div style="position:absolute;inset:0;display:grid;place-items:center"><span style="font:800 16px/1 var(--font-heading)">{{ ringLabel }}</span></div>
+      </div>
+      <div>
+        <div style="font:600 9px/1.2 var(--font-heading);letter-spacing:.12em;text-transform:uppercase;color:var(--color-neutral-700)">Meilleur score</div>
+        <div style="margin-top:6px;font:700 14px/1.25 var(--font-heading)">{{ lancerTitre }}</div>
+      </div>
+    </div>
+    <div style="flex:1;overflow-y:auto">
+      <sc-if value="{{ correctionVisible }}" hint-placeholder-val="{{ true }}">
+      <div style="padding:18px 20px;border-bottom:1px solid var(--color-neutral-300)">
+        <div style="{{ verdictStyle }}">{{ verdict }}</div>
+        <p style="margin:8px 0 0;font:400 13px/1.55 var(--font-body);color:var(--color-neutral-800);text-wrap:pretty">{{ explication }}</p>
+      </div>
+      </sc-if>
+      <div style="padding:16px 20px 8px;font:600 9.5px/1.2 var(--font-heading);letter-spacing:.12em;text-transform:uppercase;color:var(--color-neutral-700)">Fiche de session</div>
+      <sc-for list="{{ fiche }}" as="f" hint-placeholder-count="3">
+        <div style="{{ f.deskRowStyle }}">
+          <span style="{{ f.numStyle }}">{{ f.num }}</span>
+          <span style="{{ f.qStyle }}">{{ f.enonce }}</span>
+          <span style="{{ f.etatStyle }}">{{ f.etat }}</span>
+        </div>
+      </sc-for>
+      <div style="padding:16px 20px;font:400 12px/1.5 var(--font-body);color:var(--color-neutral-700)">La colonne se remplit à mesure que tu valides. En fin de session, le bilan complet remplace le panneau central.</div>
+    </div>
+  </div>
+
+</div>
+</x-import>
+</div>
+
+</div>
+
+<p style="margin:26px 0 0;font:400 12.5px/1.5 var(--font-body);color:var(--color-neutral-700)">Pistes : « ajoute un chrono au mode examen » · « notifications de révision » · « partager un QCM entre étudiants »</p>
+</section>
+
+<div style="font: 600 10px/1 var(--font-heading); letter-spacing: .15em; text-transform: uppercase; color: var(--color-accent); position: absolute; left: -189px; top: 286px"><br></div><span style="display: block; margin-top: 3px; font: 400 11.5px/1.35 var(--font-body); color: var(--color-neutral-700); position: absolute; left: -364px; top: 383px">Désactivé = mode examen par défaut</span><div style="padding: 18px 20px; font: 400 11.5px/1.5 var(--font-body); color: var(--color-neutral-600); position: absolute; left: -409px; top: 628px">Version 1.0 — aucune donnée ne quitte l'appareil.</div></x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;mode&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;entrainement&quot;,&quot;examen&quot;],&quot;default&quot;:&quot;entrainement&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Session&quot;},&quot;showStats&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Accueil&quot;}}">
+class Component extends DCLogic {
+  quizzes = [
+    { id: "q1", titre: "Restructurations — fusions", matiere: "Fusion / Consolidation", pct: 67, best: 83, revoir: 2, n: 6 },
+    { id: "q2", titre: "Fiscalité des groupes", matiere: "Droit fiscal des groupes", pct: 92, best: 92, revoir: 1, n: 5 },
+    { id: "q3", titre: "Périmètre de consolidation", matiere: "Fusion / Consolidation", pct: 41, best: 55, revoir: 4, n: 4 },
+    { id: "q4", titre: "CSRD — double matérialité", matiere: "RSE / Reporting durable", pct: null, best: null, revoir: 0, n: 6 }
+  ];
+
+  matieres = [
+    { nom: "Fusion / Consolidation", pct: 62 },
+    { nom: "Droit fiscal des groupes", pct: 88 },
+    { nom: "Contrôle de gestion", pct: 74 },
+    { nom: "RSE / Reporting durable", pct: 45 }
+  ];
+
+  sessions = [
+    { quand: "Hier", titre: "Fiscalité des groupes", score: "11 / 12" },
+    { quand: "9 sept.", titre: "Restructurations — fusions", score: "4 / 6" },
+    { quand: "7 sept.", titre: "Périmètre de consolidation", score: "3 / 9" },
+    { quand: "4 sept.", titre: "Contrôle de gestion", score: "7 / 10" }
+  ];
+
+  questions = [
+    { theme: "Évaluation des apports", enonce: "Dans une fusion à l'endroit entre sociétés sous contrôle commun, à quelle valeur les apports sont-ils évalués ?",
+      props: ["Valeur comptable", "Valeur réelle", "Valeur d'usage", "Valeur nette de trésorerie"], rep: [0],
+      expl: "Contrôle commun et opération à l'endroit : le règlement ANC 2017-01 impose la valeur comptable. La valeur réelle ne vaut que pour les opérations à l'envers ou entre entités sous contrôle distinct." },
+    { theme: "Régime fiscal de faveur", enonce: "Quels engagements l'article 210 A du CGI impose-t-il à la société absorbante ?",
+      props: ["Reprendre à son passif les provisions dont l'imposition est différée", "Obtenir l'agrément préalable de l'administration dans tous les cas", "Calculer les plus-values ultérieures d'après la valeur fiscale d'origine chez l'absorbée", "Conserver les titres reçus pendant cinq ans"], rep: [0, 2],
+      expl: "Ces deux engagements figurent dans l'acte de fusion. L'agrément n'est exigé que pour certains transferts de déficits ; la conservation cinq ans concerne l'apport partiel d'actif." },
+    { theme: "Périmètre", enonce: "Une participation de 35 % assortie d'un pacte donnant la majorité au conseil d'administration conduit à quelle méthode ?",
+      props: ["Intégration globale", "Intégration proportionnelle", "Mise en équivalence", "Exclusion du périmètre"], rep: [0],
+      expl: "Le pacte confère un contrôle exclusif de fait : intégration globale, avec constatation d'intérêts minoritaires à 65 %." },
+    { theme: "Mali de fusion", enonce: "Comment traite-t-on le mali technique de fusion ?",
+      props: ["Inscrit à l'actif, affecté aux plus-values latentes des actifs apportés", "Charge exceptionnelle de l'exercice", "Amorti linéairement sur dix ans", "Imputé sur la prime de fusion"], rep: [0],
+      expl: "Le mali technique est un actif incorporel non amortissable, affecté par nature aux plus-values latentes des biens apportés, puis testé pour dépréciation." },
+    { theme: "Intégration fiscale", enonce: "Quel seuil de détention conditionne l'entrée d'une filiale dans un groupe intégré ?",
+      props: ["95 % du capital, directement ou indirectement", "50 % des droits de vote", "66,67 % du capital", "75 % du capital"], rep: [0],
+      expl: "Article 223 A du CGI : détention de 95 % au moins du capital, de manière continue sur l'exercice, directement ou indirectement par des sociétés du groupe." },
+    { theme: "Retraitements", enonce: "Quels retraitements d'homogénéisation sont obligatoires en consolidation IFRS ?",
+      props: ["Élimination des écritures de nature purement fiscale", "Retraitement des contrats de location selon IFRS 16", "Alignement des méthodes d'évaluation des stocks", "Réévaluation systématique des immeubles"], rep: [0, 1, 2],
+      expl: "Les trois premiers relèvent de l'homogénéisation obligatoire. La réévaluation des immeubles est une option du modèle de la juste valeur, jamais une obligation." }
+  ];
+
+  modele = '{\n  "titre": "Restructurations — QCM 1",\n  "matiere": "Fusion / Consolidation",\n  "questions": [\n    {\n      "enonce": "…",\n      "propositions": ["…", "…", "…"],\n      "reponses": [0],\n      "explication": "…",\n      "theme": "…"\n    }\n  ]\n}';
+
+  state = {
+    vue: "accueil", sheet: null, quizId: "q1",
+    mode: null, melange: true, ratees: false,
+    qi: 0, choix: [], valide: false, resultats: [],
+    fichier: false, toast: null, ajoutes: 0,
+    correctionImmediate: true, swipeActif: true, taille: "M",
+    dx: 0, drag: false, detailQi: null, ordre: null
+  };
+
+  flash(t) {
+    clearTimeout(this._t);
+    this.setState({ toast: t });
+    this._t = setTimeout(() => this.setState({ toast: null }), 2400);
+  }
+
+  quiz() { return this.quizzes.find(q => q.id === this.state.quizId) || this.quizzes[0]; }
+  mode() { return this.state.mode || (this.state.correctionImmediate ? (this.props.mode || "entrainement") : "examen"); }
+  deck() { const c = this.quiz(); return this.questions.slice(0, c.n || this.questions.length); }
+  ordre() { return this.state.ordre || this.deck().map((_, i) => i); }
+  qIndex() { return this.ordre()[this.state.qi]; }
+  memes(a, b) { const t = b.slice().sort(); return a.length === b.length && a.slice().sort().every((v, i) => v === t[i]); }
+
+  pick(i) {
+    if (this.state.valide) return;
+    const q = this.questions[this.qIndex()];
+    let c = this.state.choix.slice();
+    if (q.rep.length > 1) { const p = c.indexOf(i); if (p >= 0) c.splice(p, 1); else c.push(i); }
+    else c = c.length === 1 && c[0] === i ? [] : [i];
+    this.setState({ choix: c });
+  }
+
+  action = () => {
+    const s = this.state, idx = this.qIndex(), q = this.questions[idx];
+    if (!s.valide) {
+      if (!s.choix.length) return;
+      const juste = this.memes(s.choix, q.rep);
+      const resultats = s.resultats.filter(r => r.qi !== idx).concat([{ qi: idx, choix: s.choix, juste }]);
+      if (this.mode() === "examen") return this.avancer(resultats);
+      return this.setState({ valide: true, resultats });
+    }
+    this.avancer(s.resultats);
+  };
+
+  avancer(resultats) {
+    const s = this.state, ord = this.ordre();
+    if (s.qi >= ord.length - 1) return this.setState({ vue: "bilan", resultats, valide: false, dx: 0, detailQi: null });
+    const suivant = resultats.find(r => r.qi === ord[s.qi + 1]);
+    this.setState({ qi: s.qi + 1, choix: suivant ? suivant.choix : [], valide: !!suivant && this.mode() !== "examen", resultats, dx: 0 });
+  }
+
+  reculer() {
+    const s = this.state;
+    if (s.qi === 0) return this.setState({ dx: 0 });
+    const r = s.resultats.find(x => x.qi === this.ordre()[s.qi - 1]);
+    this.setState({ qi: s.qi - 1, choix: r ? r.choix : [], valide: !!r && this.mode() !== "examen", dx: 0 });
+  }
+
+  onDown = (e) => { if (!this.state.swipeActif) return; this._x0 = e.clientX; this.setState({ drag: true, dx: 0 }); };
+  onMove = (e) => { if (!this.state.drag) return; this.setState({ dx: e.clientX - this._x0 }); };
+  onUp = () => {
+    const { dx, drag, valide } = this.state;
+    if (!drag) return;
+    this.setState({ drag: false });
+    if (dx < -70) {
+      if (valide || this.mode() === "examen") this.avancer(this.state.resultats);
+      else { this.setState({ dx: 0 }); this.flash("Valide d'abord ta réponse"); }
+    } else if (dx > 70) this.reculer();
+    else this.setState({ dx: 0 });
+  };
+
+  renderVals() {
+    const s = this.state, P = this.props;
+    const mode = this.mode();
+    const ord = this.ordre();
+    const q = this.questions[ord[s.qi]] || this.questions[0];
+    const ink = "var(--color-text)", rouge = "var(--color-accent)";
+    const ech = s.taille === "S" ? 0.92 : s.taille === "L" ? 1.12 : 1;
+
+    const btn = (bg, fg) => "display:flex;align-items:center;justify-content:flex-start;width:100%;min-height:48px;padding:0 16px;border:0;background:" + bg + ";color:" + fg + ";font:700 15px/1 var(--font-heading);letter-spacing:-.01em;cursor:pointer";
+    const seg = (actif) => "min-height:44px;padding:0 12px;display:flex;align-items:center;justify-content:flex-start;border:0;cursor:pointer;font:700 13px/1 var(--font-heading);background:" + (actif ? ink : "transparent") + ";color:" + (actif ? "var(--color-bg)" : ink);
+    const caseS = (on) => "flex:0 0 auto;width:24px;height:24px;display:grid;place-items:center;background:" + (on ? ink : "transparent") + ";color:var(--color-bg);border:1px solid " + (on ? ink : "var(--color-neutral-400)") + ";font:700 13px/1 var(--font-heading)";
+    const tab = (actif) => "padding:13px 14px;background:none;border:0;border-right:1px solid var(--color-neutral-300);text-align:left;cursor:pointer;font:" + (actif ? "700" : "600") + " 11.5px/1 var(--font-heading);letter-spacing:.06em;text-transform:uppercase;color:" + (actif ? ink : "var(--color-neutral-600)");
+
+    const options = q.props.map((texte, i) => {
+      const choisie = s.choix.indexOf(i) >= 0, bonne = q.rep.indexOf(i) >= 0;
+      let boxBg = "transparent", boxFg = "var(--color-neutral-700)", boxBd = "1px solid var(--color-neutral-400)", rowBg = "transparent", bar = "transparent";
+      if (!s.valide && choisie) { boxBg = ink; boxFg = "var(--color-bg)"; boxBd = "1px solid " + ink; rowBg = "var(--color-neutral-200)"; bar = ink; }
+      if (s.valide) {
+        if (bonne && choisie) { boxBg = ink; boxFg = "var(--color-bg)"; boxBd = "1px solid " + ink; rowBg = "rgba(32,30,29,.05)"; bar = ink; }
+        else if (choisie) { boxBg = rouge; boxFg = "#fff"; boxBd = "1px solid " + rouge; rowBg = "var(--color-accent-100)"; bar = rouge; }
+        else if (bonne) { boxFg = ink; boxBd = "2px dashed " + ink; bar = "var(--color-neutral-400)"; }
+      }
+      let lineFg = "var(--color-neutral-800)", lineWeight = "500", lettreFg = "var(--color-neutral-500)", lineBg = "transparent";
+      if (!s.valide && choisie) { lettreFg = rouge; lineFg = ink; lineWeight = "700"; }
+      if (s.valide) {
+        if (bonne) { lettreFg = choisie ? ink : ink; lineFg = ink; lineWeight = "700"; }
+        if (choisie && !bonne) { lettreFg = rouge; lineFg = "var(--color-accent-700)"; lineWeight = "600"; lineBg = "var(--color-accent-100)"; }
+      } else if (!choisie) { lettreFg = "var(--color-accent)"; }
+      return {
+        lettre: String.fromCharCode(65 + i), texte,
+        onPick: () => this.pick(i),
+        lineStyle: "display:flex;gap:14px;align-items:flex-start;width:100%;text-align:left;background:" + lineBg + ";border:0;border-top:1px solid var(--color-neutral-300);" + (i === q.props.length - 1 ? "border-bottom:1px solid var(--color-neutral-300);" : "") + "padding:15px 4px;min-height:56px;cursor:" + (s.valide ? "default" : "pointer"),
+        letterStyle: "flex:0 0 auto;width:16px;font:800 " + (15 * ech) + "px/1.35 var(--font-heading);color:" + lettreFg,
+        textStyle: "flex:1;font:" + lineWeight + " " + (17 * ech) + "px/1.35 var(--font-body);color:" + lineFg + ";text-wrap:pretty",
+        rowStyle: "display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:" + rowBg + ";border:0;border-bottom:1px solid var(--color-neutral-300);border-left:3px solid " + bar + ";padding:13px 12px 13px 9px;min-height:56px;font-size:" + (14.5 * ech) + "px;cursor:" + (s.valide ? "default" : "pointer"),
+        boxStyle: "flex:0 0 auto;width:32px;height:32px;display:grid;place-items:center;background:" + boxBg + ";color:" + boxFg + ";border:" + boxBd + ";font:700 13px/1 var(--font-heading)"
+      };
+    });
+
+    const juste = s.valide && this.memes(s.choix, q.rep);
+    const bons = q.rep.map(i => q.props[i]).join(" ; ");
+    const deck = { length: ord.length };
+    const dernier = s.qi === ord.length - 1;
+    const score = s.resultats.filter(r => r.juste).length;
+    const total = s.resultats.length || ord.length;
+    const pct = Math.round(score / total * 100);
+    const erreurs = s.resultats.filter(r => !r.juste);
+    const revueSrc = erreurs.length ? erreurs : s.resultats;
+    const cible = this.quiz();
+
+    return {
+      isAccueil: s.vue === "accueil", isSession: s.vue === "session", isBilan: s.vue === "bilan",
+      isProgression: s.vue === "progression", isReglages: s.vue === "reglages",
+      statsVisible: P.showStats !== false,
+      nbQcm: this.quizzes.length + s.ajoutes,
+      scoreMoyen: "71 %",
+      totalJouees: 74,
+      matieres: this.matieres.map(m => ({ nom: m.nom, pct: m.pct + " %", barStyle: "height:100%;width:" + m.pct + "%;background:" + (m.pct >= 70 ? ink : rouge) })),
+      sessions: this.sessions,
+      quizzes: this.quizzes.map((q2, i) => {
+        const urgent = q2.revoir >= 3;
+        const fg = urgent ? "#fff" : ink;
+        return {
+          titre: q2.titre,
+          kicker: urgent ? "À reprendre" : q2.matiere,
+          kickerStyle: "display:block;font:600 9.5px/1.2 var(--font-heading);letter-spacing:.12em;text-transform:uppercase;color:" + (urgent ? "#fff" : "var(--color-accent)"),
+          cellStyle: "padding:14px;width:100%;text-align:left;border:0;border-bottom:1px solid var(--color-neutral-300);" + (i % 2 === 0 ? "border-right:1px solid var(--color-neutral-300);" : "") + "background:" + (urgent ? rouge : "none") + ";color:" + fg + ";display:flex;flex-direction:column;justify-content:space-between;cursor:pointer",
+          score: q2.best === null ? "jamais joué" : q2.best + " %",
+          scoreStyle: q2.best === null ? "font:600 12px/1 var(--font-heading);color:var(--color-neutral-600)" : "font:800 24px/1 var(--font-heading);color:" + fg,
+          sous: q2.revoir ? q2.revoir + " à revoir" : q2.n + " quest.",
+          sousStyle: "font:400 10.5px/1.2 var(--font-body);color:" + (urgent ? "#fff" : "var(--color-neutral-600)"),
+          onOpen: () => this.setState({ sheet: "lancer", quizId: q2.id, ratees: false })
+        };
+      }),
+
+      dImport: s.sheet === "import" || s.sheet === "format",
+      dLancer: s.sheet === "lancer",
+      dProg: !s.sheet && s.vue === "progression",
+      dReglages: !s.sheet && s.vue === "reglages",
+      dBilan: !s.sheet && s.vue === "bilan",
+      dSession: !s.sheet && (s.vue === "session" || s.vue === "accueil"),
+      dAccueilHint: s.vue === "accueil",
+      quizzesDesk: this.quizzes.map(q2 => {
+        const actif = q2.id === s.quizId;
+        return {
+          titre: q2.titre,
+          kicker: q2.revoir >= 3 ? "À reprendre" : q2.matiere,
+          kickerStyle: "display:block;font:600 9px/1.2 var(--font-heading);letter-spacing:.12em;text-transform:uppercase;color:" + (q2.revoir >= 3 ? "var(--color-accent)" : "var(--color-neutral-600)"),
+          sous: q2.revoir ? q2.n + " questions · " + q2.revoir + " à revoir" : q2.n + " questions",
+          sousStyle: "display:block;margin-top:5px;font:400 11px/1.3 var(--font-body);color:var(--color-neutral-700)",
+          score: q2.best === null ? "—" : q2.best + " %",
+          scoreStyle: "font:800 14px/1 var(--font-heading);color:" + (q2.best === null ? "var(--color-neutral-500)" : q2.best >= 75 ? ink : "var(--color-accent-700)"),
+          rowStyle: "display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;width:100%;text-align:left;padding:14px 20px;border:0;border-bottom:1px solid var(--color-neutral-300);border-left:3px solid " + (actif ? rouge : "transparent") + ";background:" + (actif ? "var(--color-neutral-200)" : "none") + ";cursor:pointer",
+          onOpen: () => this.setState({ sheet: "lancer", quizId: q2.id, ratees: false })
+        };
+      }),
+      actionStyleDesk: (!s.valide && !s.choix.length)
+        ? "min-height:48px;padding:0 22px;border:0;background:var(--color-neutral-300);color:var(--color-neutral-600);font:700 15px/1 var(--font-heading);cursor:not-allowed"
+        : "min-height:48px;padding:0 22px;border:0;background:" + (!s.valide ? rouge : ink) + ";color:" + (!s.valide ? "#fff" : "var(--color-bg)") + ";font:700 15px/1 var(--font-heading);cursor:pointer",
+      tabsStyle: "display:grid;grid-template-columns:1fr 1fr 1fr;border-top:2px solid var(--color-text);padding-bottom:24px;background:var(--color-bg)",
+      tabQcm: tab(s.vue === "accueil"), tabProg: tab(!s.sheet && s.vue === "progression"),
+      tabRegl: tab(!s.sheet && s.vue === "reglages") + ";border-right:0",
+
+      sessionMode: mode === "examen" ? "Mode examen" : "Entraînement",
+      compte: String(s.qi + 1).padStart(2, "0") + " / " + String(deck.length).padStart(2, "0"),
+      progressStyle: "height:100%;background:var(--color-accent);width:" + ((s.qi + (s.valide ? 1 : 0)) / deck.length * 100) + "%;transition:width .25s ease",
+      swipeStyle: "padding:14px 20px 24px;transform:translateX(" + (s.drag ? s.dx * 0.5 : 0) + "px);transition:" + (s.drag ? "none" : "transform .18s ease"),
+      swipeAide: s.swipeActif ? (s.valide ? "Glisse vers la gauche pour continuer, vers la droite pour revoir." : "Glisse vers la droite pour revoir la question précédente.") : "",
+      theme: q.theme,
+      enonce: q.enonce,
+      consigne: q.rep.length > 1 ? "Plusieurs réponses attendues." : "Une seule réponse.",
+      options,
+      onDown: this.onDown, onMove: this.onMove, onUp: this.onUp,
+      correctionVisible: s.valide,
+      correctionStyle: "margin-top:18px;padding:14px 16px;background:var(--color-surface);border-left:3px solid " + (juste ? ink : rouge),
+      verdictStyle: "font:800 13px/1 var(--font-heading);letter-spacing:.06em;text-transform:uppercase;color:" + (juste ? ink : "var(--color-accent-700)"),
+      verdict: juste ? "Bonne réponse" : "Réponse incorrecte",
+      explication: (juste ? "" : "Attendu : " + bons + ". ") + q.expl,
+      numero: String(s.qi + 1).padStart(2, "0"),
+      totalDeck: String(deck.length).padStart(2, "0"),
+      actionLabel: !s.valide
+        ? (s.choix.length ? "Valider " + s.choix.slice().sort().map(i => String.fromCharCode(65 + i)).join(", ") : "Valider")
+        : (dernier ? "Voir mon bilan" : "Question suivante"),
+      actionStyle: (!s.valide && !s.choix.length)
+        ? btn("var(--color-neutral-300)", "var(--color-neutral-600)") + ";cursor:not-allowed"
+        : btn(!s.valide ? rouge : ink, !s.valide ? "#fff" : "var(--color-bg)"),
+      onAction: this.action,
+
+      bScore: score + " / " + total,
+      bTotal: pct + " %",
+      bCommentaire: pct === 100 ? "Sans faute. Chapitre acquis, passe au suivant."
+        : pct >= 75 ? "Solide. Reprends seulement les questions manquées."
+        : pct >= 50 ? "La base est là, mais plusieurs notions restent floues : relis le cours avant de rejouer."
+        : "Chapitre non acquis. Reprends le support avant de refaire le QCM.",
+      revueTitre: erreurs.length ? erreurs.length + " à revoir" : "Tout est juste",
+      fiche: s.resultats.slice().sort((a, b) => ord.indexOf(a.qi) - ord.indexOf(b.qi)).map(r => {
+        const qq = this.questions[r.qi];
+        const ouvert = s.detailQi === r.qi;
+        return {
+          num: String(ord.indexOf(r.qi) + 1).padStart(2, "0"),
+          enonce: qq.enonce,
+          etat: r.juste ? "Juste" : "Faux",
+          ouvert,
+          aTienne: !r.juste,
+          tienne: r.choix.length ? r.choix.map(i => qq.props[i]).join(" ; ") : "aucune réponse",
+          bonne: qq.rep.map(i => qq.props[i]).join(" ; "),
+          expl: qq.expl,
+          onToggle: () => this.setState({ detailQi: ouvert ? null : r.qi }),
+          rowStyle: "display:grid;grid-template-columns:28px 1fr 58px;gap:10px;width:100%;text-align:left;align-items:baseline;padding:12px 20px;border:0;border-bottom:1px solid var(--color-neutral-300);cursor:pointer;background:" + (r.juste ? "none" : "var(--color-accent-100)"),
+          numStyle: "font:800 13px/1.3 var(--font-heading);color:" + (r.juste ? ink : "var(--color-accent-700)"),
+          qStyle: "font:500 13px/1.35 var(--font-body);color:" + (r.juste ? ink : "var(--color-accent-800)") + ";text-wrap:pretty",
+          etatStyle: "font:700 11px/1.3 var(--font-heading);text-transform:uppercase;color:" + (r.juste ? ink : "var(--color-accent-700)"),
+          deskRowStyle: "display:grid;grid-template-columns:26px 1fr 48px;gap:8px;align-items:baseline;padding:11px 20px;border-top:1px solid var(--color-neutral-300);background:" + (r.juste ? "none" : "var(--color-accent-100)"),
+          bilanRowStyle: "display:grid;grid-template-columns:34px 1fr 70px;gap:12px;width:100%;text-align:left;align-items:baseline;padding:13px 36px;border:0;border-bottom:1px solid var(--color-neutral-300);cursor:pointer;background:" + (r.juste ? "none" : "var(--color-accent-100)")
+        };
+      }),
+      revue: revueSrc.map(r => {
+        const qq = this.questions[r.qi];
+        return {
+          enonce: qq.enonce, aTienne: !r.juste,
+          tienne: r.choix.length ? r.choix.map(i => qq.props[i]).join(" ; ") : "aucune réponse",
+          bonne: qq.rep.map(i => qq.props[i]).join(" ; "),
+          expl: qq.expl
+        };
+      }),
+      rejouerLabel: erreurs.length ? "Rejouer mes " + erreurs.length + " erreurs" : "Refaire ce QCM",
+      rejouerErreurs: () => this.setState({
+        vue: "session", qi: 0, choix: [], valide: false, resultats: [], detailQi: null,
+        ordre: erreurs.length ? erreurs.map(r => r.qi) : null
+      }),
+      retour: () => this.setState({ vue: "accueil", qi: 0, choix: [], valide: false, resultats: [], sheet: null, ordre: null, detailQi: null }),
+
+      sheetOuverte: !!s.sheet,
+      sheetImport: s.sheet === "import", sheetLancer: s.sheet === "lancer", sheetFormat: s.sheet === "format",
+      ouvrirImport: () => this.setState({ sheet: "import", fichier: false }),
+      ouvrirFormat: () => this.setState({ sheet: "format" }),
+      fermerSheet: () => this.setState({ sheet: null }),
+      choisirFichier: () => this.setState({ fichier: true }),
+      fichierChoisi: s.fichier,
+      fichierNom: "qcm-ingenierie-financiere.json",
+      fichierPoids: "14 Ko · iCloud Drive",
+      detection: "Lu : 1 QCM · 10 questions",
+      detectionDetail: "Ingénierie financière — LBO et effet de levier. Explications présentes sur les 10 questions.",
+      ajouter: () => { this.setState({ sheet: null, fichier: false, ajoutes: s.ajoutes + 1 }); this.flash("10 questions ajoutées à ta liste"); },
+
+      lancerTitre: cible.titre, lancerMatiere: cible.matiere,
+      lancerIntro: cible.n + " questions" + (cible.revoir ? " · " + cible.revoir + " à revoir" : ""),
+      ringDash: ((cible.best || 0) / 100 * 213.6).toFixed(1) + " 213.6",
+      ringLabel: cible.best === null || cible.best === undefined ? "—" : cible.best + " %",
+      caseExamenStyle: caseS(mode === "examen"), caseExamenMarque: mode === "examen" ? "✓" : "",
+      toggleExamen: () => this.setState({ mode: mode === "examen" ? "entrainement" : "examen", correctionImmediate: mode === "examen" }),
+      caseStyle: caseS(s.melange), caseMarque: s.melange ? "✓" : "",
+      caseRateesStyle: caseS(s.ratees), caseRateesMarque: s.ratees ? "✓" : "",
+      nbRateesQuiz: cible.revoir,
+      toggleMelange: () => this.setState({ melange: !s.melange }),
+      toggleRatees: () => this.setState({ ratees: !s.ratees }),
+      setEntrainement: () => this.setState({ mode: "entrainement", correctionImmediate: true }),
+      setExamen: () => this.setState({ mode: "examen" }),
+      demarrerLabel: s.ratees ? "Réviser " + cible.revoir + " questions ratées" : "Commencer les " + cible.n + " questions",
+      demarrer: () => this.setState({
+        sheet: null, vue: "session", qi: 0, choix: [], valide: false, resultats: [], detailQi: null,
+        ordre: s.ratees && cible.revoir ? this.questions.slice(0, cible.revoir).map((_, i) => i) : null
+      }),
+
+      swCorrection: caseS(s.correctionImmediate), swCorrectionMarque: s.correctionImmediate ? "✓" : "",
+      swMelange: caseS(s.melange), swMelangeMarque: s.melange ? "✓" : "",
+      swSwipe: caseS(s.swipeActif), swSwipeMarque: s.swipeActif ? "✓" : "",
+      toggleCorrection: () => this.setState({ correctionImmediate: !s.correctionImmediate, mode: null }),
+      toggleSwipe: () => this.setState({ swipeActif: !s.swipeActif }),
+      tailleS: seg(s.taille === "S"), tailleM: seg(s.taille === "M"), tailleL: seg(s.taille === "L"),
+      setTailleS: () => this.setState({ taille: "S" }),
+      setTailleM: () => this.setState({ taille: "M" }),
+      setTailleL: () => this.setState({ taille: "L" }),
+
+      modele: this.modele,
+      toast: s.toast,
+      goAccueil: () => this.setState({ vue: "accueil", sheet: null }),
+      goProgression: () => this.setState({ vue: s.vue === "progression" ? "accueil" : "progression", sheet: null }),
+      goReglages: () => this.setState({ vue: s.vue === "reglages" ? "accueil" : "reglages", sheet: null })
+    };
+  }
+}
+
+</script>
+</body>
+</html>
