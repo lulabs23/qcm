@@ -3,7 +3,8 @@
 "use strict";
 
 const KEY = "reviseur-qcm.v1";
-const SEEDED = "reviseur-qcm.seeded";
+const SEEDED = "reviseur-qcm.seeded";        /* ancien drapeau global, conservé pour les installations existantes */
+const SEEN = "reviseur-qcm.seeds";          /* noms de fichiers déjà installés, un par entrée */
 /* Dotation de départ : la liste vit dans exemples/index.json, pour n'avoir qu'un seul endroit à tenir à jour. */
 const SEED_INDEX = "exemples/index.json";
 const $ = (id) => document.getElementById(id);
@@ -42,29 +43,51 @@ function load() {
 const save = () => { try { localStorage.setItem(KEY, JSON.stringify(db)); } catch (_) {} };
 const quiz = (id) => db.quizzes.find((q) => q.id === id) || null;
 
-/* Dotation de départ : au tout premier lancement seulement, et jamais après un effacement volontaire. */
+/* Dotation : chaque fichier de exemples/index.json est installé une fois et une seule.
+   Ajouter un fichier au manifeste le livre aussi aux installations existantes ;
+   un QCM supprimé par l'utilisateur ne revient jamais. */
+const seenSeeds = () => { try { return JSON.parse(localStorage.getItem(SEEN) || "[]"); } catch (_) { return []; } };
+const rememberSeeds = (names) => { try { localStorage.setItem(SEEN, JSON.stringify([...new Set([...seenSeeds(), ...names])])); } catch (_) {} };
+
 async function seed() {
-  if (db.quizzes.length || localStorage.getItem(SEEDED)) return;
   let files = [];
   try {
-    const r = await fetch(SEED_INDEX);
+    const r = await fetch(SEED_INDEX, { cache: "no-store" });
     if (r.ok) files = JSON.parse(await r.text());
   } catch (_) { /* pas de manifeste, ou app ouverte sans serveur */ }
   if (!Array.isArray(files) || !files.length) return;
+  files = files.map(String);
+
+  /* Migration : une installée sous l'ancien drapeau a déjà reçu la dotation d'alors. */
+  if (localStorage.getItem(SEEDED) && !localStorage.getItem(SEEN)) {
+    rememberSeeds(db.quizzes.length ? files : []);
+  }
+
+  const seen = seenSeeds();
+  const todo = files.filter((n) => !seen.includes(n));
+  if (!todo.length) return;
+
   const loaded = [];
-  for (const name of files) {
-    const path = "exemples/" + encodeURIComponent(String(name));
+  const installed = [];
+  for (const name of todo) {
+    const path = "exemples/" + encodeURIComponent(name);
     try {
-      const r = await fetch(path);
-      if (r.ok) loaded.push(...readPayload(await r.text(), String(name)));
-      else console.warn("[QCM] exemple introuvable :", path, r.status);
+      const r = await fetch(path, { cache: "no-store" });
+      if (!r.ok) { console.warn("[QCM] exemple introuvable :", path, r.status); continue; }
+      loaded.push(...readPayload(await r.text(), name));
+      installed.push(name);
     } catch (e) { console.warn("[QCM] exemple illisible :", path, e.message); }
   }
   if (!loaded.length) return;
-  db.quizzes = loaded.map(({ skipped, ...q }) => q);
+
+  const nouveau = loaded.map(({ skipped, ...q }) => q);
+  const premier = !db.quizzes.length;
+  db.quizzes = [...nouveau, ...db.quizzes];
+  rememberSeeds(installed);
   try { localStorage.setItem(SEEDED, "1"); } catch (_) {}
   save();
   render();
+  if (!premier) toast(nouveau.length > 1 ? nouveau.length + " nouveaux QCM ajoutés" : "Nouveau QCM ajouté : " + nouveau[0].titre);
 }
 
 /* ── Import: tolerant parsing of Claude output ──────────────────── */
@@ -420,6 +443,7 @@ function viewSettings() {
         </div>
       </div>
       <button class="row" data-act="export">Exporter tous mes QCM</button>
+      <button class="row" data-act="reseed">Recharger les QCM fournis</button>
       <button class="row danger" data-act="wipe">Effacer mes données</button>
       <p class="hint" style="padding:18px 20px">Version 1.0 — aucune donnée ne quitte l'appareil.</p>
     </div>
@@ -653,6 +677,11 @@ document.addEventListener("click", (e) => {
       try { localStorage.setItem(SEEDED, "1"); } catch (_) {}
       save(); render();
       toast("Données effacées");
+    },
+    reseed: () => {
+      try { localStorage.removeItem(SEEN); localStorage.removeItem(SEEDED); } catch (_) {}
+      seed();
+      toast("Recherche des QCM fournis…");
     }
   };
   if (handlers[act]) { e.preventDefault(); handlers[act](); }
