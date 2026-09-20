@@ -1,0 +1,438 @@
+{
+  "titre": "Chapitre 1 — Introduction à la science économique",
+  "matiere": "Économie S1 (GEA1)",
+  "questions": [
+    {
+      "enonce": "D'où naît le phénomène de rareté, notion centrale de la science économique ?",
+      "propositions": [
+        "D'une pénurie accidentelle et temporaire de matières premières",
+        "De la confrontation entre des besoins illimités et des ressources limitées",
+        "D'une mauvaise répartition des richesses entre classes sociales",
+        "De l'inflation, qui réduit le pouvoir d'achat des ménages"
+      ],
+      "reponses": [1],
+      "explication": "La rareté n'est pas une pénurie accidentelle mais la situation permanente de toute société : les besoins humains sont illimités alors que les ressources pour les satisfaire sont en quantité limitée. C'est de cette confrontation que naît la nécessité de faire des choix, et donc l'objet même de la discipline.",
+      "theme": "1.1.1 L'objet de la science économique"
+    },
+    {
+      "enonce": "Chez Aristote, que désigne l'économie ?",
+      "propositions": [
+        "L'ensemble des règles de conduite des activités domestiques, liées à l'acquisition des richesses",
+        "L'étude des moyens d'augmenter la richesse de l'État",
+        "L'analyse de l'équilibre des marchés par les prix",
+        "La science de la répartition des revenus entre classes sociales"
+      ],
+      "reponses": [0],
+      "explication": "Initialement, l'économie est la science de l'accumulation des richesses au sens d'Aristote : un ensemble de règles de conduite des activités domestiques qui ne déborde pas du cadre de la famille. L'extension à l'échelle de la nation ne viendra qu'après le Moyen Âge.",
+      "theme": "1.1.1 L'objet de la science économique"
+    },
+    {
+      "enonce": "Quelles affirmations sont exactes à propos des mercantilistes ?",
+      "propositions": [
+        "Ils se développent aux XVIe et XVIIe siècles",
+        "Ils se préoccupent des moyens d'augmenter la richesse de l'État",
+        "Ils prônent le retrait total de l'État de la sphère économique",
+        "Leur essor accompagne la fin de la prééminence des doctrines de l'Église dans l'organisation sociale"
+      ],
+      "reponses": [0, 1, 3],
+      "explication": "Les mercantilistes (XVIe-XVIIe siècles) forment une doctrine centrée sur l'accroissement de la richesse de l'État, encouragée par une intervention forte de celui-ci (protectionnisme, métaux précieux, population nombreuse). C'est avec eux que l'économie devient politique, la prééminence des doctrines de l'Église s'estompant. La proposition 3 décrit au contraire les classiques.",
+      "theme": "1.2 Repères de la pensée économique"
+    },
+    {
+      "enonce": "Selon Keynes, comment se distinguent les deux catégories de besoins ?",
+      "propositions": [
+        "Les besoins vitaux et les besoins superflus",
+        "Les besoins solvables et les besoins insolvables",
+        "Les besoins absolus, ressentis quelle que soit la situation d'autrui, et les besoins relatifs, éprouvés au contact des autres",
+        "Les besoins individuels et les besoins collectifs"
+      ],
+      "reponses": [2],
+      "explication": "Keynes distingue les besoins à caractère absolu (ressentis indépendamment de la situation des autres) et les besoins à caractère relatif (nés de la comparaison sociale). Les premiers peuvent être saturés, les seconds jamais : c'est ce qui explique le caractère illimité des besoins, y compris dans les sociétés riches.",
+      "theme": "1.1.1 L'objet de la science économique"
+    },
+    {
+      "enonce": "Qu'est-ce qu'un bien économique ?",
+      "propositions": [
+        "Un bien disponible en quantité suffisante pour tous sans effort",
+        "Un bien rare, dont la production exige un sacrifice ou un effort",
+        "Un bien produit exclusivement par le secteur marchand",
+        "Un bien dont l'utilité marginale est croissante"
+      ],
+      "reponses": [1],
+      "explication": "L'économie ne s'intéresse qu'aux biens rares, dits biens économiques : ceux qui exigent un « sacrifice » ou un effort pour être produits, et qui ont donc un coût et un prix. Les biens libres (air, lumière du soleil), disponibles sans effort, restent hors du champ de l'analyse.",
+      "theme": "1.1.1 L'objet de la science économique"
+    },
+    {
+      "enonce": "Sur le graphique de la frontière des possibilités de production (FPP), que représente la zone 1, située sous la courbe ?",
+      "propositions": [
+        "Des combinaisons de production inaccessibles avec les ressources actuelles",
+        "Des combinaisons réalisables mais inefficaces, avec des ressources inemployées",
+        "Des combinaisons optimales utilisant pleinement les ressources",
+        "Des combinaisons rendues possibles uniquement par le progrès technique"
+      ],
+      "reponses": [1],
+      "explication": "La zone 1 regroupe des combinaisons réalisables mais inefficaces : des ressources sont inemployées ou mal employées (chômage, capacités inutilisées). On peut y produire davantage du bien A sans réduire la production du bien B, ce qui est impossible sur la courbe elle-même.",
+      "theme": "1.1.1 La rareté impose des choix (FPP)"
+    },
+    {
+      "enonce": "Pourquoi la frontière des possibilités de production est-elle concave ?",
+      "propositions": [
+        "Parce que le progrès technique déplace la courbe vers l'extérieur",
+        "Parce que les prix des deux biens sont différents",
+        "Parce que les facteurs de production ne sont pas également adaptés aux deux usages, ce qui rend le coût d'opportunité croissant",
+        "Parce que l'utilité marginale des biens est décroissante"
+      ],
+      "reponses": [2],
+      "explication": "Plus on spécialise l'économie dans la production du bien A, plus les ressources que l'on y transfère sont mal adaptées à cet usage. Il faut donc sacrifier des quantités croissantes de B pour obtenir une unité supplémentaire de A : le coût d'opportunité est croissant, d'où la concavité de la courbe.",
+      "theme": "1.1.1 La rareté impose des choix (FPP)"
+    },
+    {
+      "enonce": "Que signifie une combinaison située en zone 2, au-dessus de la FPP ?",
+      "propositions": [
+        "Elle est inaccessible compte tenu des ressources et des techniques actuelles",
+        "Elle correspond à une situation de plein emploi des facteurs",
+        "Elle traduit un gaspillage de ressources",
+        "Elle n'est atteignable qu'en réduisant la production de l'autre bien"
+      ],
+      "reponses": [0],
+      "explication": "La zone 2 rassemble les combinaisons inaccessibles avec le stock de ressources et la technologie du moment. Elle ne devient atteignable que si la courbe se déplace vers l'extérieur, c'est-à-dire en cas de croissance des ressources disponibles ou de progrès technique.",
+      "theme": "1.1.1 La rareté impose des choix (FPP)"
+    },
+    {
+      "enonce": "Quelles sont les questions de base de l'économie formulées par Samuelson ?",
+      "propositions": [
+        "Quels biens produire ?",
+        "En quelles quantités ?",
+        "À quel prix vendre ?",
+        "Comment et pour qui produire ?"
+      ],
+      "reponses": [0, 1, 3],
+      "explication": "Samuelson (prix Nobel 1970) résume l'objet de la discipline en quatre questions que toute société doit résoudre : quels biens produire, en quelles quantités, comment, et pour qui. La question du prix n'en fait pas partie : le prix est un mécanisme de réponse, pas une question posée.",
+      "theme": "1.1.2 Les questions de base de l'économie"
+    },
+    {
+      "enonce": "Qu'est-ce qu'une économie mixte ?",
+      "propositions": [
+        "Une économie combinant des décisions prises par le secteur public et par le secteur privé",
+        "Une économie où coexistent agriculture, industrie et services",
+        "Une économie ouverte aux échanges internationaux",
+        "Une économie où le planificateur fixe les prix mais laisse les quantités libres"
+      ],
+      "reponses": [0],
+      "explication": "Ni l'économie planifiée ni l'économie libérale n'existent à l'état pur. Les économies réelles sont mixtes : elles combinent des décisions du secteur public et du secteur privé. La question pertinente n'est donc pas « marché ou État ? » mais dans quelles proportions et pour quelles fonctions.",
+      "theme": "1.1.2 Les questions de base de l'économie"
+    },
+    {
+      "enonce": "Dans une économie libérale, qui répond aux questions de savoir ce qui sera produit, comment et pour qui ?",
+      "propositions": [
+        "Un organisme de planification économique, le plus souvent l'État",
+        "Le marché, par la libre interaction entre producteurs et consommateurs",
+        "Les propriétaires des moyens de production, seuls",
+        "Une négociation entre les classes sociales"
+      ],
+      "reponses": [1],
+      "explication": "En économie libérale, c'est la libre interaction entre producteurs et consommateurs sur le marché qui détermine ce qui est produit, comment et pour qui. En économie planifiée, ces décisions relèvent d'un organisme de planification, généralement étatique.",
+      "theme": "1.1.2 Les questions de base de l'économie"
+    },
+    {
+      "enonce": "Qu'affirme l'individualisme méthodologique ?",
+      "propositions": [
+        "Les comportements individuels s'inscrivent dans un contexte global prédéterminé",
+        "Les phénomènes étudiés peuvent être expliqués à partir des comportements individuels",
+        "Seul l'intérêt individuel doit guider la politique économique",
+        "L'individu est toujours rationnel et parfaitement informé"
+      ],
+      "reponses": [1],
+      "explication": "L'individualisme méthodologique explique les phénomènes collectifs à partir des comportements individuels et de leur agrégation : on part de l'individu pour aller vers le tout. Le holisme fait l'inverse, en posant que les comportements individuels s'inscrivent dans un contexte global (normes, règles, catégorie sociale) qu'il faut étudier d'abord.",
+      "theme": "1.1.3 Les deux branches de la science économique"
+    },
+    {
+      "enonce": "Comment distingue-t-on microéconomie et macroéconomie ?",
+      "propositions": [
+        "La microéconomie étudie les petites entreprises, la macroéconomie les grandes",
+        "La microéconomie étudie l'activité à travers les comportements et décisions des acteurs, la macroéconomie les systèmes et relations à un niveau global",
+        "La microéconomie est descriptive, la macroéconomie est normative",
+        "La microéconomie est ancienne, la macroéconomie a disparu après Keynes"
+      ],
+      "reponses": [1],
+      "explication": "La microéconomie analyse l'activité économique à partir des comportements et décisions des acteurs (consommateur, entreprise) et de leurs interactions sur les marchés. La macroéconomie étudie les systèmes, phénomènes et relations économiques à un niveau global, en raisonnant sur des agrégats.",
+      "theme": "1.1.3 Les deux branches de la science économique"
+    },
+    {
+      "enonce": "À quoi renvoie le problème du « no bridge » ?",
+      "propositions": [
+        "À l'impossibilité de concilier libéralisme et intervention de l'État",
+        "À l'absence de passage automatique de l'analyse microéconomique à l'analyse macroéconomique",
+        "À la rupture entre valeur d'usage et valeur d'échange",
+        "À l'absence de lien entre épargne et investissement chez Keynes"
+      ],
+      "reponses": [1],
+      "explication": "Le « no bridge » désigne la difficulté de passer de l'analyse microéconomique à l'analyse macroéconomique : on ne peut pas simplement additionner les comportements individuels, car l'agrégation fait apparaître des effets de composition. Si un ménage épargne plus il s'enrichit, mais si tous épargnent plus simultanément, la production et les revenus chutent. La mésoéconomie est une tentative de construire ce pont.",
+      "theme": "1.1.3 Les deux branches de la science économique"
+    },
+    {
+      "enonce": "Quel apport est associé aux physiocrates et à Quesnay, au milieu du XVIIe siècle ?",
+      "propositions": [
+        "La théorie de l'utilité marginale",
+        "Une analyse économique globale sous forme de circuit",
+        "La loi des débouchés",
+        "La théorie des avantages comparatifs"
+      ],
+      "reponses": [1],
+      "explication": "Les physiocrates, avec le Tableau économique de Quesnay, proposent la première analyse économique globale sous forme de circuit : les richesses circulent entre les classes sociales. Pour eux, seule l'agriculture est réellement productive.",
+      "theme": "1.2 Repères de la pensée économique"
+    },
+    {
+      "enonce": "Quels critères d'analyse structurent la pensée des économistes classiques ?",
+      "propositions": [
+        "L'étude des rapports de classe",
+        "La théorie de la valeur",
+        "La défense du libéralisme économique",
+        "L'analyse des anticipations des entrepreneurs"
+      ],
+      "reponses": [0, 1, 2],
+      "explication": "Les classiques (Smith, Malthus, Say, Ricardo), contemporains de la révolution industrielle, s'organisent autour de trois critères : l'étude des rapports de classe, la théorie de la valeur et la défense du libéralisme économique. Les anticipations des entrepreneurs relèvent de Keynes.",
+      "theme": "1.2.1 Les économistes classiques"
+    },
+    {
+      "enonce": "Pour les classiques, comment se détermine la valeur d'un bien ?",
+      "propositions": [
+        "Par la satisfaction qu'il procure au consommateur",
+        "Par la quantité de travail nécessaire à sa fabrication",
+        "Par la rareté relative du bien sur le marché",
+        "Par la confrontation de l'offre et de la demande uniquement"
+      ],
+      "reponses": [1],
+      "explication": "Les classiques ne retiennent que la valeur d'échange, définie par la quantité de travail nécessaire à la fabrication du bien. C'est une conception objective de la valeur : celle-ci réside dans le bien, du côté de la production, indépendamment du goût de l'acheteur. La proposition 0 correspond à la valeur d'usage, puis à la théorie néoclassique de la valeur-utilité.",
+      "theme": "1.2.1 Les économistes classiques"
+    },
+    {
+      "enonce": "Dans l'analyse classique en termes de classes sociales, quelle association est correcte ?",
+      "propositions": [
+        "Les travailleurs sont rémunérés par la rente",
+        "Les capitalistes sont rémunérés au minimum de subsistance",
+        "Les propriétaires terriens sont rémunérés grâce à la rente que leur procure la terre qu'ils louent",
+        "Les travailleurs sont rémunérés au taux de salaire naturel, c'est-à-dire au minimum de subsistance"
+      ],
+      "reponses": [2, 3],
+      "explication": "Les classiques définissent trois classes par la nature de leur revenu : les travailleurs perçoivent un salaire fixé au minimum de subsistance (taux de salaire naturel), les capitalistes le profit issu de la vente des produits fabriqués sur leurs machines, et les propriétaires terriens la rente tirée de la terre qu'ils louent.",
+      "theme": "1.2.1 Les économistes classiques"
+    },
+    {
+      "enonce": "Que soutient Ricardo à propos du commerce international ?",
+      "propositions": [
+        "Chaque pays a intérêt à protéger ses industries naissantes",
+        "Chaque pays a intérêt à ouvrir ses frontières et à se spécialiser dans les productions pour lesquelles il est avantagé",
+        "Le commerce international profite uniquement au pays le plus productif",
+        "L'excédent commercial est la source de la richesse nationale"
+      ],
+      "reponses": [1],
+      "explication": "Ricardo défend le libre-échange par la théorie des avantages comparatifs : chaque pays doit ouvrir ses frontières et se spécialiser là où il est avantagé. Même un pays moins performant en tout a intérêt à se spécialiser là où son désavantage est le plus faible, et l'échange bénéficie alors aux deux parties. La proposition 3 relève du mercantilisme.",
+      "theme": "1.2.1 Les économistes classiques"
+    },
+    {
+      "enonce": "Qu'implique la loi des débouchés de Say ?",
+      "propositions": [
+        "L'offre crée sa propre demande, car la production distribue des revenus équivalents",
+        "L'épargne est nécessairement transformée en investissement",
+        "Une crise générale de surproduction est impossible",
+        "La demande anticipée des entrepreneurs détermine le niveau d'emploi"
+      ],
+      "reponses": [0, 1, 2],
+      "explication": "Selon la loi de Say, l'offre distribue des revenus qui se partagent entre consommation et épargne, cette dernière étant supposée intégralement investie. Consommation et investissement forment la demande : toute production trouve donc son débouché et aucune crise générale de surproduction n'est possible. La proposition 3 est la demande effective de Keynes.",
+      "theme": "1.2.1 La loi des débouchés"
+    },
+    {
+      "enonce": "Chez Marx, qu'est-ce que la plus-value ?",
+      "propositions": [
+        "Le bénéfice réalisé lors de la revente d'une machine",
+        "La différence entre la valeur produite par la force de travail et sa rémunération",
+        "L'écart entre le prix de vente et le prix d'achat d'une marchandise",
+        "La part du profit réinvestie dans l'achat de nouvelles machines"
+      ],
+      "reponses": [1],
+      "explication": "La force de travail est une marchandise dont l'offre est toujours supérieure à la demande, ce qui tire son prix vers le bas. Elle est donc rémunérée en dessous de la valeur qu'elle produit : cette différence est la plus-value, captée par le capitaliste. La journée se décompose en travail nécessaire (payé) et surtravail (temps de travail gratuit).",
+      "theme": "1.2.2 Marx"
+    },
+    {
+      "enonce": "Quelle est la formule marxiste du taux de profit ?",
+      "propositions": [
+        "p / (c + v)",
+        "(c + v) / p",
+        "p / c",
+        "(p + v) / c"
+      ],
+      "reponses": [0],
+      "explication": "Le taux de profit s'écrit p / (c + v), où p est la plus-value, c le capital constant (valeur du travail mort : machines et biens déjà produits) et v le capital variable (valeur du travail vivant).",
+      "theme": "1.2.2 Marx"
+    },
+    {
+      "enonce": "Comment Marx explique-t-il la baisse tendancielle du taux de profit ?",
+      "propositions": [
+        "La concurrence entre capitalistes pousse à acheter des machines plus productives",
+        "Il en résulte une suraccumulation de capital constant",
+        "Le dénominateur du taux de profit croît plus vite que la plus-value",
+        "Les travailleurs obtiennent des hausses de salaire qui réduisent le profit"
+      ],
+      "reponses": [0, 1, 2],
+      "explication": "Seul le travail vivant crée de la plus-value : les machines ne font que transférer leur valeur. Or la concurrence contraint chaque capitaliste à acheter des machines plus récentes et plus productives, ce qui accroît la part de c relativement à v. Il y a suraccumulation de capital et le taux de profit baisse. Le comportement rationnel de chacun ruine collectivement la rentabilité du système : c'est une contradiction interne, non un accident.",
+      "theme": "1.2.2 Marx"
+    },
+    {
+      "enonce": "Quelles caractéristiques Marx attribue-t-il au communisme ?",
+      "propositions": [
+        "La suppression de la propriété privée des moyens de production",
+        "L'abolition des classes sociales",
+        "Le principe « de chacun selon ses capacités, à chacun selon ses besoins »",
+        "La liberté totale des échanges économiques"
+      ],
+      "reponses": [0, 1, 2],
+      "explication": "Le communisme se définit par la suppression de la propriété privée des moyens de production, l'abolition des classes sociales et le principe « de chacun selon ses capacités, à chacun selon ses besoins ». La liberté des échanges est au contraire une caractéristique du capitalisme, avec la propriété privée des moyens de production et la recherche du profit.",
+      "theme": "1.2.2 Marx"
+    },
+    {
+      "enonce": "Quelle est la conception néoclassique de la valeur ?",
+      "propositions": [
+        "Objective, fondée sur le travail incorporé",
+        "Subjective, fondée sur l'utilité que le bien procure au consommateur",
+        "Fondée sur le coût de production augmenté d'une marge",
+        "Fondée sur la rareté physique du bien uniquement"
+      ],
+      "reponses": [1],
+      "explication": "Les néoclassiques (Jevons, Menger, Walras, Pareto, Marshall, Pigou) rompent avec la valeur-travail : la valeur d'un bien résulte de l'utilité, donc de la satisfaction qu'il procure à celui qui le consomme. Elle est subjective, puisqu'elle diffère d'un individu à l'autre, alors que la valeur-travail était objective.",
+      "theme": "1.2.3 Les néoclassiques"
+    },
+    {
+      "enonce": "Quelles affirmations sont exactes concernant l'utilité ?",
+      "propositions": [
+        "L'utilité totale est en général croissante, sauf saturation",
+        "L'utilité marginale est apportée par la consommation de la dernière unité et elle est décroissante",
+        "La valeur d'un bien résulte de la dernière unité consommée",
+        "L'utilité marginale augmente à mesure que la quantité consommée s'accroît"
+      ],
+      "reponses": [0, 1, 2],
+      "explication": "L'utilité totale croît avec la quantité consommée, sauf au-delà du point de saturation. L'utilité marginale, supplément de satisfaction apporté par la dernière unité, est décroissante. C'est elle qui fixe la valeur du bien, ce qui résout le paradoxe de l'eau et du diamant.",
+      "theme": "1.2.3 Les néoclassiques"
+    },
+    {
+      "enonce": "Dans l'approche microéconomique néoclassique, quel est le programme des agents ?",
+      "propositions": [
+        "Le consommateur maximise sa satisfaction sous contrainte de prix et de budget",
+        "Le producteur maximise son profit sous contrainte technique de production",
+        "Les agents raisonnent à la marge",
+        "Les agents cherchent à atteindre le minimum de subsistance"
+      ],
+      "reponses": [0, 1, 2],
+      "explication": "L'individu type est supposé rationnel : le consommateur maximise sa satisfaction compte tenu des prix et de son budget, le producteur maximise son profit sous contrainte technique. Le mode de raisonnement est le raisonnement à la marge, qui compare le gain et le coût de la dernière unité.",
+      "theme": "1.2.3 Les néoclassiques"
+    },
+    {
+      "enonce": "Comment distingue-t-on équilibre partiel et équilibre général ?",
+      "propositions": [
+        "L'équilibre partiel porte sur un seul marché, l'équilibre général sur l'équilibre simultané de tous les marchés",
+        "L'équilibre partiel concerne le court terme, l'équilibre général le long terme",
+        "L'équilibre partiel ne concerne que l'offre, l'équilibre général intègre la demande",
+        "L'équilibre partiel est keynésien, l'équilibre général est marxiste"
+      ],
+      "reponses": [0],
+      "explication": "L'équilibre partiel analyse un seul marché, les autres étant supposés inchangés (approche de Marshall). L'équilibre général analyse l'équilibre simultané de tous les marchés de l'économie en tenant compte de leurs interdépendances (approche de Walras).",
+      "theme": "1.2.3 Les néoclassiques"
+    },
+    {
+      "enonce": "Qu'est-ce que la demande effective chez Keynes ?",
+      "propositions": [
+        "La demande réellement solvable des ménages",
+        "L'anticipation de la demande globale à venir faite par les entrepreneurs",
+        "La demande adressée à l'État par les entreprises",
+        "La somme de la consommation et des importations"
+      ],
+      "reponses": [1],
+      "explication": "La demande effective est l'anticipation, par les entrepreneurs, de la demande globale à venir. Ce ne sont pas les commandes réelles mais les prévisions qui déterminent le niveau d'emploi : si ces prévisions sont pessimistes, l'emploi peut rester inférieur au plein emploi de la main-d'œuvre disponible.",
+      "theme": "1.2.4 L'analyse keynésienne"
+    },
+    {
+      "enonce": "Qu'est-ce qu'un équilibre de sous-emploi ?",
+      "propositions": [
+        "Une situation transitoire de déséquilibre entre offre et demande de travail",
+        "Un équilibre macroéconomique durable coexistant avec du chômage",
+        "Un équilibre atteint uniquement lorsque les salaires baissent suffisamment",
+        "Une situation où l'offre de travail est inférieure à la demande"
+      ],
+      "reponses": [1],
+      "explication": "C'est le renversement décisif opéré par Keynes : lorsque les anticipations des entrepreneurs sont pessimistes, l'économie se stabilise à un niveau d'emploi inférieur au plein emploi. Le chômage n'est pas un déséquilibre transitoire à résorber, mais une situation d'équilibre qui peut durer.",
+      "theme": "1.2.4 L'analyse keynésienne"
+    },
+    {
+      "enonce": "Sur quel argument Keynes conteste-t-il la loi de Say ?",
+      "propositions": [
+        "Sur la thésaurisation, c'est-à-dire l'épargne sans affectation à un placement productif",
+        "Sur le fait que la production ne distribue pas de revenus",
+        "Sur l'existence d'avantages comparatifs entre pays",
+        "Sur la baisse tendancielle du taux de profit"
+      ],
+      "reponses": [0],
+      "explication": "La loi de Say suppose que l'épargne est intégralement transformée en investissement. Keynes montre que l'épargne peut être thésaurisée, c'est-à-dire conservée sous forme liquide sans placement productif. Une part des revenus sort alors du circuit : la demande devient inférieure à l'offre et des déséquilibres durables, donc des crises de surproduction, deviennent possibles.",
+      "theme": "1.2.4 L'analyse keynésienne"
+    },
+    {
+      "enonce": "Pourquoi Keynes juge-t-il qu'une baisse des salaires ne peut pas résoudre le chômage ?",
+      "propositions": [
+        "Parce qu'elle est néfaste à la consommation des ménages",
+        "Parce qu'elle réduit la demande effective",
+        "Parce qu'elle décourage l'offre de travail des ménages",
+        "Parce qu'elle augmente mécaniquement le coût du capital"
+      ],
+      "reponses": [0, 1],
+      "explication": "Dans la logique de marché, la baisse des salaires rééquilibrerait le marché du travail. Keynes objecte que le salaire n'est pas seulement un coût mais aussi un revenu : sa baisse générale nuit à la consommation des ménages, réduit la demande effective, et aggrave donc le chômage qu'elle prétendait résoudre.",
+      "theme": "1.2.4 L'analyse keynésienne"
+    },
+    {
+      "enonce": "Dans le circuit keynésien de relance, quel est le bon enchaînement ?",
+      "propositions": [
+        "Hausse de la demande effective → optimisme des patrons → hausse de la production et baisse du chômage → hausse du PIB → hausse des revenus versés",
+        "Baisse des salaires → baisse des coûts → hausse de l'embauche → hausse du PIB",
+        "Hausse de l'épargne → hausse de l'investissement → hausse de la production → hausse de l'emploi",
+        "Hausse des prix → hausse des profits → hausse de l'investissement → hausse de l'emploi"
+      ],
+      "reponses": [0],
+      "explication": "La hausse de la consommation, de la FBCF et des dépenses publiques accroît la demande effective, ce qui rend les entrepreneurs plus optimistes sur leurs débouchés. Ils augmentent la production et embauchent, le PIB progresse, les revenus versés augmentent et alimentent à nouveau la consommation : c'est le principe du multiplicateur. La proposition 2 décrit la logique de Say, réfutée par Keynes.",
+      "theme": "1.2.4 L'analyse keynésienne"
+    },
+    {
+      "enonce": "Quelle association auteur / courant est correcte ?",
+      "propositions": [
+        "Friedman — monétarisme : l'origine de l'inflation est toujours monétaire",
+        "Buchanan et Tullock — Public Choice : étude de la cohérence des décisions publiques",
+        "Akerlof — économie des incitations et de l'information",
+        "Muth — théorie des jeux"
+      ],
+      "reponses": [0, 1, 2],
+      "explication": "Friedman est associé au monétarisme, Buchanan et Tullock au Public Choice, Akerlof à l'économie des incitations et de l'information. Muth est en revanche l'auteur de la théorie des anticipations rationnelles ; la théorie des jeux revient à Nash, Von Neumann et Morgenstern.",
+      "theme": "1.2.5 La pensée économique contemporaine"
+    },
+    {
+      "enonce": "Que désigne le modèle IS/LM ?",
+      "propositions": [
+        "Une synthèse des modèles néoclassiques et keynésiens",
+        "Une variante du Tableau économique des physiocrates",
+        "Un modèle de croissance fondé sur le progrès technique",
+        "Une formalisation de la baisse tendancielle du taux de profit"
+      ],
+      "reponses": [0],
+      "explication": "Le modèle IS/LM constitue une synthèse des modèles néoclassiques et keynésiens : il détermine simultanément l'équilibre du marché des biens (IS) et celui du marché de la monnaie (LM). Il a dominé l'enseignement de la macroéconomie des années 1950 aux années 1970.",
+      "theme": "1.2.5 La pensée économique contemporaine"
+    },
+    {
+      "enonce": "À qui attribue-t-on l'approche mathématique des problèmes de stratégie, c'est-à-dire la théorie des jeux ?",
+      "propositions": [
+        "Arrow et Sen",
+        "Nash, Von Neumann et Morgenstern",
+        "Walras et Pareto",
+        "Buchanan et Tullock"
+      ],
+      "reponses": [1],
+      "explication": "Nash, Von Neumann et Morgenstern sont les figures de la théorie des jeux, approche mathématique des problèmes de stratégie qui analyse les décisions en situation d'interdépendance. Arrow et Sen relèvent du Social Choice, l'analyse des méthodes de décision collective.",
+      "theme": "1.2.5 La pensée économique contemporaine"
+    }
+  ]
+}
