@@ -3,6 +3,9 @@
 "use strict";
 
 const KEY = "reviseur-qcm.v1";
+const SEEDED = "reviseur-qcm.seeded";
+/* Dotation de départ : la liste vit dans exemples/index.json, pour n'avoir qu'un seul endroit à tenir à jour. */
+const SEED_INDEX = "exemples/index.json";
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const pct = (a, b) => (b ? Math.round((a / b) * 100) : 0);
@@ -38,6 +41,31 @@ function load() {
 }
 const save = () => { try { localStorage.setItem(KEY, JSON.stringify(db)); } catch (_) {} };
 const quiz = (id) => db.quizzes.find((q) => q.id === id) || null;
+
+/* Dotation de départ : au tout premier lancement seulement, et jamais après un effacement volontaire. */
+async function seed() {
+  if (db.quizzes.length || localStorage.getItem(SEEDED)) return;
+  let files = [];
+  try {
+    const r = await fetch(SEED_INDEX);
+    if (r.ok) files = JSON.parse(await r.text());
+  } catch (_) { /* pas de manifeste, ou app ouverte sans serveur */ }
+  if (!Array.isArray(files) || !files.length) return;
+  const loaded = [];
+  for (const name of files) {
+    const path = "exemples/" + encodeURIComponent(String(name));
+    try {
+      const r = await fetch(path);
+      if (r.ok) loaded.push(...readPayload(await r.text(), String(name)));
+      else console.warn("[QCM] exemple introuvable :", path, r.status);
+    } catch (e) { console.warn("[QCM] exemple illisible :", path, e.message); }
+  }
+  if (!loaded.length) return;
+  db.quizzes = loaded.map(({ skipped, ...q }) => q);
+  try { localStorage.setItem(SEEDED, "1"); } catch (_) {}
+  save();
+  render();
+}
 
 /* ── Import: tolerant parsing of Claude output ──────────────────── */
 function stripFence(text) {
@@ -621,7 +649,9 @@ document.addEventListener("click", (e) => {
     },
     wipe: () => {
       if (!confirm("Effacer tous les QCM et l'historique de révision ?")) return;
-      db = { quizzes: [], settings: db.settings }; ses = null; ui.view = "home"; save(); render();
+      db = { quizzes: [], settings: db.settings }; ses = null; ui.view = "home";
+      try { localStorage.setItem(SEEDED, "1"); } catch (_) {}
+      save(); render();
       toast("Données effacées");
     }
   };
@@ -661,4 +691,5 @@ window.matchMedia("(min-width:900px)").addEventListener("change", render);
 
 load();
 render();
+seed();
 })();
