@@ -1,0 +1,1170 @@
+{
+  "titre": "Environnement, entrepreneuriat et innovation — Thèmes 3 et 4",
+  "matiere": "Management d’activités (BUT GEA, semestre 1)",
+  "questions": [
+    {
+      "enonce": "En management, le mot « environnement » désigne :",
+      "propositions": [
+        "la seule dimension écologique de l’activité",
+        "tout ce qui entoure l’organisation et peut l’influencer",
+        "le climat social interne de l’entreprise",
+        "l’ensemble des normes applicables à l’entreprise"
+      ],
+      "reponses": [1],
+      "explication": "L’écologie n’est qu’une composante de l’environnement (le « E » du PESTEL). L’environnement organisationnel recouvre l’ensemble des éléments extérieurs à l’organisation.",
+      "theme": "Définir l’environnement"
+    },
+    {
+      "enonce": "Selon Duncan (1972), l’environnement organisationnel est la totalité des facteurs physiques et sociaux :",
+      "propositions": [
+        "qui existent objectivement autour de l’organisation",
+        "qui sont pris directement en considération dans les comportements de décision des individus de l’organisation",
+        "qui sont recensés dans le rapport de gestion",
+        "sur lesquels l’organisation exerce un contrôle direct"
+      ],
+      "reponses": [1],
+      "explication": "Duncan définit l’environnement par ce que les décideurs perçoivent et intègrent à leurs décisions, et non comme une réalité objective extérieure.",
+      "theme": "Définir l’environnement"
+    },
+    {
+      "enonce": "Quelle conséquence découle directement de la définition de Duncan ?",
+      "propositions": [
+        "l’environnement pertinent est identique pour toutes les organisations",
+        "ce qui n’est pas perçu par les décideurs n’influence pas la décision, d’où un risque d’angle mort",
+        "l’environnement se réduit aux acteurs liés par contrat",
+        "l’environnement peut être totalement maîtrisé"
+      ],
+      "reponses": [1],
+      "explication": "Une évolution réglementaire ignorée ou un concurrent venu d’un autre secteur ne seront pas anticipés s’ils ne sont pas pris en considération.",
+      "theme": "Définir l’environnement"
+    },
+    {
+      "enonce": "Selon Topa (2021), les forces qui composent l’environnement :",
+      "propositions": [
+        "entravent ou facilitent l’accès de l’organisation aux ressources",
+        "offrent à la fois des opportunités et des menaces",
+        "portent sur des ressources à la fois précieuses et rares",
+        "s’imposent à l’organisation sans influencer son comportement"
+      ],
+      "reponses": [0, 1, 2],
+      "explication": "Ces forces influencent au contraire le comportement de l’organisation : la dernière proposition est fausse.",
+      "theme": "Définir l’environnement"
+    },
+    {
+      "enonce": "Le couple « opportunité / menace » sert à qualifier :",
+      "propositions": [
+        "les forces et faiblesses internes de l’organisation",
+        "les facteurs de l’environnement, favorables ou défavorables",
+        "les parties prenantes primaires et secondaires",
+        "les innovations incrémentales et radicales"
+      ],
+      "reponses": [1],
+      "explication": "Opportunité = facteur favorable, menace = facteur défavorable. C’est la moitié externe du diagnostic ; forces et faiblesses relèvent de l’interne.",
+      "theme": "Définir l’environnement"
+    },
+    {
+      "enonce": "Selon la théorie des coûts de transaction appliquée aux frontières, l’organisation arbitre entre :",
+      "propositions": [
+        "le court terme et le long terme",
+        "le marché et la « hiérarchie » (l’entreprise), avec des formes hybrides intermédiaires",
+        "le capital et le travail",
+        "la centralisation et la décentralisation"
+      ],
+      "reponses": [1],
+      "explication": "Entre le marché pur et l’intégration complète existe un continuum de formes hybrides.",
+      "theme": "Frontières de l’organisation"
+    },
+    {
+      "enonce": "Parmi les formes suivantes, lesquelles sont citées comme formes hybrides entre marché et hiérarchie ?",
+      "propositions": [
+        "la sous-traitance",
+        "le réseau",
+        "le contrat de licence",
+        "la fusion-absorption"
+      ],
+      "reponses": [0, 1, 2],
+      "explication": "La fusion-absorption relève de l’intégration pure : elle fait disparaître la frontière au lieu de créer une forme intermédiaire.",
+      "theme": "Frontières de l’organisation"
+    },
+    {
+      "enonce": "Chez Santos et Eisenhardt (2005), la frontière d’efficience délimite :",
+      "propositions": [
+        "les domaines sur lesquels l’organisation exerce une influence",
+        "les transactions réalisées à l’intérieur de l’organisation, dans une logique de minimisation des coûts",
+        "les ressources possédées par l’organisation",
+        "l’état d’esprit dominant du « qui sommes-nous »"
+      ],
+      "reponses": [1],
+      "explication": "C’est la frontière issue de la théorie des coûts de transaction : elle sépare ce qui est fait en interne de ce qui est acheté sur le marché.",
+      "theme": "Frontières de l’organisation"
+    },
+    {
+      "enonce": "Toujours chez Santos et Eisenhardt, la frontière de pouvoir poursuit une logique :",
+      "propositions": [
+        "de minimisation des coûts",
+        "d’autonomie",
+        "de croissance",
+        "de cohérence"
+      ],
+      "reponses": [1],
+      "explication": "Efficience → coûts ; pouvoir → autonomie ; compétence → croissance ; identité → cohérence.",
+      "theme": "Frontières de l’organisation"
+    },
+    {
+      "enonce": "La frontière de compétence délimite :",
+      "propositions": [
+        "les ressources possédées par l’organisation, dans une logique de croissance",
+        "les salariés titulaires d’un contrat de travail",
+        "le périmètre de consolidation comptable",
+        "les revendications légitimes des parties prenantes"
+      ],
+      "reponses": [0],
+      "explication": "Elle renvoie à l’approche par les ressources : l’organisation est définie par ce qu’elle sait faire.",
+      "theme": "Frontières de l’organisation"
+    },
+    {
+      "enonce": "La frontière d’identité délimite :",
+      "propositions": [
+        "les actifs inscrits au bilan",
+        "l’état d’esprit dominant du « qui sommes-nous », dans une logique de cohérence",
+        "les transactions internes",
+        "les domaines d’influence de l’organisation"
+      ],
+      "reponses": [1],
+      "explication": "Un franchisé peut se situer hors de la frontière d’efficience tout en étant à l’intérieur de la frontière d’identité : les quatre frontières ne coïncident pas.",
+      "theme": "Frontières de l’organisation"
+    },
+    {
+      "enonce": "Selon Paché et Paraponaris (2006), l’entreprise en réseau se caractérise par le fait que :",
+      "propositions": [
+        "elle absorbe progressivement ses partenaires",
+        "elle renonce à réaliser elle-même certaines opérations et noue des accords de maillage, sans qu’aucun partenaire ne perde son indépendance",
+        "elle centralise toutes ses opérations dans une structure unique",
+        "elle confie sa direction à un prestataire extérieur"
+      ],
+      "reponses": [1],
+      "explication": "Deux éléments essentiels : externalisation d’activités et conservation de l’indépendance juridique de chaque partenaire.",
+      "theme": "Frontières de l’organisation"
+    },
+    {
+      "enonce": "L’entreprise en réseau est également appelée :",
+      "propositions": [
+        "entreprise étendue",
+        "entreprise matricielle",
+        "entreprise virtuelle",
+        "entreprise unitaire"
+      ],
+      "reponses": [0, 1, 2],
+      "explication": "L’entreprise unitaire (structure en U de Chandler) désigne au contraire une structure interne organisée par fonctions.",
+      "theme": "Frontières de l’organisation"
+    },
+    {
+      "enonce": "Le microenvironnement, ou environnement spécifique, regroupe :",
+      "propositions": [
+        "les acteurs contractuellement liés à l’organisation qui peuvent l’influencer",
+        "les concurrents du même secteur industriel",
+        "les législateurs et les acteurs politiques",
+        "les salariés et les dirigeants"
+      ],
+      "reponses": [0],
+      "explication": "Clients et fournisseurs en sont les exemples types : le critère est l’existence d’un lien contractuel.",
+      "theme": "Niveaux de l’environnement"
+    },
+    {
+      "enonce": "Le mésoenvironnement regroupe :",
+      "propositions": [
+        "les acteurs du même secteur industriel pouvant influencer l’organisation, en amont comme en aval",
+        "les clients et les fournisseurs directs",
+        "les pouvoirs publics et les normalisateurs",
+        "les salariés et les représentants du personnel"
+      ],
+      "reponses": [0],
+      "explication": "Niveau intermédiaire, situé entre le micro et le macro : concurrents et autres firmes du secteur.",
+      "theme": "Niveaux de l’environnement"
+    },
+    {
+      "enonce": "Les législateurs et les acteurs politiques relèvent :",
+      "propositions": [
+        "du microenvironnement",
+        "du mésoenvironnement",
+        "du macroenvironnement",
+        "de l’environnement interne"
+      ],
+      "reponses": [2],
+      "explication": "Le macroenvironnement rassemble les acteurs moins directement liés à l’organisation mais capables de l’influencer.",
+      "theme": "Niveaux de l’environnement"
+    },
+    {
+      "enonce": "Un fournisseur implanté en Asie avec lequel l’entreprise a signé un contrat relève :",
+      "propositions": [
+        "du macroenvironnement, en raison de l’éloignement géographique",
+        "du microenvironnement, car le critère est le lien contractuel et non la distance",
+        "du mésoenvironnement, car il appartient à un autre pays",
+        "d’aucun niveau, car il est étranger"
+      ],
+      "reponses": [1],
+      "explication": "Le classement repose sur la proximité du lien, pas sur la proximité géographique.",
+      "theme": "Niveaux de l’environnement"
+    },
+    {
+      "enonce": "L’analyse PEST reposait sur quatre facteurs :",
+      "propositions": [
+        "Politique, Économique, Social, Technologique",
+        "Politique, Écologique, Social, Technique",
+        "Produit, Environnement, Société, Territoire",
+        "Politique, Économique, Sectoriel, Territorial"
+      ],
+      "reponses": [0],
+      "explication": "Political, Economic, Social, Technological. Le PESTEL y ajoute Environmental et Legal.",
+      "theme": "PESTEL"
+    },
+    {
+      "enonce": "Les deux facteurs ajoutés par le PESTEL par rapport au PEST sont :",
+      "propositions": [
+        "Écologique et Légal",
+        "Économique et Légal",
+        "Écologique et Logistique",
+        "Éthique et Légal"
+      ],
+      "reponses": [0],
+      "explication": "Environmental et Legal complètent les quatre facteurs d’origine.",
+      "theme": "PESTEL"
+    },
+    {
+      "enonce": "Le taux de chômage, l’inflation et le pouvoir d’achat relèvent du facteur :",
+      "propositions": [
+        "politique",
+        "économique",
+        "socioculturel",
+        "légal"
+      ],
+      "reponses": [1],
+      "explication": "Le facteur économique couvre aussi la stabilité de la monnaie, la croissance, la facilité de financement et la politique de commerce extérieur.",
+      "theme": "PESTEL"
+    },
+    {
+      "enonce": "Les données démographiques, la composition des ménages et le style de vie relèvent du facteur :",
+      "propositions": [
+        "socioculturel",
+        "politique",
+        "technologique",
+        "économique"
+      ],
+      "reponses": [0],
+      "explication": "Le facteur socioculturel intègre également le niveau d’éducation, la place des minorités, l’égalité des chances, les habitudes d’achat et la mobilité.",
+      "theme": "PESTEL"
+    },
+    {
+      "enonce": "Les normes comptables relèvent, dans le PESTEL, du facteur :",
+      "propositions": [
+        "économique",
+        "technologique",
+        "légal",
+        "politique"
+      ],
+      "reponses": [2],
+      "explication": "Le facteur légal regroupe lois, normes et règlements, protection des consommateurs, droit du travail, de la concurrence et des contrats.",
+      "theme": "PESTEL"
+    },
+    {
+      "enonce": "Les mesures de gaz à effet de serre, la gestion des déchets et les disponibilités énergétiques relèvent du facteur :",
+      "propositions": [
+        "écologique",
+        "légal",
+        "technologique",
+        "politique"
+      ],
+      "reponses": [0],
+      "explication": "Le facteur écologique intègre aussi la législation de protection de l’environnement, les positions gouvernementales et les facteurs climatiques.",
+      "theme": "PESTEL"
+    },
+    {
+      "enonce": "Les lobbys, le niveau de corruption et les accords de libre-échange relèvent du facteur :",
+      "propositions": [
+        "légal",
+        "politique",
+        "économique",
+        "socioculturel"
+      ],
+      "reponses": [1],
+      "explication": "Le facteur politique couvre aussi la stabilité politique, la politique fiscale et sociale, la géopolitique et les aides gouvernementales.",
+      "theme": "PESTEL"
+    },
+    {
+      "enonce": "La première étape de la réalisation d’un PESTEL consiste à :",
+      "propositions": [
+        "hiérarchiser les variables pivots",
+        "lister tous les facteurs ayant un impact et indiquer, pour chacun, s’il constitue une opportunité ou une menace",
+        "évaluer les forces et faiblesses internes",
+        "identifier les parties prenantes"
+      ],
+      "reponses": [1],
+      "explication": "Chaque variable analysée doit être qualifiée de favorable ou de défavorable.",
+      "theme": "PESTEL"
+    },
+    {
+      "enonce": "La seconde étape du PESTEL consiste à :",
+      "propositions": [
+        "traduire les facteurs en objectifs chiffrés",
+        "évaluer l’importance des facteurs identifiés, les hiérarchiser et retenir les variables pivots",
+        "diffuser l’analyse aux parties prenantes secondaires",
+        "calculer la probabilité de chaque facteur"
+      ],
+      "reponses": [1],
+      "explication": "Les variables pivots sont les facteurs les plus structurants : elles désignent les points de vigilance et les efforts d’adaptation à engager.",
+      "theme": "PESTEL"
+    },
+    {
+      "enonce": "Un PESTEL qui se contente de lister trente variables sans les hiérarchiser :",
+      "propositions": [
+        "est complet et donc satisfaisant",
+        "reste inexploitable, car il décrit le monde sans éclairer une décision",
+        "est conforme à la méthode recommandée",
+        "remplace utilement l’analyse des 5 forces"
+      ],
+      "reponses": [1],
+      "explication": "C’est l’erreur classique : s’arrêter au premier temps de la méthode et omettre l’identification des variables pivots.",
+      "theme": "PESTEL"
+    },
+    {
+      "enonce": "Le modèle des 5 forces de Porter sert à analyser :",
+      "propositions": [
+        "le macroenvironnement",
+        "le micro et le mésoenvironnement",
+        "l’environnement interne",
+        "les parties prenantes secondaires"
+      ],
+      "reponses": [1],
+      "explication": "Le PESTEL analyse le macroenvironnement ; Porter analyse le secteur et ses acteurs proches.",
+      "theme": "5 forces de Porter"
+    },
+    {
+      "enonce": "Parmi les propositions suivantes, lesquelles font partie des 5 forces de Porter ?",
+      "propositions": [
+        "la menace des nouveaux entrants",
+        "la menace des produits de substitution",
+        "le pouvoir de négociation des fournisseurs",
+        "le pouvoir de négociation des salariés"
+      ],
+      "reponses": [0, 1, 2],
+      "explication": "Les cinq forces sont : rivalité entre concurrents, nouveaux entrants, substituts, pouvoir des fournisseurs, pouvoir des clients. Les salariés sont des parties prenantes, pas une force du modèle.",
+      "theme": "5 forces de Porter"
+    },
+    {
+      "enonce": "Un produit de substitution est un produit :",
+      "propositions": [
+        "identique proposé par un concurrent du même secteur",
+        "différent qui répond au même besoin fondamental du client",
+        "vendu moins cher par un nouvel entrant",
+        "fabriqué par un fournisseur intégré en aval"
+      ],
+      "reponses": [1],
+      "explication": "La substitution s’apprécie du point de vue du besoin satisfait, ce qui explique qu’elle vienne souvent d’un autre secteur.",
+      "theme": "5 forces de Porter"
+    },
+    {
+      "enonce": "La menace des nouveaux entrants est d’autant plus forte que :",
+      "propositions": [
+        "les barrières à l’entrée sont faibles",
+        "les brevets sont nombreux et solides",
+        "les capitaux nécessaires sont considérables",
+        "l’accès à la distribution est verrouillé"
+      ],
+      "reponses": [0],
+      "explication": "Les trois autres propositions décrivent au contraire des barrières à l’entrée élevées, qui réduisent la menace.",
+      "theme": "5 forces de Porter"
+    },
+    {
+      "enonce": "Porter définit l’industry comme :",
+      "propositions": [
+        "l’ensemble des entreprises implantées sur un même territoire",
+        "un groupe d’entreprises offrant des produits ou services étroitement substituables, satisfaisant les mêmes besoins fondamentaux des clients",
+        "l’ensemble du secteur secondaire",
+        "la chaîne de valeur d’une entreprise donnée"
+      ],
+      "reponses": [1],
+      "explication": "Cette définition par les besoins satisfaits est à la fois la force et la limite du modèle.",
+      "theme": "5 forces de Porter"
+    },
+    {
+      "enonce": "La première limite du modèle des 5 forces est que :",
+      "propositions": [
+        "il néglige la concurrence venue d’un autre secteur d’activité, car il raisonne au niveau de l’industry",
+        "il surestime le pouvoir des clients",
+        "il ne prend pas en compte les fournisseurs",
+        "il est inapplicable aux services"
+      ],
+      "reponses": [0],
+      "explication": "Or c’est précisément d’un autre secteur que viennent souvent les ruptures récentes.",
+      "theme": "5 forces de Porter"
+    },
+    {
+      "enonce": "La seconde limite du modèle des 5 forces est que :",
+      "propositions": [
+        "il exige des données financières confidentielles",
+        "il adopte une approche purement concurrentielle et néglige la coopération entre les entreprises",
+        "il ne distingue pas le micro et le mésoenvironnement",
+        "il ne s’applique qu’aux grandes entreprises"
+      ],
+      "reponses": [1],
+      "explication": "Alliances, consortiums, écosystèmes et coopétition échappent au modèle — ce que montre à l’inverse l’entreprise en réseau.",
+      "theme": "5 forces de Porter"
+    },
+    {
+      "enonce": "Selon Freeman (1984), une partie prenante est :",
+      "propositions": [
+        "tout actionnaire détenant plus de 5 % du capital",
+        "tout groupe ou individu qui peut affecter, ou qui est affecté par, la réalisation des objectifs de l’organisation",
+        "tout acteur lié contractuellement à l’organisation",
+        "tout salarié de l’organisation"
+      ],
+      "reponses": [1],
+      "explication": "La définition est volontairement large et fonctionne dans les deux sens : affecter et être affecté.",
+      "theme": "Parties prenantes"
+    },
+    {
+      "enonce": "Les parties prenantes primaires sont également appelées :",
+      "propositions": [
+        "contractuelles",
+        "diffuses",
+        "internes",
+        "définitives"
+      ],
+      "reponses": [0],
+      "explication": "Primaires = contractuelles (salariés, actionnaires, clients, fournisseurs) ; secondaires = diffuses.",
+      "theme": "Parties prenantes"
+    },
+    {
+      "enonce": "Parmi les acteurs suivants, lesquels sont des parties prenantes secondaires (diffuses) ?",
+      "propositions": [
+        "les pouvoirs publics",
+        "les médias",
+        "les ONG et l’opinion publique",
+        "les fournisseurs"
+      ],
+      "reponses": [0, 1, 2],
+      "explication": "Les fournisseurs sont liés contractuellement : ce sont des parties prenantes primaires.",
+      "theme": "Parties prenantes"
+    },
+    {
+      "enonce": "Le critère qui sépare parties prenantes primaires et secondaires est :",
+      "propositions": [
+        "l’importance stratégique",
+        "l’existence d’un lien contractuel",
+        "l’appartenance juridique à l’organisation",
+        "la taille de l’acteur"
+      ],
+      "reponses": [1],
+      "explication": "Attention : « secondaire » ne signifie pas négligeable — une ONG peut peser plus lourd qu’un petit fournisseur.",
+      "theme": "Parties prenantes"
+    },
+    {
+      "enonce": "Les trois attributs du Salience Model (Mitchell, Agle et Wood, 1997) sont :",
+      "propositions": [
+        "pouvoir, légitimité, urgence",
+        "pouvoir, richesse, proximité",
+        "légitimité, rentabilité, urgence",
+        "influence, dépendance, contrat"
+      ],
+      "reponses": [0],
+      "explication": "Power, legitimacy, urgency. Leur combinaison produit sept types de parties prenantes.",
+      "theme": "Parties prenantes"
+    },
+    {
+      "enonce": "Dans le Salience Model, l’urgence désigne :",
+      "propositions": [
+        "la capacité de la partie prenante à influencer le projet",
+        "le caractère approprié et acceptable des actions de la partie prenante",
+        "le degré auquel ses revendications nécessitent une attention immédiate",
+        "l’ancienneté de la relation avec l’organisation"
+      ],
+      "reponses": [2],
+      "explication": "Le pouvoir correspond à la capacité d’influence, la légitimité au caractère acceptable de la revendication.",
+      "theme": "Parties prenantes"
+    },
+    {
+      "enonce": "Une partie prenante qualifiée de « définitive » (definitive) :",
+      "propositions": [
+        "ne possède aucun des trois attributs",
+        "possède un seul attribut",
+        "possède deux attributs",
+        "possède les trois attributs et constitue une priorité absolue"
+      ],
+      "reponses": [3],
+      "explication": "Pouvoir, légitimité et urgence réunis : sa demande appelle un traitement immédiat.",
+      "theme": "Parties prenantes"
+    },
+    {
+      "enonce": "Une partie prenante « dangereuse » (dangerous) combine :",
+      "propositions": [
+        "pouvoir et légitimité",
+        "pouvoir et urgence, sans légitimité",
+        "légitimité et urgence, sans pouvoir",
+        "les trois attributs"
+      ],
+      "reponses": [1],
+      "explication": "Elle peut agir vite sans que sa demande soit reconnue comme légitime : d’où le risque de passage en force.",
+      "theme": "Parties prenantes"
+    },
+    {
+      "enonce": "Une partie prenante « dépendante » (dependent) combine :",
+      "propositions": [
+        "légitimité et urgence, sans pouvoir",
+        "pouvoir et légitimité",
+        "pouvoir et urgence",
+        "pouvoir seul"
+      ],
+      "reponses": [0],
+      "explication": "Sa demande est fondée et pressante mais elle n’a pas les moyens d’agir : elle dépend d’un allié puissant.",
+      "theme": "Parties prenantes"
+    },
+    {
+      "enonce": "Une partie prenante ne possédant que l’attribut de pouvoir est qualifiée de :",
+      "propositions": [
+        "dormante (dormant)",
+        "discrétionnaire (discretionary)",
+        "exigeante (demanding)",
+        "dominante (dominant)"
+      ],
+      "reponses": [0],
+      "explication": "Parmi les latentes : dormante = pouvoir seul, discrétionnaire = légitimité seule, exigeante = urgence seule.",
+      "theme": "Parties prenantes"
+    },
+    {
+      "enonce": "La dernière des cinq étapes d’application du Salience Model est :",
+      "propositions": [
+        "la classification des parties prenantes",
+        "le développement de stratégies de gestion et de communication",
+        "la surveillance et l’ajustement",
+        "l’évaluation des attributs"
+      ],
+      "reponses": [2],
+      "explication": "Les attributs sont dynamiques : une partie prenante dépendante qui trouve un relais médiatique peut devenir définitive en quelques jours.",
+      "theme": "Parties prenantes"
+    },
+    {
+      "enonce": "Quelles sont les limites du Salience Model ?",
+      "propositions": [
+        "la classification est un processus subjectif",
+        "le modèle traite les attributs comme présents ou absents, sans degré",
+        "le modèle ne repose que sur trois attributs",
+        "le modèle ignore les parties prenantes internes"
+      ],
+      "reponses": [0, 1, 2],
+      "explication": "Le modèle s’applique à toutes les parties prenantes, internes comme externes : la dernière proposition est fausse.",
+      "theme": "Parties prenantes"
+    },
+    {
+      "enonce": "Les trois caractéristiques fréquemment mises en avant pour qualifier l’environnement sont :",
+      "propositions": [
+        "dynamisme, complexité, incertitude",
+        "volatilité, rentabilité, concurrence",
+        "stabilité, simplicité, prévisibilité",
+        "pouvoir, légitimité, urgence"
+      ],
+      "reponses": [0],
+      "explication": "Ces trois caractéristiques sont ensuite complétées par l’acronyme VUCA, qui ajoute l’ambiguïté.",
+      "theme": "Caractériser l’environnement"
+    },
+    {
+      "enonce": "Parmi les manifestations du dynamisme de l’environnement citées dans le cours figurent :",
+      "propositions": [
+        "les turbulences des environnements sociaux et sociétaux",
+        "un environnement économique mondialisé et soumis aux cycles économiques",
+        "un environnement technologique fortement perturbateur",
+        "la stabilité des cadres réglementaires nationaux"
+      ],
+      "reponses": [0, 1, 2],
+      "explication": "S’y ajoute la prise de conscience écologique. La stabilité réglementaire serait au contraire un facteur de faible dynamisme.",
+      "theme": "Caractériser l’environnement"
+    },
+    {
+      "enonce": "Selon Genelot (2017), la complication désigne :",
+      "propositions": [
+        "tout ce qui dépasse nos capacités de modélisation et d’entendement",
+        "un empilement et une imbrication de dispositifs dont on peut venir à bout avec du temps et de l’expertise",
+        "l’absence d’information disponible",
+        "la multiplication des parties prenantes"
+      ],
+      "reponses": [1],
+      "explication": "Le compliqué se résout par l’expertise ; c’est le complexe qui échappe à la modélisation.",
+      "theme": "Caractériser l’environnement"
+    },
+    {
+      "enonce": "Toujours selon Genelot, la complexité désigne :",
+      "propositions": [
+        "un grand nombre de paramètres à traiter",
+        "tout ce qui dépasse nos capacités de modélisation et d’entendement",
+        "une situation dont la probabilité peut être calculée",
+        "un environnement en changement rapide"
+      ],
+      "reponses": [1],
+      "explication": "Conséquence managériale : face au complexe, l’expertise ne suffit pas ; il faut expérimenter, s’adapter et travailler collectivement.",
+      "theme": "Caractériser l’environnement"
+    },
+    {
+      "enonce": "Les deux axes de la matrice d’Emery et Trist (1965) sont :",
+      "propositions": [
+        "le dynamisme et la complexité",
+        "le risque et l’incertitude",
+        "le pouvoir et la légitimité",
+        "le marché et la technologie"
+      ],
+      "reponses": [0],
+      "explication": "Leur croisement produit quatre types d’environnement, du type I (calme et aléatoire) au type IV (turbulent).",
+      "theme": "Caractériser l’environnement"
+    },
+    {
+      "enonce": "Dans la matrice d’Emery et Trist, un environnement à la fois très dynamique et très complexe est de :",
+      "propositions": [
+        "type I — random placid",
+        "type II — placid clustered",
+        "type III — disturbed reactive",
+        "type IV — turbulent"
+      ],
+      "reponses": [3],
+      "explication": "C’est le type que décrivent la plupart des analyses contemporaines : changements nombreux, rapides et interdépendants.",
+      "theme": "Caractériser l’environnement"
+    },
+    {
+      "enonce": "Un environnement peu dynamique et peu complexe correspond, chez Emery et Trist, au :",
+      "propositions": [
+        "type I — random placid",
+        "type II — placid clustered",
+        "type III — disturbed reactive",
+        "type IV — turbulent"
+      ],
+      "reponses": [0],
+      "explication": "C’est l’environnement le plus simple à gérer : peu d’éléments et peu de changement.",
+      "theme": "Caractériser l’environnement"
+    },
+    {
+      "enonce": "Selon Knight (1921), le risque se définit comme :",
+      "propositions": [
+        "une situation où aucune information n’est disponible",
+        "une quantité susceptible d’être mesurée, dont on peut calculer la probabilité des résultats les plus probables",
+        "la probabilité d’une perte comptable",
+        "une menace identifiée lors d’un PESTEL"
+      ],
+      "reponses": [1],
+      "explication": "Le résultat exact reste inconnu, mais il est probabilisable — donc assurable et provisionnable.",
+      "theme": "Caractériser l’environnement"
+    },
+    {
+      "enonce": "Toujours selon Knight, l’incertitude signifie :",
+      "propositions": [
+        "que le résultat est défavorable",
+        "qu’il n’y a pas assez d’informations pour ne serait-ce que réduire les possibilités",
+        "que la probabilité est inférieure à 50 %",
+        "que l’information est coûteuse à obtenir"
+      ],
+      "reponses": [1],
+      "explication": "On ne peut pas assurer ce qu’on ne peut pas probabiliser : l’incertitude se gère par la flexibilité et la réversibilité des engagements.",
+      "theme": "Caractériser l’environnement"
+    },
+    {
+      "enonce": "L’acronyme V.U.C.A. signifie :",
+      "propositions": [
+        "Volatility, Uncertainty, Complexity, Ambiguity",
+        "Volatility, Urgency, Complexity, Autonomy",
+        "Value, Uncertainty, Competition, Ambiguity",
+        "Volatility, Uncertainty, Coherency, Agility"
+      ],
+      "reponses": [0],
+      "explication": "Sigle né dans le vocabulaire militaire américain (US Army War College) puis passé au management.",
+      "theme": "Caractériser l’environnement"
+    },
+    {
+      "enonce": "L’apport propre du VUCA par rapport au triptyque dynamisme / complexité / incertitude est :",
+      "propositions": [
+        "la volatilité",
+        "l’ambiguïté, c’est-à-dire le fait que l’information disponible se prête à plusieurs lectures",
+        "l’incertitude",
+        "la complexité"
+      ],
+      "reponses": [1],
+      "explication": "Il ne s’agit plus seulement de manquer d’information, mais de ne pas pouvoir l’interpréter de façon univoque.",
+      "theme": "Caractériser l’environnement"
+    },
+    {
+      "enonce": "Parmi les enjeux nouveaux de l’environnement identifiés dans le cours figurent :",
+      "propositions": [
+        "la mondialisation et la financiarisation",
+        "la robotisation et l’automatisation de la production, y compris par l’IA",
+        "la digitalisation et la prise en compte de la dimension écologique",
+        "la disparition de la concurrence internationale"
+      ],
+      "reponses": [0, 1, 2],
+      "explication": "Ces cinq enjeux alimentent le dynamisme et la complexité de l’environnement et se rattachent chacun à une case du PESTEL.",
+      "theme": "Enjeux nouveaux"
+    },
+    {
+      "enonce": "Le mot « entrepreneuriat » :",
+      "propositions": [
+        "figure dans le Trésor de la Langue Française depuis 1832",
+        "n’y figure pas : seule l’entrée « entrepreneur » existe",
+        "y est défini comme la création d’entreprise",
+        "y est défini comme synonyme d’innovation"
+      ],
+      "reponses": [1],
+      "explication": "Signe que le phénomène a été nommé par l’acteur avant de l’être par le concept : le champ académique de l’entrepreneuriat est récent.",
+      "theme": "L’entrepreneur"
+    },
+    {
+      "enonce": "Selon Jean-Baptiste Say (1832), l’entrepreneur d’industrie est celui qui entreprend de créer un produit :",
+      "propositions": [
+        "pour le compte de l’État et sous son contrôle",
+        "pour son compte, à son profit et à ses risques",
+        "en s’appuyant sur les seules découvertes des savants",
+        "sans engager de capitaux propres"
+      ],
+      "reponses": [1],
+      "explication": "Trois marqueurs : initiative (pour son compte), mobile (à son profit), contrepartie (à ses risques).",
+      "theme": "L’entrepreneur"
+    },
+    {
+      "enonce": "Chez Say, l’entrepreneur se distingue du savant en ce qu’il :",
+      "propositions": [
+        "produit la connaissance scientifique",
+        "profite des connaissances apportées pour créer des produits utiles",
+        "finance la recherche fondamentale",
+        "administre les biens publics"
+      ],
+      "reponses": [1],
+      "explication": "L’entrepreneur est d’abord un coordinateur de facteurs de production qui assume l’aléa.",
+      "theme": "L’entrepreneur"
+    },
+    {
+      "enonce": "Pour Schumpeter (1942), le rôle de l’entrepreneur consiste à :",
+      "propositions": [
+        "gérer efficacement les ressources existantes",
+        "réformer ou révolutionner la routine de production en exploitant une possibilité technique inédite",
+        "inventer de nouveaux objets techniques",
+        "répartir le capital entre les actionnaires"
+      ],
+      "reponses": [1],
+      "explication": "C’est la rupture de la routine qui définit la fonction entrepreneuriale.",
+      "theme": "L’entrepreneur"
+    },
+    {
+      "enonce": "Parmi les formes de rupture citées par Schumpeter figurent :",
+      "propositions": [
+        "la production d’une marchandise nouvelle",
+        "une nouvelle méthode de production d’une marchandise ancienne",
+        "l’exploitation d’une nouvelle source de matières premières ou d’un nouveau débouché",
+        "la réduction des effectifs salariés"
+      ],
+      "reponses": [0, 1, 2],
+      "explication": "S’y ajoute la réorganisation d’une branche industrielle. La réduction des effectifs n’est pas une innovation au sens de Schumpeter.",
+      "theme": "L’entrepreneur"
+    },
+    {
+      "enonce": "Selon Schumpeter, la mise en œuvre des innovations est difficile parce que :",
+      "propositions": [
+        "elle se détache des besognes de routine familières à chacun",
+        "le milieu économique y résiste, du refus de financer jusqu’à l’agression contre celui qui tente de produire",
+        "elle exige des aptitudes que seule une faible fraction de la population possède",
+        "elle suppose toujours le dépôt d’un brevet"
+      ],
+      "reponses": [0, 1, 2],
+      "explication": "Le brevet n’intervient pas dans le raisonnement de Schumpeter : ce sont la rupture de routine et la résistance du milieu qui font la difficulté.",
+      "theme": "L’entrepreneur"
+    },
+    {
+      "enonce": "Toujours selon Schumpeter, la fonction d’entrepreneur consiste essentiellement à :",
+      "propositions": [
+        "inventer un objet nouveau",
+        "créer les conditions techniques exploitées par l’entreprise",
+        "aboutir à des réalisations",
+        "financer les projets risqués"
+      ],
+      "reponses": [2],
+      "explication": "L’entrepreneur n’est ni l’inventeur ni le capitaliste : c’est celui qui fait aboutir. C’est la racine de la distinction invention / innovation.",
+      "theme": "L’entrepreneur"
+    },
+    {
+      "enonce": "Les quatre paradigmes de l’entrepreneuriat selon Verstraete et Fayolle (2005) sont :",
+      "propositions": [
+        "opportunité d’affaires, création d’une organisation, création de valeur, innovation",
+        "opportunité, financement, croissance, transmission",
+        "invention, brevet, production, diffusion",
+        "risque, profit, capital, travail"
+      ],
+      "reponses": [0],
+      "explication": "Ces paradigmes ne s’excluent pas : un même projet peut être lu à travers plusieurs d’entre eux.",
+      "theme": "Paradigmes de l’entrepreneuriat"
+    },
+    {
+      "enonce": "L’idée d’entreprendre, selon le cours :",
+      "propositions": [
+        "se limite à la création d’une entreprise nouvelle",
+        "s’applique à toutes les situations où l’organisation se montre proactive et s’emploie à modifier son environnement à son avantage",
+        "suppose nécessairement le statut d’entrepreneur individuel",
+        "concerne uniquement les start-ups technologiques"
+      ],
+      "reponses": [1],
+      "explication": "Être proactif, c’est agir sur l’environnement plutôt que réagir à l’environnement : c’est le lien direct entre les thèmes 3 et 4.",
+      "theme": "Entrepreneuriat et création d’entreprise"
+    },
+    {
+      "enonce": "L’intrapreneuriat (corporate entrepreneurship) désigne :",
+      "propositions": [
+        "la création d’une entreprise par un ancien salarié",
+        "la démarche entrepreneuriale conduite à l’intérieur d’une organisation existante",
+        "le rachat d’une entreprise par ses salariés",
+        "la sous-traitance d’une activité innovante"
+      ],
+      "reponses": [1],
+      "explication": "L’intrapreneur porte le projet avec les ressources de l’entreprise : il prend des risques, mais pas les siens.",
+      "theme": "Entrepreneuriat et création d’entreprise"
+    },
+    {
+      "enonce": "Dans la distinction entrepreneur / manager / dirigeant, le dirigeant :",
+      "propositions": [
+        "se limite à la mise en œuvre du management",
+        "est l’agent qui dirige l’organisation et doit idéalement être à la fois entrepreneur et manager",
+        "supporte seul les risques liés à l’incertitude des résultats",
+        "exerce uniquement une fonction de contrôle"
+      ],
+      "reponses": [1],
+      "explication": "L’entrepreneur met en œuvre une idée en supportant le risque ; le manager a la charge du management ; le dirigeant doit tenir les deux rôles.",
+      "theme": "Entrepreneur, manager, dirigeant"
+    },
+    {
+      "enonce": "Selon le dictionnaire, le mot « innovation » désigne :",
+      "propositions": [
+        "uniquement l’action d’innover",
+        "uniquement le résultat de cette action",
+        "à la fois l’action d’innover et la chose nouvelle introduite",
+        "toute invention brevetée"
+      ],
+      "reponses": [2],
+      "explication": "Même dualité action / résultat que pour le mot « organisation » : l’innovation est à la fois un processus et son produit.",
+      "theme": "Définir l’innovation"
+    },
+    {
+      "enonce": "Selon le Manuel d’Oslo de l’OCDE (2018), une innovation est la mise en œuvre :",
+      "propositions": [
+        "d’un produit (bien ou service) nouveau ou sensiblement amélioré",
+        "d’un procédé nouveau ou sensiblement amélioré",
+        "d’une nouvelle méthode de commercialisation ou d’une nouvelle méthode organisationnelle",
+        "d’une idée nouvelle, même non appliquée"
+      ],
+      "reponses": [0, 1, 2],
+      "explication": "Le mot décisif est « mise en œuvre » : une idée non appliquée n’est pas une innovation.",
+      "theme": "Définir l’innovation"
+    },
+    {
+      "enonce": "Dans la définition de l’OCDE, l’adverbe « sensiblement » signifie que :",
+      "propositions": [
+        "l’innovation doit être perçue favorablement par les clients",
+        "une modification marginale ne suffit pas à constituer une innovation",
+        "l’innovation doit être mesurable financièrement",
+        "l’innovation doit être protégée par un titre de propriété industrielle"
+      ],
+      "reponses": [1],
+      "explication": "La nouveauté doit être significative par rapport à l’offre ou aux processus antérieurs de l’entreprise.",
+      "theme": "Définir l’innovation"
+    },
+    {
+      "enonce": "Selon Rogers (1962), une innovation est une idée, une pratique ou un objet :",
+      "propositions": [
+        "objectivement nouveau au niveau mondial",
+        "perçu comme nouveau par un individu ou une autre unité d’adoption",
+        "protégé par un brevet en vigueur",
+        "mis sur le marché depuis moins de deux ans"
+      ],
+      "reponses": [1],
+      "explication": "La nouveauté est un jugement de l’adoptant : une technologie ancienne est une innovation pour qui la découvre. C’est le fondement de la diffusion de l’innovation.",
+      "theme": "Définir l’innovation"
+    },
+    {
+      "enonce": "Selon Fréry, la différence entre créativité et innovation est que :",
+      "propositions": [
+        "être créatif, c’est avoir des idées ; être innovant, c’est mettre ces idées en œuvre",
+        "la créativité concerne les produits, l’innovation les services",
+        "la créativité est collective, l’innovation individuelle",
+        "la créativité relève du marketing, l’innovation de la R&D"
+      ],
+      "reponses": [0],
+      "explication": "La créativité est affaire de psychologie (réflexion) ; l’innovation est affaire de management (action).",
+      "theme": "Idées reçues sur l’innovation"
+    },
+    {
+      "enonce": "La formule de Lewis Duncan citée dans le cours résume l’innovation ainsi :",
+      "propositions": [
+        "« L’innovation, c’est la destruction créatrice »",
+        "« L’innovation consiste à transformer des idées en factures »",
+        "« L’innovation, c’est l’invention diffusée »",
+        "« L’innovation est la fille de la nécessité »"
+      ],
+      "reponses": [1],
+      "explication": "Une idée coûte peu, sa mise en œuvre coûte beaucoup — et seule la mise en œuvre rapporte.",
+      "theme": "Idées reçues sur l’innovation"
+    },
+    {
+      "enonce": "L’opposition Xerox / Apple illustre le fait que :",
+      "propositions": [
+        "la protection par brevet est inefficace",
+        "avoir les idées ne suffit pas : c’est leur mise en œuvre commerciale qui crée la valeur",
+        "les innovations de rupture viennent toujours des grandes entreprises",
+        "la créativité est plus rentable que l’innovation"
+      ],
+      "reponses": [1],
+      "explication": "Le centre de recherche de Xerox a conçu des technologies majeures sans en tirer parti, quand Apple en a fait des produits.",
+      "theme": "Idées reçues sur l’innovation"
+    },
+    {
+      "enonce": "Selon Fréry, la différence entre invention et innovation est que :",
+      "propositions": [
+        "l’invention est technique, l’innovation est commerciale par nature",
+        "l’invention consiste à mettre au point ce qui n’existait pas, l’innovation concerne la diffusion de cette invention auprès du public",
+        "l’invention est protégée, l’innovation ne l’est jamais",
+        "l’invention est individuelle, l’innovation est nécessairement collective"
+      ],
+      "reponses": [1],
+      "explication": "D’où l’exemple du téléphone : inventé par Charles Bourseul en 1854, industrialisé par Alexander Graham Bell en 1876.",
+      "theme": "Idées reçues sur l’innovation"
+    },
+    {
+      "enonce": "Le cours indique qu’environ quelle proportion des brevets n’est pas exploitée ?",
+      "propositions": [
+        "10 %",
+        "25 %",
+        "40 %",
+        "70 %"
+      ],
+      "reponses": [2],
+      "explication": "Conclusion : stimuler l’invention ne suffit pas à stimuler l’innovation.",
+      "theme": "Idées reçues sur l’innovation"
+    },
+    {
+      "enonce": "La comparaison entre le TGV français et l’ICE allemand illustre l’idée que :",
+      "propositions": [
+        "la solution techniquement la plus performante n’est pas nécessairement la plus efficace économiquement",
+        "les innovations de rupture sont toujours préférables",
+        "la vitesse est le seul critère pertinent",
+        "les innovations incrémentales sont sans effet"
+      ],
+      "reponses": [0],
+      "explication": "Le TGV est plus rapide mais impose des voies dédiées ; l’ICE, un peu moins rapide, utilise les voies existantes.",
+      "theme": "Idées reçues sur l’innovation"
+    },
+    {
+      "enonce": "Selon Fréry, l’innovation n’est pas la rupture parce que :",
+      "propositions": [
+        "les innovations incrémentales jouent un rôle déterminant et relèvent de la responsabilité de chacun",
+        "les ruptures technologiques sont interdites en Europe",
+        "seules les grandes entreprises peuvent innover",
+        "l’innovation disruptive n’existe pas"
+      ],
+      "reponses": [0],
+      "explication": "Il oppose la vision héroïque de l’innovation disruptive à la réalité quotidienne de l’innovation modeste et permanente.",
+      "theme": "Idées reçues sur l’innovation"
+    },
+    {
+      "enonce": "Parmi les innovations françaises citées par Fréry comme non technologiques figurent :",
+      "propositions": [
+        "l’hypermarché",
+        "le club de vacances",
+        "le ticket restaurant",
+        "l’A380"
+      ],
+      "reponses": [0, 1, 2],
+      "explication": "L’A380, Ariane et le TGV sont au contraire les exemples technologiques « évidents ». Les trois premiers sont des innovations de concept et de modèle économique.",
+      "theme": "Idées reçues sur l’innovation"
+    },
+    {
+      "enonce": "Selon le Manuel d’Oslo (2018), les deux grands types d’innovation sont :",
+      "propositions": [
+        "l’innovation de produit et l’innovation de processus d’affaires",
+        "l’innovation technologique et l’innovation sociale",
+        "l’innovation incrémentale et l’innovation radicale",
+        "l’innovation de procédé et l’innovation de commercialisation"
+      ],
+      "reponses": [0],
+      "explication": "La version 2018 a regroupé en un seul type (processus d’affaires) ce que les versions antérieures séparaient en plusieurs catégories.",
+      "theme": "Types d’innovation"
+    },
+    {
+      "enonce": "Une innovation de produit désigne l’introduction sur le marché :",
+      "propositions": [
+        "d’un bien uniquement",
+        "d’un bien ou d’un service nouveau ou amélioré différant sensiblement de ce que l’entreprise proposait jusque-là",
+        "d’un procédé de fabrication nouveau",
+        "d’une méthode organisationnelle nouvelle"
+      ],
+      "reponses": [1],
+      "explication": "L’innovation de produit couvre deux sous-catégories : les biens et les services.",
+      "theme": "Types d’innovation"
+    },
+    {
+      "enonce": "Parmi les fonctions concernées par l’innovation de processus d’affaires selon l’OCDE figurent :",
+      "propositions": [
+        "la production de biens et de services, la distribution et la logistique",
+        "la commercialisation et les ventes",
+        "le système d’information et de communication, l’administration et la gestion",
+        "la rémunération des actionnaires"
+      ],
+      "reponses": [0, 1, 2],
+      "explication": "La sixième fonction est le développement de produits et de processus d’affaires. La rémunération des actionnaires n’en fait pas partie.",
+      "theme": "Types d’innovation"
+    },
+    {
+      "enonce": "Dans la matrice croisant marché et technologie, l’amélioration continue d’un produit sur son marché existant, avec une technologie existante, correspond à une innovation :",
+      "propositions": [
+        "incrémentale",
+        "adjacente",
+        "radicale",
+        "disruptive"
+      ],
+      "reponses": [0],
+      "explication": "Marché existant + technologie existante = innovation incrémentale, qui assure l’essentiel du progrès dans la durée.",
+      "theme": "Degrés de nouveauté"
+    },
+    {
+      "enonce": "La création d’un tout nouveau produit ou service que personne n’attendait, sur un marché nouveau et avec une technologie nouvelle, correspond à une innovation :",
+      "propositions": [
+        "incrémentale",
+        "adjacente",
+        "radicale",
+        "disruptive"
+      ],
+      "reponses": [2],
+      "explication": "C’est la configuration la plus risquée : le marché est à créer et la technologie à maîtriser.",
+      "theme": "Degrés de nouveauté"
+    },
+    {
+      "enonce": "L’amélioration d’un produit ou service existant lui procurant un avantage concurrentiel sur un marché nouveau, avec une technologie existante, correspond à une innovation :",
+      "propositions": [
+        "adjacente",
+        "incrémentale",
+        "radicale",
+        "disruptive"
+      ],
+      "reponses": [0],
+      "explication": "Marché nouveau + technologie existante = innovation adjacente.",
+      "theme": "Degrés de nouveauté"
+    },
+    {
+      "enonce": "Dans cette même matrice, l’innovation disruptive consiste à :",
+      "propositions": [
+        "créer une technologie de rupture sur un marché inexistant",
+        "proposer un produit ou service déjà existant en simplifiant l’usage ou en changeant le modèle économique",
+        "améliorer un produit de façon continue",
+        "déposer un brevet sur une invention nouvelle"
+      ],
+      "reponses": [1],
+      "explication": "Contre-intuitif : malgré le mot « disruptif », la case repose sur une rupture d’usage et de modèle économique, sur un marché déjà existant.",
+      "theme": "Degrés de nouveauté"
+    },
+    {
+      "enonce": "Les deux composantes principales de la propriété intellectuelle sont :",
+      "propositions": [
+        "le droit d’auteur et le droit des marques",
+        "la propriété littéraire et artistique et la propriété industrielle",
+        "la propriété corporelle et la propriété incorporelle",
+        "le brevet et le secret des affaires"
+      ],
+      "reponses": [1],
+      "explication": "Le droit d’auteur est une composante de la propriété littéraire et artistique ; les marques relèvent de la propriété industrielle.",
+      "theme": "Propriété intellectuelle"
+    },
+    {
+      "enonce": "L’obtention du droit d’auteur :",
+      "propositions": [
+        "nécessite un dépôt auprès de l’INPI",
+        "ne nécessite aucune formalité de dépôt, sous condition d’originalité",
+        "suppose une inscription au registre du commerce",
+        "exige le paiement d’une redevance annuelle"
+      ],
+      "reponses": [1],
+      "explication": "Le droit d’auteur naît du seul fait de la création originale ; les titres de propriété industrielle, eux, n’existent que par le dépôt.",
+      "theme": "Propriété intellectuelle"
+    },
+    {
+      "enonce": "Les logiciels sont protégés :",
+      "propositions": [
+        "par le brevet, au titre de la propriété industrielle",
+        "par le droit d’auteur, au titre de la propriété littéraire et artistique",
+        "par le droit des marques",
+        "par les indications géographiques"
+      ],
+      "reponses": [1],
+      "explication": "Spécificité française et européenne régulièrement évaluée : le logiciel relève du droit d’auteur, non du brevet.",
+      "theme": "Propriété intellectuelle"
+    },
+    {
+      "enonce": "Relèvent de la propriété industrielle :",
+      "propositions": [
+        "les brevets",
+        "les marques",
+        "les dessins et modèles industriels et les indications géographiques",
+        "les droits voisins des artistes-interprètes"
+      ],
+      "reponses": [0, 1, 2],
+      "explication": "Les droits voisins accompagnent le droit d’auteur et relèvent donc de la propriété littéraire et artistique.",
+      "theme": "Propriété intellectuelle"
+    },
+    {
+      "enonce": "La demande des titres de propriété industrielle doit être déposée auprès :",
+      "propositions": [
+        "de l’INSEE",
+        "de l’INPI",
+        "du greffe du tribunal de commerce",
+        "de l’OCDE"
+      ],
+      "reponses": [1],
+      "explication": "Institut national de la propriété industrielle. Le dépôt protège l’invention mais ne la transforme pas en innovation : 40 % des brevets ne sont pas exploités.",
+      "theme": "Propriété intellectuelle"
+    },
+    {
+      "enonce": "Une entreprise constate qu’un concurrent d’un tout autre secteur capte ses clients en répondant au même besoin par une solution différente. Quel outil du cours est le plus directement pris en défaut ?",
+      "propositions": [
+        "le PESTEL, qui ignore les concurrents",
+        "les 5 forces de Porter, dont la focale sur l’industry néglige la concurrence venue d’un autre secteur",
+        "le Salience Model, qui ne traite pas des concurrents",
+        "la matrice d’Emery et Trist, qui ignore le dynamisme"
+      ],
+      "reponses": [1],
+      "explication": "C’est la première limite du modèle, et elle rejoint l’angle mort décrit par Duncan : ce qui n’est pas pris en considération n’est pas anticipé.",
+      "theme": "Questions transversales"
+    },
+    {
+      "enonce": "Une association locale sans moyens financiers conteste publiquement l’implantation d’un site industriel, avec une demande fondée et urgente. Dans le Salience Model, elle est :",
+      "propositions": [
+        "dormante",
+        "dépendante",
+        "dominante",
+        "définitive"
+      ],
+      "reponses": [1],
+      "explication": "Légitimité et urgence sans pouvoir : elle devra trouver un allié puissant, ce qui pourrait la faire basculer vers le statut de partie prenante définitive.",
+      "theme": "Questions transversales"
+    },
+    {
+      "enonce": "Un dirigeant affirme qu’il gérera l’arrivée d’une technologie entièrement nouvelle en calculant la probabilité des scénarios possibles. Quelle critique tirée du cours peut-on lui opposer ?",
+      "propositions": [
+        "il confond risque et incertitude : sans information suffisante, aucune probabilité ne peut être établie",
+        "il confond complexité et complication",
+        "il applique à tort le modèle de Porter",
+        "il néglige les parties prenantes secondaires"
+      ],
+      "reponses": [0],
+      "explication": "Distinction de Knight : le risque se mesure, l’incertitude non. Elle se gère par la flexibilité et la réversibilité des engagements.",
+      "theme": "Questions transversales"
+    },
+    {
+      "enonce": "Une entreprise dispose d’un portefeuille de brevets important mais ne commercialise presque aucun produit nouveau. Quelle analyse du cours s’applique le mieux ?",
+      "propositions": [
+        "elle est créative mais pas innovante : elle invente sans diffuser, or l’innovation suppose la mise en œuvre et la diffusion",
+        "elle pratique l’innovation incrémentale",
+        "elle applique la stratégie de l’entreprise en réseau",
+        "elle relève du paradigme de la création d’organisation"
+      ],
+      "reponses": [0],
+      "explication": "C’est le cas Xerox et le constat des 40 % de brevets non exploités : la fonction entrepreneuriale consiste, chez Schumpeter, à aboutir à des réalisations.",
+      "theme": "Questions transversales"
+    }
+  ]
+}
