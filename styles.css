@@ -31,7 +31,10 @@ p{margin:0;text-wrap:pretty}
 .kicker-mute{font:600 10px/1 var(--head);letter-spacing:.13em;text-transform:uppercase;color:var(--n-700)}
 .h-xl{font:800 27px/1.02 var(--head)}
 .h-lg{font:800 21px/1.12 var(--head)}
-.foot{border-top:2px solid var(--ink);padding:13px 20px calc(13px + var(--safe-b));background:var(--bg);display:flex;flex-direction:column;gap:9px}
+.foot{border-top:2px solid var(--ink);padding:0 0 var(--safe-b);background:var(--bg);display:flex;flex-direction:column}
+.foot .btn{min-height:56px;padding:0 20px;border-bottom:1px solid var(--n-300)}
+.foot .btn:last-child{border-bottom:0}
+.foot .btn-ghost{border:0;border-bottom:1px solid var(--n-300);min-height:48px}
 .hint{font:400 11.5px/1.5 var(--body);color:var(--n-600)}
 .rule{height:2px;background:var(--ink)}
 
@@ -172,7 +175,7 @@ p{margin:0;text-wrap:pretty}
 
 /* ── Tab bar (mobile) ─────────────────────────────────────── */
 .tabbar{display:grid;grid-template-columns:1fr 1fr 1fr;border-top:2px solid var(--ink);padding-bottom:var(--safe-b);background:var(--bg)}
-.tabbar button{padding:13px 14px;text-align:left;background:none;border:0;border-right:1px solid var(--n-300);font:600 11.5px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;color:var(--n-600);cursor:pointer}
+.tabbar button{min-height:52px;display:flex;align-items:center;padding:0 14px;text-align:left;background:none;border:0;border-right:1px solid var(--n-300);font:600 11.5px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;color:var(--n-600);cursor:pointer}
 .tabbar button:last-child{border-right:0}
 .tabbar button.on{font-weight:700;color:var(--ink)}
 
@@ -190,9 +193,11 @@ p{margin:0;text-wrap:pretty}
   .pane-main .grid{grid-template-columns:minmax(0,1fr)}
   .pane-main .grid .cell{border-right:0}
   .hd{padding:22px 24px 18px}
-  .pane-main .hd,.pane-main .q-top,.pane-main .q-body,.pane-main .foot,.pane-main .banner,
+  .pane-main .hd,.pane-main .q-top,.pane-main .q-body,.pane-main .banner,
   .pane-main .tbl-head,.pane-main .tbl-row,.pane-main .detail{padding-left:36px;padding-right:36px}
-  .pane-main .foot{flex-direction:row;align-items:center;flex-wrap:wrap}
+  .pane-main .foot{flex-direction:row;align-items:center;flex-wrap:wrap;gap:12px;padding:16px 36px}
+  .pane-main .foot .btn{min-height:48px;border-bottom:0}
+  .pane-main .foot .btn-ghost{border:1px solid var(--divider);min-height:48px}
   .pane-main .btn{width:auto;padding:0 22px}
   .pane-main .q-num{font-size:74px}
   .pane-main .q-title{font-size:34px;max-width:26ch}

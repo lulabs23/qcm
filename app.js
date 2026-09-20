@@ -458,10 +458,10 @@ function paneList() {
         <span class="s">${q.questions.length} questions${(q.missed || []).length ? " · " + q.missed.length + " à revoir" : ""}</span></span>
       <span class="v ${q.best === null ? "none" : q.best < 75 ? "low" : ""}">${q.best === null ? "—" : q.best + " %"}</span></button>`;
   }).join("");
-  return `<div class="hd"><div class="hd-row"><div><div class="kicker">Réviseur de QCM</div><h1 class="h-lg" style="margin-top:9px">Mes QCM</h1></div>
+  return `<div class="hd"><div class="hd-row"><div><div class="kicker">QCM</div><h1 class="h-lg" style="margin-top:9px">Mes QCM</h1></div>
       <span style="font:800 14px/1 var(--head);color:var(--n-700)">${o.played ? o.pct + " %" : "—"}</span></div></div>
     <div class="scroll">${rows || `<p class="hint" style="padding:18px 20px">Aucun QCM importé.</p>`}</div>
-    <div style="border-top:2px solid var(--ink);padding:14px 20px"><button class="btn" data-act="import">Importer un fichier .json</button></div>
+    <div style="border-top:2px solid var(--ink);padding:14px 20px"><button class="btn" data-act="import">Importer un fichier</button></div>
     <div style="display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--n-300)">
       <button class="tabbar-like ${ui.view === "stats" ? "on" : ""}" data-act="stats" style="padding:13px 14px;text-align:left;background:none;border:0;border-right:1px solid var(--n-300);font:${ui.view === "stats" ? 700 : 600} 11.5px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;color:${ui.view === "stats" ? "var(--ink)" : "var(--n-600)"};cursor:pointer">Progression</button>
       <button data-act="settings" style="padding:13px 14px;text-align:left;background:none;border:0;font:${ui.view === "settings" ? 700 : 600} 11.5px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;color:${ui.view === "settings" ? "var(--ink)" : "var(--n-600)"};cursor:pointer">Réglages</button>
@@ -509,10 +509,9 @@ function viewDesktopHome() {
       </div>` : `<div class="prompt">${esc(PROMPT)}</div>`}
       <div class="inline" style="margin-top:0">
         ${hot ? `<button class="btn btn-auto" data-act="launch" data-id="${hot.id}">Reprendre ${esc(hot.titre)}</button>` : ""}
-        <button class="btn${hot ? " btn-ghost" : ""} btn-auto" data-act="import">Importer un fichier .json</button>
+        <button class="btn${hot ? " btn-ghost" : ""} btn-auto" data-act="import">Importer un fichier</button>
         <button class="btn btn-ghost btn-auto" data-act="format">Format attendu</button>
       </div>
-      <p class="hint">Clavier pendant une session : A–D pour choisir, Entrée pour valider, ← → pour naviguer.</p>
     </div></div>
   </div>`;
 }
