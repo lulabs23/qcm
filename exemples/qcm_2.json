@@ -1,0 +1,253 @@
+{
+  "titre": "Culture générale - Malouines, Islande & cartographie (2)",
+  "matiere": "Culture générale",
+  "questions": [
+    {
+      "enonce": "Qui a dit que « l'Islande ferait un parfait 52e État américain » ?",
+      "propositions": [
+        "Billy Long",
+        "Donald Trump",
+        "Elon Musk",
+        "Marco Rubio",
+        "JD Vance"
+      ],
+      "reponses": [0],
+      "explication": "Billy Long, ancien membre du Congrès du Missouri et candidat de Trump au poste d'ambassadeur en Islande, a plaisanté en disant que l'Islande deviendrait le 52e État américain et qu'il en serait le gouverneur — une remarque rapportée par Politico en janvier 2026 qui a suscité l'inquiétude en Islande.",
+      "theme": "Actualité internationale - États-Unis / Islande"
+    },
+    {
+      "enonce": "Le nom complet de Mercator est…",
+      "propositions": [
+        "Gerard Mercatorius",
+        "Gerardus Mercator",
+        "Gerhard Mercator",
+        "Harald Mercatorius",
+        "Gerardus Van Mercator"
+      ],
+      "reponses": [1],
+      "explication": "Gerardus Mercator est le nom latinisé du cartographe flamand, né Gerard de Cremer (ou Kremer), célèbre pour sa projection cartographique éponyme.",
+      "theme": "Cartographie"
+    },
+    {
+      "enonce": "Le Groenland est … fois plus grande que l'Afrique.",
+      "propositions": [
+        "2",
+        "5",
+        "3",
+        "25",
+        "14"
+      ],
+      "reponses": [4],
+      "explication": "Sur la projection de Mercator, le Groenland apparaît à peu près de la même taille que l'Afrique, alors qu'en réalité l'Afrique est environ 14 fois plus grande que le Groenland — un exemple classique de la distorsion introduite par cette projection cartographique.",
+      "theme": "Cartographie"
+    },
+    {
+      "enonce": "À qui appartiennent les îles Malouines ?",
+      "propositions": [
+        "au Royaume-Uni",
+        "aux Nations unies",
+        "à l'Argentine",
+        "à l'Uruguay",
+        "au Chili"
+      ],
+      "reponses": [0],
+      "explication": "Les îles Malouines (Falkland Islands) sont un territoire britannique d'outre-mer, bien que l'Argentine en revendique la souveraineté sous le nom d'Islas Malvinas — un différend qui a notamment mené à la guerre des Malouines en 1982.",
+      "theme": "Géopolitique - Malouines"
+    },
+    {
+      "enonce": "Quelles sont les deux associations qui soutenaient la campagne « Corriger la carte » / « Correct the map » ?",
+      "propositions": [
+        "Africa No Filter et Speak Up Africa",
+        "UNESCO et UNICEF",
+        "Greenpeace et Amnesty International",
+        "Human Rights Watch et Transparency International",
+        "Oxfam et Médecins Sans Frontières"
+      ],
+      "reponses": [0],
+      "explication": "Ces deux organisations ont lancé la campagne « Correct the Map » en avril 2025, appelant les institutions internationales à adopter la projection Equal Earth plutôt que la projection de Mercator, jugée trompeuse sur la taille réelle de l'Afrique. La campagne a ensuite reçu le soutien de l'Union africaine.",
+      "theme": "Cartographie"
+    },
+    {
+      "enonce": "Qui était Premier ministre du Royaume-Uni au moment de la guerre des Malouines ?",
+      "propositions": [
+        "Tony Blair",
+        "Harold Wilson",
+        "John Major",
+        "Edward Heath",
+        "Margaret Thatcher"
+      ],
+      "reponses": [4],
+      "explication": "Margaret Thatcher était Première ministre du Royaume-Uni au moment de la guerre des Malouines en 1982.",
+      "theme": "Géopolitique - Malouines"
+    },
+    {
+      "enonce": "En quelle année a eu lieu la guerre des Malouines ?",
+      "propositions": [
+        "2019",
+        "1999",
+        "1982",
+        "2005",
+        "2003"
+      ],
+      "reponses": [2],
+      "explication": "La guerre des Malouines a eu lieu en 1982.",
+      "theme": "Géopolitique - Malouines"
+    },
+    {
+      "enonce": "En août 2026, les Islandais ont voté contre la reprise des négociations d'adhésion avec l'Union européenne. Quels sujets ont fait basculer les votes vers le NON ?",
+      "propositions": [
+        "l'immigration et la sécurité",
+        "la santé et l'éducation",
+        "l'énergie et les transports",
+        "la pêche et l'agriculture",
+        "la défense et la fiscalité"
+      ],
+      "reponses": [3],
+      "explication": "Le secteur de la pêche, pilier économique de l'Islande, a pesé lourd dans le résultat du référendum du 29 août 2026 (52,8 % de « non »), avec 90 % des entreprises du secteur opposées à une adhésion à l'UE — la crainte de perdre le contrôle sur les eaux de pêche et l'agriculture étant un argument central des partisans du « non ».",
+      "theme": "Actualité internationale - Islande"
+    },
+    {
+      "enonce": "Quel a été le montant de l'amende pour l'équipe nationale de football de l'Argentine lors de la Coupe du monde de football 2026 ?",
+      "propositions": [
+        "221 000 dollars",
+        "421 000 dollars",
+        "121 000 dollars",
+        "521 000 dollars",
+        "321 000 dollars"
+      ],
+      "reponses": [4],
+      "explication": "La commission de discipline de la FIFA a infligé une amende totale de 321 000 dollars à la fédération argentine (AFA), suite aux incidents survenus après la finale perdue contre l'Espagne le 19 juillet 2026, notamment pour l'affichage d'une banderole sur les îles Malouines et des comportements inappropriés durant le tournoi.",
+      "theme": "Actualité sportive"
+    },
+    {
+      "enonce": "Quel territoire Javier Milei revendique-t-il, en septembre 2026 ?",
+      "propositions": [
+        "les îles Galápagos",
+        "l'Antarctique argentin",
+        "la Terre de Feu",
+        "les îles Malouines",
+        "l'île de Pâques"
+      ],
+      "reponses": [3],
+      "explication": "Début septembre 2026, Javier Milei a relancé les revendications de souveraineté de l'Argentine sur les îles Malouines (Falkland Islands), déclarant qu'elles appartiennent à l'Argentine « historiquement et juridiquement », tout en menaçant de sanctions les entreprises pétrolières opérant autour de l'archipel sans autorisation argentine.",
+      "theme": "Géopolitique - Malouines"
+    },
+    {
+      "enonce": "Lors d'un référendum, quel a été le score des habitants des Malouines favorables au maintien de l'administration britannique ?",
+      "propositions": [
+        "89,8 %",
+        "99,8 %",
+        "79,8 %",
+        "69,8 %",
+        "59,8 %"
+      ],
+      "reponses": [1],
+      "explication": "Lors du référendum organisé en mars 2013, 99,8 % des habitants des Malouines ayant voté (soit 1 513 voix sur 1 517) se sont prononcés en faveur du maintien du statut de territoire britannique d'outre-mer.",
+      "theme": "Géopolitique - Malouines"
+    },
+    {
+      "enonce": "La projection Mercator datait du…",
+      "propositions": [
+        "XVIIIe siècle",
+        "XVIIe siècle",
+        "XVe siècle",
+        "XVIe siècle",
+        "XIVe siècle"
+      ],
+      "reponses": [3],
+      "explication": "La projection de Mercator a été créée en 1569 par le cartographe flamand Gerardus Mercator.",
+      "theme": "Cartographie"
+    },
+    {
+      "enonce": "La guerre des Malouines a fait… morts.",
+      "propositions": [
+        "804",
+        "1104",
+        "1 004",
+        "704",
+        "904"
+      ],
+      "reponses": [4],
+      "explication": "Le bilan le plus couramment cité est d'environ 907 morts (647 militaires argentins, 255 militaires britanniques et quelques civils), un chiffre le plus proche de l'option 904.",
+      "theme": "Géopolitique - Malouines"
+    },
+    {
+      "enonce": "Lors de quelle compétition des sportifs ont-ils brandi une banderole proclamant « Les Malouines sont argentines », en juillet 2026 ?",
+      "propositions": [
+        "les Jeux panaméricains",
+        "les Jeux olympiques de 2026",
+        "la Coupe du monde de football 2026",
+        "La Ligue des champions",
+        "la Coupe du monde de rugby 2026"
+      ],
+      "reponses": [2],
+      "explication": "Les joueurs argentins avaient brandi cette banderole après leur victoire en demi-finale contre l'Angleterre lors du Mondial 2026, un geste ensuite relevé par la commission de discipline de la FIFA parmi les motifs de sanction contre la fédération argentine (AFA).",
+      "theme": "Actualité sportive"
+    },
+    {
+      "enonce": "Qui dirigeait l'Argentine au moment de la guerre des Malouines ?",
+      "propositions": [
+        "Carlos Menem",
+        "le général Jorge Videla",
+        "Raúl Alfonsín",
+        "Isabel Perón",
+        "le général Leopoldo Galtieri"
+      ],
+      "reponses": [4],
+      "explication": "Le général Leopoldo Galtieri dirigeait l'Argentine au moment de la guerre des Malouines en 1982.",
+      "theme": "Géopolitique - Malouines"
+    },
+    {
+      "enonce": "L'Islande fait partie du programme…",
+      "propositions": [
+        "Erasmus+",
+        "Interreg",
+        "Creative Europe uniquement",
+        "LIFE",
+        "Horizon Europe uniquement"
+      ],
+      "reponses": [0],
+      "explication": "En tant que membre de l'Espace économique européen (EEE), l'Islande participe pleinement au programme Erasmus+, qui permet aux étudiants et enseignants islandais de bénéficier des mêmes possibilités d'échanges et de mobilité que les pays membres de l'UE.",
+      "theme": "Institutions européennes"
+    },
+    {
+      "enonce": "L'Islande est membre de…",
+      "propositions": [
+        "l'OSCE uniquement",
+        "la zone euro",
+        "l'Union européenne occidentale",
+        "l'Union européenne",
+        "l'OTAN"
+      ],
+      "reponses": [4],
+      "explication": "L'Islande est membre fondateur de l'OTAN depuis 1949, mais elle n'est pas membre de l'Union européenne (elle fait en revanche partie de l'Espace économique européen et de l'espace Schengen).",
+      "theme": "Institutions internationales"
+    },
+    {
+      "enonce": "La guerre des Malouines a fait… morts britanniques.",
+      "propositions": [
+        "455",
+        "155",
+        "355",
+        "255",
+        "55"
+      ],
+      "reponses": [3],
+      "explication": "La guerre des Malouines a fait 255 morts britanniques.",
+      "theme": "Géopolitique - Malouines"
+    },
+    {
+      "enonce": "Quel pourcentage de la population islandaise vit dans la capitale ?",
+      "propositions": [
+        "La moitié",
+        "Les deux tiers",
+        "Les trois quarts",
+        "Un tiers",
+        "Un quart"
+      ],
+      "reponses": [1],
+      "explication": "Environ les deux tiers de la population islandaise vivent dans la région de la capitale (Höfuðborgarsvæðið), qui regroupe Reykjavik et les communes environnantes.",
+      "theme": "Géographie - Islande"
+    }
+  ]
+}

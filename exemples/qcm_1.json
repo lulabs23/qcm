@@ -1,0 +1,214 @@
+{
+  "titre": "Culture générale - Actualité internationale (1)",
+  "matiere": "Culture générale",
+  "questions": [
+    {
+      "enonce": "Quel est l'autre nom d'Ahmed Al-Chareh ?",
+      "propositions": [
+        "Ayman al-Zawahiri",
+        "Abou Bakr al-Baghdadi",
+        "Mohammed al-Joulani",
+        "Omar al-Bachir",
+        "Hassan Nasrallah"
+      ],
+      "reponses": [2],
+      "explication": "Ahmed Al-Chareh (Ahmad al-Sharaa) est le véritable nom du dirigeant syrien connu sous son nom de guerre Abou Mohammed al-Joulani, qui dirigeait auparavant Hayat Tahrir al-Cham (HTS) avant de devenir président de transition de la Syrie après la chute du régime Assad.",
+      "theme": "Actualité internationale - Syrie"
+    },
+    {
+      "enonce": "Combien de visiteurs compte le parc Astérix chaque année ?",
+      "propositions": [
+        "10 millions",
+        "20 millions",
+        "12 millions",
+        "25 millions",
+        "2,9 millions"
+      ],
+      "reponses": [4],
+      "explication": "Le Parc Astérix a battu son record de fréquentation en 2025 avec plus de 2,9 millions de visiteurs, en hausse par rapport aux 2,842 millions de 2024.",
+      "theme": "Culture générale - France"
+    },
+    {
+      "enonce": "Le père de Raphaël Glucksmann était…",
+      "propositions": [
+        "Sociologue",
+        "Philosophe",
+        "Écrivain",
+        "Historien",
+        "Journaliste"
+      ],
+      "reponses": [1],
+      "explication": "Raphaël Glucksmann est le fils d'André Glucksmann, philosophe français connu notamment pour son parcours au sein des « nouveaux philosophes » dans les années 1970.",
+      "theme": "Politique française"
+    },
+    {
+      "enonce": "En août 2026, l'Arabie Saoudite a annoncé qu'elle allait investir en France pour la construction de trois parcs à thème, dont un dédié à l'univers de…",
+      "propositions": [
+        "Naruto",
+        "Final Fantasy",
+        "Pokémon",
+        "One Piece",
+        "Dragon Ball"
+      ],
+      "reponses": [4],
+      "explication": "Le projet, discuté depuis un accord entre Emmanuel Macron et le prince héritier saoudien en décembre 2024, prévoit qu'un parc soit dédié à l'univers de Dragon Ball Z, sur le site de l'ancien parc Mirapolis dans le Val-d'Oise.",
+      "theme": "Actualité économique - France"
+    },
+    {
+      "enonce": "Combien d'emplois directs sont prévus pour les parcs à thème qui seront construits par l'Arabie saoudite en France ?",
+      "propositions": [
+        "22 000",
+        "10 000",
+        "30 000",
+        "18 000",
+        "15 000"
+      ],
+      "reponses": [0],
+      "explication": "L'investissement saoudien pour ces trois parcs à thème en France prévoit la création de 22 000 emplois directs.",
+      "theme": "Actualité économique - France"
+    },
+    {
+      "enonce": "En quelle année le génocide au Rwanda a-t-il eu lieu ?",
+      "propositions": [
+        "1996",
+        "1998",
+        "1994",
+        "1990",
+        "1992"
+      ],
+      "reponses": [2],
+      "explication": "Le génocide au Rwanda a eu lieu en 1994.",
+      "theme": "Histoire - Afrique"
+    },
+    {
+      "enonce": "Quel est le pourcentage des exportations canadiennes vers les États-Unis, en 2026 ?",
+      "propositions": [
+        "80 %",
+        "50 %",
+        "60 %",
+        "65 %",
+        "70 %"
+      ],
+      "reponses": [3],
+      "explication": "Selon les chiffres publiés début septembre 2026, la part des exportations canadiennes destinées aux États-Unis est tombée à 66,3 % en juillet 2026, son plus bas niveau depuis 1997 hors pandémie — un chiffre le plus proche de l'option 65 %.",
+      "theme": "Économie internationale"
+    },
+    {
+      "enonce": "En août 2026, qui est le Premier ministre canadien ?",
+      "propositions": [
+        "Mark Carney",
+        "Pierre Poilievre",
+        "Jagmeet Singh",
+        "Stephen Harper",
+        "Justin Trudeau"
+      ],
+      "reponses": [0],
+      "explication": "Mark Carney est le Premier ministre canadien en août 2026.",
+      "theme": "Politique internationale - Canada"
+    },
+    {
+      "enonce": "Le père de Raphaël Glucksmann a été…",
+      "propositions": [
+        "Socialiste",
+        "Libéral",
+        "Communiste",
+        "Maoïste",
+        "Gaulliste"
+      ],
+      "reponses": [3],
+      "explication": "André Glucksmann a été militant maoïste entre 1968 et 1974, ardent défenseur de la Révolution culturelle chinoise au sein de la Gauche prolétarienne, avant de rompre avec le marxisme et d'évoluer vers les « nouveaux philosophes » puis une position atlantiste et néolibérale.",
+      "theme": "Politique française"
+    },
+    {
+      "enonce": "Le grand-père de Raphaël Glucksmann s'appelait…",
+      "propositions": [
+        "Pierre",
+        "Jean",
+        "Michel",
+        "Ruben",
+        "André"
+      ],
+      "reponses": [3],
+      "explication": "Le grand-père de Raphaël Glucksmann s'appelait Rubin (Ruben) Glucksmann (1889-1940), originaire de Czernowitz, qui a combattu dans l'armée austro-hongroise pendant la Première Guerre mondiale — c'était le père d'André Glucksmann.",
+      "theme": "Politique française"
+    },
+    {
+      "enonce": "Quel est le montant de l'investissement annoncé par l'Arabie saoudite pour la construction de trois parcs à thème en France ?",
+      "propositions": [
+        "600 millions d'euros",
+        "1 milliard d'euros",
+        "6 milliards d'euros",
+        "60 milliards d'euros",
+        "20 milliards d'euros"
+      ],
+      "reponses": [2],
+      "explication": "L'investissement annoncé par l'Arabie saoudite pour la construction de ces trois parcs à thème en France s'élève à 6 milliards d'euros.",
+      "theme": "Actualité économique - France"
+    },
+    {
+      "enonce": "En quelle année Raphaël Glucksmann est-il né ?",
+      "propositions": [
+        "1982",
+        "1971",
+        "1985",
+        "1975",
+        "1979"
+      ],
+      "reponses": [4],
+      "explication": "Raphaël Glucksmann est né en 1979.",
+      "theme": "Politique française"
+    },
+    {
+      "enonce": "Comment s'appelle le président syrien à la date d'août 2026 ?",
+      "propositions": [
+        "Mohammed ben Salmane",
+        "Mahmoud Abbas",
+        "Abdel Fattah al-Sissi",
+        "Bachar al-Assad",
+        "Ahmed al-Chareh"
+      ],
+      "reponses": [4],
+      "explication": "Ahmed al-Chareh est le président de transition de la Syrie en août 2026, après la chute du régime Assad.",
+      "theme": "Actualité internationale - Syrie"
+    },
+    {
+      "enonce": "En 2019, Raphaël Glucksmann a été élu…",
+      "propositions": [
+        "Député à l'Assemblée nationale",
+        "Maire",
+        "Conseiller régional",
+        "Député européen",
+        "Sénateur"
+      ],
+      "reponses": [3],
+      "explication": "Raphaël Glucksmann a été élu député européen en 2019, en tête de la liste « Envie d'Europe » (Place publique-PS).",
+      "theme": "Politique française"
+    },
+    {
+      "enonce": "Quel golfe Trump a-t-il rebaptisé « golfe d'Amérique » ?",
+      "propositions": [
+        "Le golfe de Floride",
+        "Le golfe de Californie",
+        "Le golfe des Caraïbes",
+        "Le golfe du Mexique",
+        "Le golfe du Venezuela"
+      ],
+      "reponses": [3],
+      "explication": "Donald Trump a rebaptisé le golfe du Mexique en « golfe d'Amérique ».",
+      "theme": "Actualité internationale - États-Unis"
+    },
+    {
+      "enonce": "Quel est le nom du réseau social créé par Donald Trump ?",
+      "propositions": [
+        "Freedom Social",
+        "Truth Social",
+        "America First",
+        "Patriot",
+        "Trump Network"
+      ],
+      "reponses": [1],
+      "explication": "Truth Social est le réseau social créé par Donald Trump.",
+      "theme": "Actualité internationale - États-Unis"
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "titre": "QCM - Introduction au droit : le droit objectif",
+  "matiere": "Droit",
+  "questions": [
+    {
+      "enonce": "Laquelle de ces caractéristiques ne s'applique PAS à la règle de droit ?",
+      "propositions": ["Générale et impersonnelle", "Obligatoire", "Facultative", "Coercitive"],
+      "reponses": [2],
+      "explication": "La règle de droit est par nature obligatoire, et non facultative : sa violation est sanctionnée par la puissance publique.",
+      "theme": "Les caractéristiques de la règle de droit"
+    },
+    {
+      "enonce": "Qu'est-ce qui distingue principalement la règle de droit d'une règle morale ou religieuse ?",
+      "propositions": ["Elle est écrite", "Elle est sanctionnée par la puissance publique (l'État)", "Elle concerne la vie privée", "Elle n'évolue jamais"],
+      "reponses": [1],
+      "explication": "Le caractère coercitif, c'est-à-dire la sanction étatique en cas de violation, distingue la règle de droit des autres règles sociales.",
+      "theme": "Les caractéristiques de la règle de droit"
+    },
+    {
+      "enonce": "Quelle est la Constitution actuellement en vigueur en France ?",
+      "propositions": ["La Constitution de 1946", "La Constitution du 4 octobre 1958", "La Constitution de 1789", "La Constitution de l'an VIII"],
+      "reponses": [1],
+      "explication": "La Ve République est régie par la Constitution du 4 octobre 1958, toujours en vigueur.",
+      "theme": "La Constitution"
+    },
+    {
+      "enonce": "Parmi les textes suivants, lesquels sont rattachés au bloc de constitutionnalité par le préambule de 1958 ? (plusieurs réponses possibles)",
+      "propositions": ["La Déclaration des droits de l'homme et du citoyen de 1789", "Le Code civil de 1804", "Le préambule de la Constitution de 1946", "La Charte de l'environnement de 2004"],
+      "reponses": [0, 2, 3],
+      "explication": "Le préambule de 1958 rattache trois textes au bloc de constitutionnalité : la DDHC de 1789, le préambule de 1946 et la Charte de l'environnement de 2004. Le Code civil, lui, n'a pas valeur constitutionnelle.",
+      "theme": "La Constitution"
+    },
+    {
+      "enonce": "Que désignent les PFRLR ?",
+      "propositions": ["Les principes fondamentaux reconnus par les lois de la République", "Les projets de loi référendaires", "Les procédures de fixation des règles législatives", "Les principes fixés par le règlement européen"],
+      "reponses": [0],
+      "explication": "Les PFRLR sont d'anciens principes, issus de lois antérieures à la IIIe République, qui ont acquis valeur constitutionnelle.",
+      "theme": "La Constitution"
+    },
+    {
+      "enonce": "Selon l'article 34 de la Constitution, le domaine de la loi est :",
+      "propositions": ["Résiduel", "Exclusif et limitatif", "Illimité", "Réservé au pouvoir exécutif"],
+      "reponses": [1],
+      "explication": "L'article 34 énumère limitativement les domaines de la loi : en dehors de ceux-ci, seul le pouvoir réglementaire peut intervenir.",
+      "theme": "La loi ordinaire"
+    },
+    {
+      "enonce": "Comment les députés de l'Assemblée nationale sont-ils élus ?",
+      "propositions": ["Au suffrage universel indirect", "Par tirage au sort", "Au suffrage universel direct", "Par nomination du gouvernement"],
+      "reponses": [2],
+      "explication": "Les députés sont élus au suffrage universel direct (SUD), directement par les citoyens.",
+      "theme": "La loi ordinaire"
+    },
+    {
+      "enonce": "Comment les sénateurs sont-ils élus ?",
+      "propositions": ["Au suffrage universel direct", "Au suffrage universel indirect, par un collège de grands électeurs", "Par le président de la République", "Par référendum"],
+      "reponses": [1],
+      "explication": "Les sénateurs sont élus au suffrage universel indirect (SUI), par un collège de grands électeurs.",
+      "theme": "La loi ordinaire"
+    },
+    {
+      "enonce": "Qui adopte les règlements ?",
+      "propositions": ["Le pouvoir législatif", "Le pouvoir judiciaire", "Le pouvoir exécutif", "Le Conseil constitutionnel"],
+      "reponses": [2],
+      "explication": "Les règlements sont des actes adoptés par le pouvoir exécutif, à la différence des lois votées par le Parlement.",
+      "theme": "Les règlements"
+    },
+    {
+      "enonce": "Un règlement pris pour préciser les modalités d'application d'une loi est appelé :",
+      "propositions": ["Un règlement autonome", "Un règlement d'application", "Une ordonnance", "Un décret référendaire"],
+      "reponses": [1],
+      "explication": "Le règlement d'application précise les modalités d'application d'une loi, lorsque celle-ci le prévoit, à la différence du règlement autonome qui intervient hors du domaine de la loi.",
+      "theme": "Les règlements"
+    },
+    {
+      "enonce": "Lequel de ces actes réglementaires est pris à un niveau plus décentralisé ?",
+      "propositions": ["Le décret", "L'arrêté", "La loi organique", "Le traité"],
+      "reponses": [1],
+      "explication": "Les décrets sont pris au niveau central, tandis que les arrêtés sont pris à un niveau plus décentralisé (ministres, préfets, maires).",
+      "theme": "Les règlements"
+    },
+    {
+      "enonce": "Quel article de la Constitution permet au Parlement d'habiliter le gouvernement à légiférer par ordonnance ?",
+      "propositions": ["Article 34", "Article 37", "Article 38", "Article 49"],
+      "reponses": [2],
+      "explication": "L'article 38 permet au Parlement d'autoriser, par une loi d'habilitation, le gouvernement à prendre des ordonnances dans le domaine de la loi.",
+      "theme": "Les ordonnances"
+    },
+    {
+      "enonce": "Que doit obtenir une ordonnance pour acquérir pleinement valeur législative ?",
+      "propositions": ["Une loi de ratification", "Un décret d'application", "Un avis du Conseil d'État", "Une révision constitutionnelle"],
+      "reponses": [0],
+      "explication": "Une loi de ratification, votée par le Parlement, donne à l'ordonnance pleine valeur législative.",
+      "theme": "Les ordonnances"
+    },
+    {
+      "enonce": "Un traité conclu entre plus de deux États est qualifié de :",
+      "propositions": ["Bilatéral", "Multilatéral", "Unilatéral", "Supranational"],
+      "reponses": [1],
+      "explication": "Un traité conclu entre plusieurs États est dit multilatéral, par opposition au traité bilatéral conclu entre deux États.",
+      "theme": "Les traités et la CEDH"
+    },
+    {
+      "enonce": "Avant de saisir la Cour européenne des droits de l'homme, un requérant doit :",
+      "propositions": ["Payer une caution", "Avoir épuisé toutes les voies de recours internes", "Obtenir l'accord de son gouvernement", "Avoir la nationalité d'un État membre uniquement"],
+      "reponses": [1],
+      "explication": "La saisine de la CEDH suppose d'avoir préalablement épuisé toutes les voies de recours internes disponibles.",
+      "theme": "Les traités et la CEDH"
+    },
+    {
+      "enonce": "Lequel de ces textes fait partie du droit primaire de l'Union européenne ?",
+      "propositions": ["Le RGPD", "Une directive européenne", "Le TFUE", "Un arrêté ministériel"],
+      "reponses": [2],
+      "explication": "Le TFUE (Traité sur le fonctionnement de l'Union européenne) est un traité fondateur : il relève du droit primaire, à la différence des règlements et directives qui relèvent du droit dérivé.",
+      "theme": "Le droit de l'Union européenne"
+    },
+    {
+      "enonce": "Quelle est la principale différence entre une directive et un règlement européen ?",
+      "propositions": ["Le règlement nécessite une loi de transposition, pas la directive", "La directive nécessite une loi de transposition, le règlement s'applique directement", "Les deux nécessitent une ratification par référendum", "Il n'y a aucune différence entre les deux"],
+      "reponses": [1],
+      "explication": "La directive fixe un objectif et doit être transposée par une loi nationale, tandis que le règlement européen s'applique directement dans tous les États membres.",
+      "theme": "Le droit de l'Union européenne"
+    },
+    {
+      "enonce": "Le RGPD est un exemple de :",
+      "propositions": ["Directive européenne", "Règlement européen", "Traité international", "Loi ordinaire française"],
+      "reponses": [1],
+      "explication": "Le RGPD est un règlement européen, ce qui explique son application directe dans tous les États membres sans loi de transposition.",
+      "theme": "Le droit de l'Union européenne"
+    },
+    {
+      "enonce": "Quels sont les deux éléments nécessaires à la reconnaissance d'une coutume ?",
+      "propositions": ["Un élément matériel et un élément psychologique", "Un élément écrit et un élément oral", "Un vote parlementaire et une promulgation", "Un décret et un arrêté"],
+      "reponses": [0],
+      "explication": "La coutume suppose la réunion d'un élément matériel (la répétition ancienne d'une pratique) et d'un élément psychologique (le sentiment de son caractère obligatoire).",
+      "theme": "Les sources non écrites directes"
+    },
+    {
+      "enonce": "Les principes généraux du droit sont dégagés par :",
+      "propositions": ["Le Parlement", "Le juge", "Le gouvernement", "La doctrine uniquement"],
+      "reponses": [1],
+      "explication": "Les principes généraux du droit sont dégagés par le juge, lorsque l'ensemble des textes semble converger dans un même sens.",
+      "theme": "Les sources non écrites directes"
+    },
+    {
+      "enonce": "Quel est le rôle du juge, selon le cours ?",
+      "propositions": ["Créer la loi", "Appliquer les textes, sans pouvoir créer la loi", "Réviser la Constitution", "Ratifier les traités"],
+      "reponses": [1],
+      "explication": "Le juge n'a pas le pouvoir de créer la loi ; son rôle est d'appliquer les textes, même si sa jurisprudence peut influencer l'évolution du droit.",
+      "theme": "Les sources non écrites indirectes"
+    },
+    {
+      "enonce": "L'ensemble des opinions émises par les théoriciens du droit constitue :",
+      "propositions": ["La jurisprudence", "La pratique", "La doctrine", "La coutume"],
+      "reponses": [2],
+      "explication": "La doctrine regroupe les opinions et analyses des théoriciens du droit, qui peuvent inspirer le législateur.",
+      "theme": "Les sources non écrites indirectes"
+    },
+    {
+      "enonce": "Dans la pyramide des normes, quel bloc se situe juste en dessous de la Constitution ?",
+      "propositions": ["Le bloc réglementaire", "Le bloc de légalité", "Le bloc conventionnel (conventions, traités, droit de l'UE)", "Le bloc jurisprudentiel"],
+      "reponses": [2],
+      "explication": "Sous le bloc de constitutionnalité vient le bloc conventionnel, regroupant les conventions, les traités et le droit de l'Union européenne.",
+      "theme": "La hiérarchie des normes"
+    },
+    {
+      "enonce": "Le contrôle de conventionnalité vise à vérifier :",
+      "propositions": ["La conformité d'un règlement à la loi", "La conformité d'une loi aux conventions et traités internationaux", "La conformité de la Constitution au droit de l'UE", "La conformité d'un décret à un arrêté"],
+      "reponses": [1],
+      "explication": "Le contrôle de conventionnalité vérifie qu'une loi respecte bien les conventions et traités internationaux, notamment via le Conseil d'État et la Cour de cassation.",
+      "theme": "La hiérarchie des normes"
+    },
+    {
+      "enonce": "Qui exerce le contrôle de constitutionnalité des lois ?",
+      "propositions": ["Le Conseil d'État", "La Cour de cassation", "Le Conseil constitutionnel", "La Cour européenne des droits de l'homme"],
+      "reponses": [2],
+      "explication": "C'est le Conseil constitutionnel qui vérifie qu'une loi n'est pas contraire aux garanties du bloc de constitutionnalité.",
+      "theme": "La hiérarchie des normes"
+    },
+    {
+      "enonce": "Pour un fait juridique, comment s'applique la loi nouvelle ?",
+      "propositions": ["Elle ne s'applique jamais aux faits passés", "Elle s'applique immédiatement, même si le fait s'est produit avant son entrée en vigueur", "Elle nécessite l'accord des deux parties", "Elle ne s'applique qu'après un délai de cinq ans"],
+      "reponses": [1],
+      "explication": "Pour les faits juridiques, la loi nouvelle s'applique immédiatement, quelle que soit la date de survenance du fait.",
+      "theme": "Les conflits de lois dans le temps"
+    },
+    {
+      "enonce": "Le principe de survie de la loi ancienne concerne :",
+      "propositions": ["Les faits juridiques", "Les actes juridiques", "Les règlements autonomes", "Les traités internationaux"],
+      "reponses": [1],
+      "explication": "Pour les actes juridiques (contrats, etc.), la loi ancienne continue en principe de s'appliquer, sauf exceptions (urgence, loi interprétative, disposition contraire).",
+      "theme": "Les conflits de lois dans le temps"
+    },
+    {
+      "enonce": "Quelle étape suit l'adoption d'une loi par le Parlement ?",
+      "propositions": ["La ratification par un État étranger", "La promulgation par le chef de l'État", "Le contrôle de conventionnalité", "La révision constitutionnelle"],
+      "reponses": [1],
+      "explication": "Après l'adoption par le Parlement vient la promulgation : le chef de l'État certifie par décret que la procédure a bien été suivie.",
+      "theme": "L'entrée en vigueur de la loi"
+    },
+    {
+      "enonce": "En principe, une loi entre en vigueur :",
+      "propositions": ["Le jour même de son adoption", "Le lendemain de sa publication au Journal officiel", "Un an après sa promulgation", "Dès son dépôt au Parlement"],
+      "reponses": [1],
+      "explication": "Sauf délai particulier, nécessité d'un décret d'application ou urgence, la loi entre en vigueur le lendemain de sa publication au Journal officiel.",
+      "theme": "L'entrée en vigueur de la loi"
+    },
+    {
+      "enonce": "Qu'est-ce qu'une commission mixte paritaire ?",
+      "propositions": ["Une commission composée à parité de députés et de sénateurs, réunie en cas de désaccord entre les deux chambres", "Un organe qui contrôle la constitutionnalité des lois", "Une commission qui rédige les ordonnances", "Un comité qui ratifie les traités internationaux"],
+      "reponses": [0],
+      "explication": "La commission mixte paritaire, composée à parité de députés et de sénateurs, intervient pour trouver un compromis lorsque les deux chambres ne s'accordent pas sur un texte.",
+      "theme": "L'entrée en vigueur de la loi"
+    }
+  ]
+}
