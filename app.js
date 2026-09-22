@@ -3,7 +3,6 @@
 "use strict";
 
 const KEY = "reviseur-qcm.v1";
-const SEEDED = "reviseur-qcm.seeded";        /* ancien drapeau global, conservé pour les installations existantes */
 const SEEN = "reviseur-qcm.seeds";          /* noms de fichiers déjà installés, un par entrée */
 /* Dotation de départ : la liste vit dans exemples/index.json, pour n'avoir qu'un seul endroit à tenir à jour. */
 const SEED_INDEX = "exemples/index.json";
@@ -29,8 +28,20 @@ const MODEL = `{
   ]
 }`;
 
-/* ── State ──────────────────────────────────────────────────────── */
-let db = { quizzes: [], settings: { correction: true, shuffle: true, swipe: true, size: "M" } };
+/* ── Icons (Lucide) ────────────────────────────────────────── */
+const I = {
+  list: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13"/><path d="M8 12h13"/><path d="M8 18h13"/><path d="M3 6h.01"/><path d="M3 12h.01"/><path d="M3 18h.01"/></svg>',
+  chart: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>',
+  sliders: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 4H14"/><path d="M10 4H3"/><path d="M21 12H12"/><path d="M8 12H3"/><path d="M21 20H16"/><path d="M12 20H3"/><path d="M14 2v4"/><path d="M8 10v4"/><path d="M16 18v4"/></svg>',
+  pause: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>',
+  x: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>',
+  play: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 3 14 9-14 9V3z"/></svg>',
+  left: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>',
+  right: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>'
+};
+
+/* ── State ────────────────────────────────────────────── */
+let db = { quizzes: [], paused: null, settings: { correction: true, shuffle: true, swipe: true, size: "M", theme: "system" } };
 let ui = { view: "home", sheet: null, quizId: null, pending: null, launch: { exam: false, shuffle: true, missedOnly: false }, detail: null };
 let ses = null;
 
@@ -43,9 +54,19 @@ function load() {
 const save = () => { try { localStorage.setItem(KEY, JSON.stringify(db)); } catch (_) {} };
 const quiz = (id) => db.quizzes.find((q) => q.id === id) || null;
 
+/* Thème : "light" | "dark" | "system". Le CSS fait le reste via [data-theme]. */
+function applyTheme() {
+  const t = db.settings.theme || "system";
+  document.documentElement.dataset.theme = t;
+  const dark = t === "dark" || (t === "system" && matchMedia("(prefers-color-scheme: dark)").matches);
+  const meta = document.querySelector('meta[name="theme-color"]');
+  if (meta) meta.content = dark ? "#1a1918" : "#f3f2f2";
+}
+
 /* Dotation : chaque fichier de exemples/index.json est installé une fois et une seule.
-   Ajouter un fichier au manifeste le livre aussi aux installations existantes ;
-   un QCM supprimé par l'utilisateur ne revient jamais. */
+   L'identité est portée par le QCM lui-même (champ seedFile), pas par un drapeau :
+   ajouter un fichier au manifeste le livre aux installations existantes,
+   et un QCM supprimé par l'utilisateur ne revient jamais. */
 const seenSeeds = () => { try { return JSON.parse(localStorage.getItem(SEEN) || "[]"); } catch (_) { return []; } };
 const rememberSeeds = (names) => { try { localStorage.setItem(SEEN, JSON.stringify([...new Set([...seenSeeds(), ...names])])); } catch (_) {} };
 
@@ -58,33 +79,34 @@ async function seed() {
   if (!Array.isArray(files) || !files.length) return;
   files = files.map(String);
 
-  /* Migration : une installée sous l'ancien drapeau a déjà reçu la dotation d'alors. */
-  if (localStorage.getItem(SEEDED) && !localStorage.getItem(SEEN)) {
-    rememberSeeds(db.quizzes.length ? files : []);
-  }
-
   const seen = seenSeeds();
-  const todo = files.filter((n) => !seen.includes(n));
+  const held = new Set(db.quizzes.map((q) => q.seedFile).filter(Boolean));
+  const signature = new Set(db.quizzes.map((q) => q.titre + "\u0000" + q.questions.length));
+  const todo = files.filter((n) => !seen.includes(n) && !held.has(n));
   if (!todo.length) return;
 
-  const loaded = [];
+  const nouveau = [];
   const installed = [];
   for (const name of todo) {
     const path = "exemples/" + encodeURIComponent(name);
     try {
       const r = await fetch(path, { cache: "no-store" });
       if (!r.ok) { console.warn("[QCM] exemple introuvable :", path, r.status); continue; }
-      loaded.push(...readPayload(await r.text(), name));
       installed.push(name);
+      readPayload(await r.text(), name).forEach(({ skipped, ...q }) => {
+        const sig = q.titre + "\u0000" + q.questions.length;
+        if (signature.has(sig)) return;           /* déjà dans la bibliothèque : on ne duplique pas */
+        signature.add(sig);
+        nouveau.push({ ...q, seedFile: name });
+      });
     } catch (e) { console.warn("[QCM] exemple illisible :", path, e.message); }
   }
-  if (!loaded.length) return;
 
-  const nouveau = loaded.map(({ skipped, ...q }) => q);
+  if (installed.length) rememberSeeds(installed);
+  if (!nouveau.length) return;
+
   const premier = !db.quizzes.length;
   db.quizzes = [...nouveau, ...db.quizzes];
-  rememberSeeds(installed);
-  try { localStorage.setItem(SEEDED, "1"); } catch (_) {}
   save();
   render();
   if (!premier) toast(nouveau.length > 1 ? nouveau.length + " nouveaux QCM ajoutés" : "Nouveau QCM ajouté : " + nouveau[0].titre);
@@ -293,6 +315,19 @@ function ring(value, size = 78) {
     </svg><span>${value === null || value === undefined ? "—" : value + " %"}</span></div>`;
 }
 
+function resumeBar() {
+  const p = db.paused;
+  if (!p || !quiz(p.quizId)) return "";
+  const q = quiz(p.quizId);
+  return `<div class="resume">
+    <div class="resume-t"><b>Session en pause</b><span>${esc(q.titre)} · question ${p.i + 1} sur ${p.order.length}</span></div>
+    <div class="resume-a">
+      <button class="btn btn-auto" data-act="resume">${I.play}<span>Reprendre</span></button>
+      <button class="nav-ico" data-act="dropPaused" aria-label="Abandonner la session en pause" title="Abandonner">${I.x}</button>
+    </div>
+  </div>`;
+}
+
 function viewHome() {
   if (!db.quizzes.length) {
     return `<div class="screen">
@@ -321,9 +356,9 @@ function viewHome() {
       <div><div class="kicker">Réviseur de QCM</div><h1 class="h-xl" style="margin-top:9px">Mes QCM</h1></div>
       <span style="font:800 15px/1 var(--head);color:var(--n-700)">${o.played ? o.pct + " %" : "—"}</span>
     </div></div>
-    <div class="scroll"><div class="grid">${cells}
+    <div class="scroll">${resumeBar()}<div class="grid">${cells}
       <button class="cell cell-add" data-act="import">+ Importer<br>un fichier .json</button>
-    </div><p class="hint" style="padding:18px 20px 26px">Hors-ligne. Les QCM importés restent sur l'appareil.</p></div>
+    </div></div>
   </div>`;
 }
 
@@ -343,10 +378,16 @@ function viewSession() {
   const label = !done
     ? (ses.picks.length ? "Valider " + [...ses.picks].sort().map(letter).join(", ") : "Valider")
     : (ses.i >= ses.order.length - 1 ? "Voir mon bilan" : "Question suivante");
+  const last = ses.i >= ses.order.length - 1;
   return `<div class="screen">
+    <div class="q-bar">
+      <button class="q-ico" data-act="pause" aria-label="Mettre la session en pause" title="Mettre en pause">${I.pause}</button>
+      <span class="q-mode">${ses.exam ? "Mode examen" : "Entraînement"}</span>
+      <button class="q-ico" data-act="quit" aria-label="Quitter la session" title="Quitter">${I.x}</button>
+    </div>
     <div class="q-top">
       <div class="q-num">${String(ses.i + 1).padStart(2, "0")}</div>
-      <div class="q-meta">sur ${String(ses.order.length).padStart(2, "0")}<br>${ses.exam ? "Mode examen" : "Entraînement"}
+      <div class="q-meta">sur ${String(ses.order.length).padStart(2, "0")}
         <div class="bar" style="margin-top:8px;width:150px;margin-left:auto"><i style="width:${((ses.i + (done ? 1 : 0)) / ses.order.length) * 100}%"></i></div>
       </div>
     </div>
@@ -358,12 +399,14 @@ function viewSession() {
         <div class="opts">${opts}</div>
         ${done ? `<div class="verdict${juste ? "" : " bad"}"><div class="verdict-t">${juste ? "Bonne réponse" : "Réponse incorrecte"}</div>
           <p>${juste ? "" : "Attendu : " + esc(cur.rep.map((i) => cur.props[i]).join(" ; ")) + ". "}${esc(cur.expl)}</p></div>` : ""}
-        ${db.settings.swipe ? `<p class="swipe-hint">${done ? "Glisse vers la gauche pour continuer, vers la droite pour revoir." : "Glisse vers la droite pour revoir la question précédente."}</p>` : ""}
       </div>
     </div>
     <div class="foot">
-      <button class="btn${!done && !ses.picks.length ? "" : done ? " btn-ink" : ""}" data-act="${done ? "next" : "validate"}"${!done && !ses.picks.length ? " disabled" : ""}>${label}</button>
-      <button class="btn btn-ghost" data-act="home">Arrêter la session</button>
+      <div class="q-nav">
+        <button class="nav-ico" data-act="back" aria-label="Question précédente" title="Refaire la précédente"${ses.i === 0 ? " disabled" : ""}>${I.left}</button>
+        <button class="btn${!done && !ses.picks.length ? "" : done ? " btn-ink" : ""}" data-act="${done ? "next" : "validate"}"${!done && !ses.picks.length ? " disabled" : ""}>${label}</button>
+        <button class="nav-ico" data-act="skip" aria-label="${last ? "Terminer la session" : "Passer la question"}" title="${last ? "Terminer" : "Passer"}">${I.right}</button>
+      </div>
     </div>
   </div>`;
 }
@@ -431,11 +474,15 @@ function viewSettings() {
     <div class="hd"><div class="kicker">Réglages</div><h1 class="h-xl" style="margin-top:9px">Comment je révise</h1></div>
     <div class="scroll">
       <button class="check" data-act="set" data-k="correction"><span class="box${s.correction ? " on" : ""}">${s.correction ? "✓" : ""}</span>
-        <span><span class="check-t">Correction immédiate</span><span class="check-s">Désactivé = mode examen par défaut</span></span></button>
+        <span><span class="check-t">Correction immédiate</span></span></button>
       <button class="check" data-act="set" data-k="shuffle"><span class="box${s.shuffle ? " on" : ""}">${s.shuffle ? "✓" : ""}</span>
         <span><span class="check-t">Mélanger les questions</span></span></button>
-      <button class="check" data-act="set" data-k="swipe"><span class="box${s.swipe ? " on" : ""}">${s.swipe ? "✓" : ""}</span>
-        <span><span class="check-t">Glisser pour changer de question</span><span class="check-s">Vers la gauche après validation, vers la droite pour revoir</span></span></button>
+      <div style="padding:16px 20px;border-bottom:1px solid var(--n-300)">
+        <div class="check-t">Thème</div>
+        <div class="seg" style="margin-top:10px">
+          ${[["light", "Clair"], ["dark", "Sombre"], ["system", "Système"]].map(([k, l]) => `<button data-act="theme" data-k="${k}" class="${(s.theme || "system") === k ? "on" : ""}">${l}</button>`).join("")}
+        </div>
+      </div>
       <div style="padding:16px 20px;border-bottom:1px solid var(--n-300)">
         <div class="check-t">Taille du texte</div>
         <div class="seg" style="margin-top:10px">
@@ -445,7 +492,6 @@ function viewSettings() {
       <button class="row" data-act="export">Exporter tous mes QCM</button>
       <button class="row" data-act="reseed">Recharger les QCM fournis</button>
       <button class="row danger" data-act="wipe">Effacer mes données</button>
-      <p class="hint" style="padding:18px 20px">Version 1.0 — aucune donnée ne quitte l'appareil.</p>
     </div>
     <div class="foot desktop-only"><button class="btn btn-ghost" data-act="home">Revenir à la liste</button></div>
   </div>`;
@@ -481,7 +527,7 @@ function sheetLaunch() {
       <div style="flex:0 0 auto">${ring(q.best)}<div class="ring-cap">Meilleur score</div></div>
     </div>
     <button class="check" style="margin-top:18px;border-top:1px solid var(--n-300);padding-left:0;padding-right:0" data-act="opt" data-k="exam">
-      <span class="box${l.exam ? " on" : ""}">${l.exam ? "✓" : ""}</span><span><span class="check-t">Mode examen</span><span class="check-s">Aucun retour avant la fin</span></span></button>
+      <span class="box${l.exam ? " on" : ""}">${l.exam ? "✓" : ""}</span><span><span class="check-t">Mode examen</span></span></button>
     <button class="check" style="padding-left:0;padding-right:0" data-act="opt" data-k="shuffle">
       <span class="box${l.shuffle ? " on" : ""}">${l.shuffle ? "✓" : ""}</span><span><span class="check-t">Mélanger les questions</span></span></button>
     <button class="check" style="padding-left:0;padding-right:0" data-act="opt" data-k="missedOnly"${missed ? "" : " disabled"}>
@@ -505,7 +551,7 @@ function paneList() {
     const hot = (q.missed || []).length >= 3;
     const cls = q.id === (ses ? ses.quizId : ui.quizId) ? " on" : "";
     return `<button class="list-row${cls}" data-act="launch" data-id="${q.id}">
-      <span><span class="cell-kicker" style="color:${hot ? "var(--accent)" : "var(--n-600)"}">${esc(hot ? "À reprendre" : q.matiere)}</span>
+      <span><span class="cell-kicker" style="color:${hot ? "var(--accent)" : "var(--n-700)"}">${esc(hot ? "À reprendre" : q.matiere)}</span>
         <span class="t" style="display:block;margin-top:6px">${esc(q.titre)}</span>
         <span class="s">${q.questions.length} questions${(q.missed || []).length ? " · " + q.missed.length + " à revoir" : ""}</span></span>
       <span class="v ${q.best === null ? "none" : q.best < 75 ? "low" : ""}">${q.best === null ? "—" : q.best + " %"}</span></button>`;
@@ -515,8 +561,8 @@ function paneList() {
     <div class="scroll">${rows || `<p class="hint" style="padding:18px 20px">Aucun QCM importé.</p>`}</div>
     <div style="border-top:2px solid var(--ink);padding:14px 20px"><button class="btn" data-act="import">Importer un fichier</button></div>
     <div style="display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--n-300)">
-      <button class="tabbar-like ${ui.view === "stats" ? "on" : ""}" data-act="stats" style="padding:13px 14px;text-align:left;background:none;border:0;border-right:1px solid var(--n-300);font:${ui.view === "stats" ? 700 : 600} 11.5px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;color:${ui.view === "stats" ? "var(--ink)" : "var(--n-600)"};cursor:pointer">Progression</button>
-      <button data-act="settings" style="padding:13px 14px;text-align:left;background:none;border:0;font:${ui.view === "settings" ? 700 : 600} 11.5px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;color:${ui.view === "settings" ? "var(--ink)" : "var(--n-600)"};cursor:pointer">Réglages</button>
+      <button class="tabbar-like ${ui.view === "stats" ? "on" : ""}" data-act="stats" style="padding:13px 14px;text-align:left;background:none;border:0;border-right:1px solid var(--n-300);font:${ui.view === "stats" ? 700 : 600} 11.5px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;color:${ui.view === "stats" ? "var(--ink)" : "var(--n-700)"};cursor:pointer">Progression</button>
+      <button data-act="settings" style="padding:13px 14px;text-align:left;background:none;border:0;font:${ui.view === "settings" ? 700 : 600} 11.5px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;color:${ui.view === "settings" ? "var(--ink)" : "var(--n-700)"};cursor:pointer">Réglages</button>
     </div>`;
 }
 
@@ -551,6 +597,7 @@ function viewDesktopHome() {
   return `<div class="screen">
     <div class="hd"><div class="kicker">Réviseur de QCM</div><h1 class="h-xl" style="margin-top:9px">${nb ? "Choisis un QCM à gauche" : "Importe ton premier QCM"}</h1></div>
     <div class="scroll"><div style="padding:24px 36px 32px;max-width:64ch;display:flex;flex-direction:column;gap:18px">
+      ${resumeBar()}
       <p style="font:400 14px/1.6 var(--body);color:var(--n-800)">${nb
         ? "La colonne de gauche liste tes QCM et leur meilleur score. Ouvre-en un pour régler la session — mode examen, mélange, reprise des seules questions ratées."
         : "Demande un QCM à Claude au format du réviseur, enregistre sa réponse en fichier .json, puis dépose-le ici. Tout reste sur cet appareil."}</p>
@@ -568,40 +615,50 @@ function viewDesktopHome() {
   </div>`;
 }
 
+/* Render ─────────────────────────────────────────────────────────── */
+let lastMode = null;
+
 function render() {
+  lastMode = isDesktop();
   if ((ui.view === "session" || ui.view === "results") && (!ses || !quiz(ses.quizId))) ui.view = "home";
+  /* L'accueil existe en deux mises en page : on émet les deux et c'est le CSS qui tranche,
+     pour qu'aucun changement de largeur n'exige un nouveau rendu. */
   const main = ui.view === "session" ? viewSession()
     : ui.view === "results" ? viewResults()
     : ui.view === "stats" ? viewStats()
     : ui.view === "settings" ? viewSettings()
-    : isDesktop() ? viewDesktopHome() : viewHome();
+    : `<div class="mobile-only">${viewHome()}</div><div class="desktop-only">${viewDesktopHome()}</div>`;
 
   const sheet = ui.sheet === "import" ? sheetImport() : ui.sheet === "launch" ? sheetLaunch() : ui.sheet === "format" ? sheetFormat() : null;
-  const desktopSheetInline = isDesktop() && ui.sheet;
 
-  $("pane-main").innerHTML = desktopSheetInline
-    ? `<div class="screen"><div class="scroll"><div style="padding:26px 36px 32px;max-width:860px">${sheet}</div></div></div>`
+  $("pane-main").innerHTML = sheet
+    ? `<div class="desktop-only"><div class="screen"><div class="scroll"><div style="padding:26px 36px 32px;max-width:860px">${sheet}</div></div></div></div>`
+      + `<div class="mobile-only">${main}</div>`
     : main;
-  $("pane-list").innerHTML = isDesktop() ? paneList() : "";
-  $("pane-side").innerHTML = isDesktop() ? paneSide() : "";
+  $("pane-list").innerHTML = paneList();
+  $("pane-side").innerHTML = paneSide();
 
   document.querySelectorAll(".sheet-back").forEach((n) => n.remove());
-  if (sheet && !desktopSheetInline) {
+  if (sheet) {
     const back = document.createElement("div");
-    back.className = "sheet-back";
+    back.className = "sheet-back mobile-only";
     back.innerHTML = `<div class="sheet">${sheet}</div>`;
     back.addEventListener("pointerdown", (e) => { if (e.target === back) closeSheet(); });
     document.body.appendChild(back);
   }
 
+  const ICONS = { home: I.list, stats: I.chart, settings: I.sliders };
   const tabs = [["home", "QCM"], ["stats", "Progression"], ["settings", "Réglages"]];
   const inSession = ui.view === "session" || ui.view === "results";
-  $("tabbar").hidden = isDesktop() || inSession;
-  $("tabbar").innerHTML = isDesktop() || inSession ? "" : tabs
-    .map(([k, l]) => `<button data-act="${k === "home" ? "home" : k}" class="${ui.view === k ? "on" : ""}">${l}</button>`).join("");
+  $("tabbar").hidden = inSession;
+  $("tabbar").innerHTML = inSession ? "" : tabs
+    .map(([k, l]) => `<button data-act="${k}" class="${ui.view === k ? "on" : ""}" aria-label="${l}"${ui.view === k ? ' aria-current="page"' : ""}>${ICONS[k]}<span class="tab-label">${l}</span></button>`).join("");
 
   document.documentElement.style.fontSize = db.settings.size === "S" ? "15px" : db.settings.size === "L" ? "18px" : "16px";
   bindSwipe();
+  /* La largeur réelle n'est connue qu'après la mise en page : si le mode a changé entre-temps,
+     on refait un tour. Auto-terminant — la seconde passe trouve les deux valeurs égales. */
+  requestAnimationFrame(() => { if (isDesktop() !== lastMode) render(); });
 }
 
 let toastT;
@@ -664,22 +721,40 @@ document.addEventListener("click", (e) => {
     replay: replayWrong,
     set: () => { const k = el.dataset.k; db.settings[k] = !db.settings[k]; save(); render(); },
     size: () => { db.settings.size = el.dataset.k; save(); render(); },
+    theme: () => { db.settings.theme = el.dataset.k; save(); applyTheme(); render(); },
+    pause: () => {
+      db.paused = { ...ses, savedAt: Date.now() };
+      ses = null; ui.view = "home"; ui.detail = null; save(); render();
+      toast("Session mise en pause");
+    },
+    quit: () => {
+      if (!confirm("Quitter la session ? Les réponses de cette session seront perdues.")) return;
+      ses = null; db.paused = null; ui.view = "home"; ui.detail = null; save(); render();
+    },
+    resume: () => {
+      if (!db.paused || !quiz(db.paused.quizId)) return;
+      const { savedAt, ...s } = db.paused;
+      ses = s; db.paused = null; ui.view = "session"; save(); render();
+    },
+    dropPaused: () => { db.paused = null; save(); render(); },
+    back: () => back(),
+    skip: () => next(),
     copy: () => { navigator.clipboard?.writeText(PROMPT).then(() => toast("Phrase copiée")); },
     export: () => {
-      const blob = new Blob([JSON.stringify({ qcms: db.quizzes.map(({ id, best, history, missed, ...q }) => q) }, null, 2)], { type: "application/json" });
+      const blob = new Blob([JSON.stringify({ qcms: db.quizzes.map(({ id, best, history, missed, seedFile, ...q }) => q) }, null, 2)], { type: "application/json" });
       const a = document.createElement("a");
       a.href = URL.createObjectURL(blob); a.download = "mes-qcm.json"; a.click();
       URL.revokeObjectURL(a.href);
     },
     wipe: () => {
       if (!confirm("Effacer tous les QCM et l'historique de révision ?")) return;
+      rememberSeeds(db.quizzes.map((q) => q.seedFile).filter(Boolean));
       db = { quizzes: [], settings: db.settings }; ses = null; ui.view = "home";
-      try { localStorage.setItem(SEEDED, "1"); } catch (_) {}
       save(); render();
       toast("Données effacées");
     },
     reseed: () => {
-      try { localStorage.removeItem(SEEN); localStorage.removeItem(SEEDED); } catch (_) {}
+      try { localStorage.removeItem(SEEN); } catch (_) {}
       seed();
       toast("Recherche des QCM fournis…");
     }
@@ -712,13 +787,28 @@ document.addEventListener("keydown", (e) => {
     if (i < cur.props.length) return pick(i);
   }
   if (e.key === "Enter") return ses.validated ? next() : validate();
-  if (e.key === "ArrowRight") return ses.validated || ses.exam ? next() : null;
+  if (e.key === "ArrowRight") return next();
   if (e.key === "ArrowLeft") return back();
 });
 
 window.matchMedia("(min-width:900px)").addEventListener("change", render);
 
+/* Les événements de fenêtre ne suffisent pas : un cadre dimensionné par la mise en page
+   (iframe, vue partagée, fenêtre restaurée) n'en déclenche aucun, et le premier rendu
+   resterait figé dans le mauvais mode. On observe donc l'élément lui-même. */
+if (typeof ResizeObserver !== "undefined") {
+  new ResizeObserver(() => { if (isDesktop() !== lastMode) render(); }).observe(document.documentElement);
+}
+
+let resizeT;
+window.addEventListener("resize", () => {
+  clearTimeout(resizeT);
+  resizeT = setTimeout(() => { if (isDesktop() !== lastMode) render(); }, 120);
+});
+
 load();
+applyTheme();
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", applyTheme);
 render();
 seed();
 })();
