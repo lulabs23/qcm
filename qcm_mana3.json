@@ -1,0 +1,1434 @@
+{
+  "titre": "Gouvernance et performance — Thèmes 5 et 6",
+  "matiere": "Management d’activités (BUT GEA, semestre 1)",
+  "questions": [
+    {
+      "enonce": "Dans le dictionnaire, le sens d’origine du verbe « gouverner » renvoie :",
+      "propositions": [
+        "à l’exercice du pouvoir politique",
+        "à la direction d’un bateau à l’aide d’un gouvernail",
+        "à la tenue des comptes d’une collectivité",
+        "à la surveillance d’un territoire"
+      ],
+      "reponses": [1],
+      "explication": "La métaphore du gouvernail contient toute la notion : gouverner, ce n’est pas ramer (l’exécution), c’est tenir le cap et pouvoir corriger la trajectoire.",
+      "theme": "Définir la gouvernance"
+    },
+    {
+      "enonce": "Historiquement, le substantif « gouvernance » désignait :",
+      "propositions": [
+        "un synonyme de bailliage, en Flandre et en Artois",
+        "le conseil du roi",
+        "l’administration des finances royales",
+        "le pilotage d’un navire marchand"
+      ],
+      "reponses": [0],
+      "explication": "Le sens actuel du mot est un retour d’anglais (governance) : le mot français n’avait longtemps qu’un sens historique et administratif.",
+      "theme": "Définir la gouvernance"
+    },
+    {
+      "enonce": "Selon la Banque mondiale (1992), la gouvernance désigne :",
+      "propositions": [
+        "la manière dont le pouvoir est exercé dans la gestion des ressources économiques et sociales d’un pays en vue du développement",
+        "l’ensemble des mécanismes qui délimitent les pouvoirs des dirigeants",
+        "le système par lequel une organisation prend ses décisions",
+        "la mise en cohérence du fonctionnement avec le projet social"
+      ],
+      "reponses": [0],
+      "explication": "La notion est née dans un cadre macro et public : elle visait d’abord les États avant d’être transposée aux entreprises.",
+      "theme": "Définir la gouvernance"
+    },
+    {
+      "enonce": "Selon Charreaux (1997), le gouvernement d’entreprise désigne l’ensemble des mécanismes organisationnels qui ont pour effet :",
+      "propositions": [
+        "d’organiser la production et la coordination du travail",
+        "de délimiter les pouvoirs et d’influencer les décisions des dirigeants",
+        "de maximiser la valeur actionnariale",
+        "de répartir le capital entre les associés"
+      ],
+      "reponses": [1],
+      "explication": "Définition de référence en gestion. Trois mots comptent : mécanismes (des dispositifs, pas des intentions), délimiter les pouvoirs, décisions des dirigeants.",
+      "theme": "Définir la gouvernance"
+    },
+    {
+      "enonce": "La définition de Hoarau et Laville (2008) est particulièrement adaptée :",
+      "propositions": [
+        "aux sociétés cotées",
+        "aux associations et organisations portées par un projet social",
+        "aux administrations publiques",
+        "aux entreprises familiales"
+      ],
+      "reponses": [1],
+      "explication": "Elle définit la gouvernance comme la mise en cohérence du fonctionnement de l’organisation avec le projet social qui l’anime : le référentiel n’est plus le profit mais le projet.",
+      "theme": "Définir la gouvernance"
+    },
+    {
+      "enonce": "Selon l’ISO 26000, la gouvernance de l’organisation est :",
+      "propositions": [
+        "le système par lequel une organisation prend des décisions et les applique en vue d’atteindre ses objectifs",
+        "l’ensemble des organes sociaux prévus par la loi",
+        "la supervision exercée par les actionnaires majoritaires",
+        "la politique de responsabilité sociétale de l’entreprise"
+      ],
+      "reponses": [0],
+      "explication": "C’est la définition la plus large, valable pour toute organisation, quelle que soit sa forme juridique.",
+      "theme": "Définir la gouvernance"
+    },
+    {
+      "enonce": "Toujours selon l’ISO 26000, la gouvernance peut comprendre :",
+      "propositions": [
+        "des mécanismes formels reposant sur des processus et des structures définis",
+        "des mécanismes informels émergeant des valeurs et de la culture de l’organisation",
+        "des mécanismes imposés exclusivement par la loi",
+        "l’influence des personnes qui dirigent l’organisation"
+      ],
+      "reponses": [0, 1, 3],
+      "explication": "La gouvernance ne se réduit pas aux organes légaux : la culture et l’influence des dirigeants en font partie.",
+      "theme": "Définir la gouvernance"
+    },
+    {
+      "enonce": "La distinction entre management et gouvernance peut se résumer ainsi :",
+      "propositions": [
+        "le management encadre ceux qui gouvernent",
+        "le management dirige l’activité, la gouvernance encadre et contrôle ceux qui dirigent",
+        "les deux termes sont synonymes",
+        "la gouvernance concerne le court terme, le management le long terme"
+      ],
+      "reponses": [1],
+      "explication": "La gouvernance est, si l’on veut, le management des managers.",
+      "theme": "Définir la gouvernance"
+    },
+    {
+      "enonce": "Selon Jensen et Meckling (1976), une relation d’agence est un contrat par lequel :",
+      "propositions": [
+        "deux parties s’associent pour partager les bénéfices",
+        "une ou plusieurs personnes (le principal) engagent une autre personne (l’agent) pour accomplir un service en leur nom, ce qui implique une délégation du pouvoir de décision",
+        "un employeur rémunère un salarié en échange d’un travail",
+        "un mandataire social est désigné par l’assemblée générale"
+      ],
+      "reponses": [1],
+      "explication": "Deux éléments constitutifs : agir pour le compte d’autrui et recevoir une délégation de décision.",
+      "theme": "Théorie de l’agence"
+    },
+    {
+      "enonce": "Parmi les couples suivants, lesquels constituent une relation d’agence au sens du cours ?",
+      "propositions": [
+        "épargnant et banque",
+        "citoyen et représentant élu",
+        "franchiseur et franchisé",
+        "concurrent et concurrent"
+      ],
+      "reponses": [0, 1, 2],
+      "explication": "S’y ajoutent employeur / salarié et actionnaire / gestionnaire. Deux concurrents n’ont aucune relation de délégation.",
+      "theme": "Théorie de l’agence"
+    },
+    {
+      "enonce": "Il y a asymétrie d’information lorsque :",
+      "propositions": [
+        "l’information est trop abondante pour être traitée",
+        "certains participants à un échange disposent d’informations pertinentes que les autres n’ont pas",
+        "les deux parties ignorent les conséquences du contrat",
+        "l’information est volontairement falsifiée"
+      ],
+      "reponses": [1],
+      "explication": "Cette asymétrie est la source des deux problèmes majeurs de la relation d’agence : l’antisélection et l’aléa moral.",
+      "theme": "Théorie de l’agence"
+    },
+    {
+      "enonce": "L’antisélection (ou sélection adverse) intervient :",
+      "propositions": [
+        "après la signature du contrat, pendant son exécution",
+        "au moment de l’écriture du contrat, l’agent détenant une information privée",
+        "uniquement sur les marchés financiers",
+        "lorsque le principal surveille mal l’agent"
+      ],
+      "reponses": [1],
+      "explication": "L’antisélection porte sur une caractéristique cachée : ce que l’agent est, avant la signature.",
+      "theme": "Théorie de l’agence"
+    },
+    {
+      "enonce": "L’aléa moral désigne la situation dans laquelle :",
+      "propositions": [
+        "l’agent peut prendre des décisions non observables qui, du fait de la divergence d’objectifs, peuvent ne pas servir l’intérêt du principal",
+        "l’agent ment sur ses qualités avant la signature du contrat",
+        "le principal refuse de contracter",
+        "les deux parties ont des objectifs identiques"
+      ],
+      "reponses": [0],
+      "explication": "L’aléa moral porte sur une action cachée : ce que l’agent fait, après la signature.",
+      "theme": "Théorie de l’agence"
+    },
+    {
+      "enonce": "L’exemple du marché des voitures d’occasion illustre :",
+      "propositions": [
+        "l’aléa moral",
+        "l’antisélection",
+        "les coûts de surveillance",
+        "les pertes résiduelles"
+      ],
+      "reponses": [1],
+      "explication": "L’information pertinente est détenue par le vendeur et l’acheteur risque de choisir la voiture la moins sûre, faute d’informations suffisantes au moment du contrat.",
+      "theme": "Théorie de l’agence"
+    },
+    {
+      "enonce": "L’exemple de l’assurance maladie illustre :",
+      "propositions": [
+        "l’antisélection",
+        "l’aléa moral",
+        "les coûts d’obligation",
+        "la gouvernance partenariale"
+      ],
+      "reponses": [1],
+      "explication": "Les dépenses résultant de la transaction entre le patient et le médecin ne peuvent être contrôlées par l’assureur : ce sont des décisions non observables prises après le contrat.",
+      "theme": "Théorie de l’agence"
+    },
+    {
+      "enonce": "Les coûts de surveillance (monitoring) sont supportés :",
+      "propositions": [
+        "par le principal",
+        "par l’agent",
+        "à parts égales par les deux",
+        "par un tiers indépendant"
+      ],
+      "reponses": [0],
+      "explication": "Le principal engage ces dépenses pour contrôler l’agent : audit, reporting, conseil d’administration, systèmes d’information.",
+      "theme": "Théorie de l’agence"
+    },
+    {
+      "enonce": "Les coûts d’obligation (bonding) sont supportés :",
+      "propositions": [
+        "par le principal",
+        "par l’agent, pour se rendre crédible et rassurer le principal",
+        "par l’État",
+        "par les créanciers de l’entreprise"
+      ],
+      "reponses": [1],
+      "explication": "Garanties, certifications, engagements contractuels, communication volontaire : l’agent dépense pour prouver sa bonne foi.",
+      "theme": "Théorie de l’agence"
+    },
+    {
+      "enonce": "Les pertes résiduelles correspondent :",
+      "propositions": [
+        "aux pertes comptables de l’exercice",
+        "à l’écart qui subsiste malgré tout entre les décisions de l’agent et celles qui auraient maximisé l’intérêt du principal",
+        "au coût des audits externes",
+        "aux dividendes non distribués"
+      ],
+      "reponses": [1],
+      "explication": "Aucun dispositif de contrôle n’est parfait : la gouvernance ne supprime pas le problème d’agence, elle minimise le coût total des trois postes.",
+      "theme": "Théorie de l’agence"
+    },
+    {
+      "enonce": "Les trois catégories de coûts d’agence sont :",
+      "propositions": [
+        "coûts de surveillance, coûts d’obligation, pertes résiduelles",
+        "coûts fixes, coûts variables, coûts cachés",
+        "coûts de transaction, coûts d’information, coûts de comportement",
+        "coûts directs, coûts indirects, coûts d’opportunité"
+      ],
+      "reponses": [0],
+      "explication": "Attention à ne pas confondre avec les coûts de la théorie des coûts de transaction, qui relèvent d’un autre cadre théorique.",
+      "theme": "Théorie de l’agence"
+    },
+    {
+      "enonce": "Dans la relation actionnaires-gestionnaires, qui est l’agent ?",
+      "propositions": [
+        "les actionnaires",
+        "les gestionnaires (les dirigeants)",
+        "le commissaire aux comptes",
+        "les salariés"
+      ],
+      "reponses": [1],
+      "explication": "Les actionnaires sont le principal, les gestionnaires l’agent : ces derniers décident pour le compte des premiers.",
+      "theme": "Théorie de l’agence"
+    },
+    {
+      "enonce": "Parmi les mécanismes destinés à encadrer la relation actionnaires-gestionnaires, le cours cite :",
+      "propositions": [
+        "le rôle et la composition des conseils d’administration",
+        "la rémunération des dirigeants",
+        "la suppression du droit de vote des actionnaires minoritaires",
+        "le recours systématique à l’endettement"
+      ],
+      "reponses": [0, 1],
+      "explication": "Ces mécanismes ont un coût : ce sont précisément des coûts d’agence engagés pour réduire la divergence d’intérêts.",
+      "theme": "Théorie de l’agence"
+    },
+    {
+      "enonce": "Pourquoi les intérêts des actionnaires et des dirigeants divergent-ils ?",
+      "propositions": [
+        "parce que les dirigeants ne détiennent jamais d’actions",
+        "parce que l’actionnaire cherche la valorisation de son investissement, tandis que le dirigeant peut privilégier la croissance, son prestige, sa sécurité ou sa rémunération",
+        "parce que la loi leur interdit d’avoir les mêmes objectifs",
+        "parce que les dirigeants sont nommés par les salariés"
+      ],
+      "reponses": [1],
+      "explication": "C’est cette divergence d’objectifs, combinée à l’asymétrie d’information, qui rend l’aléa moral problématique.",
+      "theme": "Théorie de l’agence"
+    },
+    {
+      "enonce": "Le rôle de l’assemblée générale est :",
+      "propositions": [
+        "d’assurer la gestion courante de l’organisation",
+        "de contrôler les organes de direction et de voter les modifications de statuts et autres décisions exceptionnelles",
+        "de déterminer les orientations de l’activité au quotidien",
+        "d’étudier des questions particulières à la demande du conseil"
+      ],
+      "reponses": [1],
+      "explication": "L’AG est l’organe des propriétaires : elle contrôle et tranche l’exceptionnel, elle ne gère pas.",
+      "theme": "Organes de gouvernance"
+    },
+    {
+      "enonce": "Le rôle du conseil d’administration est :",
+      "propositions": [
+        "de déterminer les orientations de l’activité de la société et de veiller à leur mise en œuvre",
+        "d’assurer la gestion courante",
+        "de voter les comptes annuels à la place de l’AG",
+        "de représenter exclusivement les salariés"
+      ],
+      "reponses": [0],
+      "explication": "Le conseil oriente et surveille ; l’exécutif met en œuvre.",
+      "theme": "Organes de gouvernance"
+    },
+    {
+      "enonce": "La formule « conseil de surveillance et directoire » repose sur :",
+      "propositions": [
+        "la concentration des pouvoirs entre les mains du président",
+        "la séparation des fonctions de direction et de contrôle",
+        "la suppression de l’assemblée générale",
+        "la cogestion obligatoire avec les salariés"
+      ],
+      "reponses": [1],
+      "explication": "Le directoire dirige, le conseil de surveillance contrôle : cette formule dualiste répond mieux au problème d’agence, au prix d’une plus grande lourdeur.",
+      "theme": "Organes de gouvernance"
+    },
+    {
+      "enonce": "Les comités spécialisés (comité d’audit, des rémunérations…) sont :",
+      "propositions": [
+        "élus par l’assemblée générale",
+        "créés par le conseil pour étudier des questions ou sujets particuliers",
+        "imposés par le directeur général",
+        "composés exclusivement de salariés"
+      ],
+      "reponses": [1],
+      "explication": "Ce sont des émanations du conseil, destinées à instruire techniquement certains sujets avant délibération.",
+      "theme": "Organes de gouvernance"
+    },
+    {
+      "enonce": "Le directeur général (DG) est responsable :",
+      "propositions": [
+        "du contrôle des organes de direction",
+        "de la gestion courante de l’organisation",
+        "de la modification des statuts",
+        "de la nomination des administrateurs"
+      ],
+      "reponses": [1],
+      "explication": "Le DG dirige l’exécutif et le comité de direction : il est dans l’action quotidienne, pas dans le contrôle.",
+      "theme": "Organes de gouvernance"
+    },
+    {
+      "enonce": "La logique d’ensemble des organes de gouvernance peut se résumer ainsi :",
+      "propositions": [
+        "plus on descend dans les organes, plus on est dans le contrôle",
+        "plus on monte dans les organes, plus on est dans le contrôle ; plus on descend, plus on est dans l’action",
+        "tous les organes exercent les mêmes fonctions",
+        "le contrôle est confié exclusivement à des tiers externes"
+      ],
+      "reponses": [1],
+      "explication": "Les propriétaires contrôlent (AG), un organe collégial oriente et surveille (conseil), un exécutif gère au quotidien (DG).",
+      "theme": "Organes de gouvernance"
+    },
+    {
+      "enonce": "Combien de chapitres comportent les Principes de gouvernance d’entreprise du G20 et de l’OCDE (2023) ?",
+      "propositions": [
+        "quatre",
+        "cinq",
+        "six",
+        "dix"
+      ],
+      "reponses": [2],
+      "explication": "Fondements du cadre ; droits des actionnaires ; investisseurs institutionnels et marchés ; diffusion de l’information ; responsabilités du conseil ; durabilité et résilience.",
+      "theme": "Principes OCDE"
+    },
+    {
+      "enonce": "Selon le premier principe de l’OCDE, le cadre de gouvernance devrait concourir :",
+      "propositions": [
+        "à la transparence et à l’équité des marchés ainsi qu’à l’efficience de l’affectation des ressources",
+        "à la maximisation du cours de bourse",
+        "à la protection exclusive des actionnaires majoritaires",
+        "à la réduction de la fiscalité des entreprises"
+      ],
+      "reponses": [0],
+      "explication": "Il doit en outre être compatible avec l’état de droit et garantir une surveillance et une mise en application efficaces.",
+      "theme": "Principes OCDE"
+    },
+    {
+      "enonce": "Concernant les droits des actionnaires, le cadre de gouvernance devrait notamment :",
+      "propositions": [
+        "assurer un traitement équitable de tous les actionnaires, y compris les minoritaires et les étrangers",
+        "permettre à tout actionnaire d’obtenir réparation effective de toute violation de ses droits, à un coût raisonnable et sans délai excessif",
+        "réserver le droit de vote aux actionnaires nationaux",
+        "protéger et faciliter l’exercice des droits des actionnaires"
+      ],
+      "reponses": [0, 1, 3],
+      "explication": "La protection des minoritaires et des actionnaires étrangers est au cœur du principe d’équité de traitement.",
+      "theme": "Principes OCDE"
+    },
+    {
+      "enonce": "Le principe relatif aux investisseurs institutionnels et aux marchés boursiers vise à :",
+      "propositions": [
+        "limiter l’accès des investisseurs étrangers",
+        "instituer des incitations saines tout au long de la chaîne d’investissement",
+        "imposer la cotation de toutes les grandes entreprises",
+        "supprimer les intermédiaires financiers"
+      ],
+      "reponses": [1],
+      "explication": "Le fonctionnement des marchés boursiers doit lui-même contribuer à la bonne gouvernance d’entreprise.",
+      "theme": "Principes OCDE"
+    },
+    {
+      "enonce": "Au titre de la diffusion de l’information et de la transparence, les informations à publier portent notamment sur :",
+      "propositions": [
+        "la situation financière et les résultats",
+        "la durabilité",
+        "l’actionnariat et la gouvernance de l’entreprise",
+        "les rémunérations individuelles de tous les salariés"
+      ],
+      "reponses": [0, 1, 2],
+      "explication": "L’information doit être diffusée en temps opportun et être exacte sur tous les sujets significatifs. L’apparition de la durabilité dans cette liste est une nouveauté marquante.",
+      "theme": "Principes OCDE"
+    },
+    {
+      "enonce": "Le principe relatif aux responsabilités du conseil d’administration prévoit :",
+      "propositions": [
+        "le pilotage stratégique de l’entreprise et la surveillance effective de la gestion par le conseil",
+        "la responsabilité du conseil vis-à-vis de la société et de ses actionnaires",
+        "la gestion opérationnelle quotidienne par le conseil",
+        "la nomination du conseil par les pouvoirs publics"
+      ],
+      "reponses": [0, 1],
+      "explication": "Le conseil pilote et surveille, il ne gère pas : la gestion courante relève du directeur général.",
+      "theme": "Principes OCDE"
+    },
+    {
+      "enonce": "Le sixième principe de l’OCDE (2023) porte sur :",
+      "propositions": [
+        "la durabilité et la résilience",
+        "la rémunération des dirigeants",
+        "la lutte contre la corruption",
+        "la protection des salariés"
+      ],
+      "reponses": [0],
+      "explication": "Le cadre doit inciter les entreprises et leurs investisseurs à décider et à gérer leurs risques d’une façon qui contribue à la durabilité et à la résilience de l’entreprise.",
+      "theme": "Principes OCDE"
+    },
+    {
+      "enonce": "L’évolution majeure de la version 2023 des principes de l’OCDE est :",
+      "propositions": [
+        "la disparition des droits des actionnaires minoritaires",
+        "l’apparition de la durabilité comme principe autonome et son intégration dans l’information à publier",
+        "la suppression du rôle du conseil d’administration",
+        "la limitation du cadre aux seules sociétés cotées"
+      ],
+      "reponses": [1],
+      "explication": "La gouvernance n’est plus seulement un dispositif de protection des actionnaires : elle devient un vecteur de la transition.",
+      "theme": "Principes OCDE"
+    },
+    {
+      "enonce": "Quelle est la relation entre shareholders et stakeholders ?",
+      "propositions": [
+        "ce sont deux groupes qui s’opposent et s’excluent",
+        "les shareholders font partie des stakeholders",
+        "les stakeholders font partie des shareholders",
+        "les deux termes sont synonymes"
+      ],
+      "reponses": [1],
+      "explication": "Le rapport est un rapport d’inclusion. Ce qui s’oppose, ce sont deux modèles de gouvernance : actionnarial et partenarial.",
+      "theme": "Shareholders et stakeholders"
+    },
+    {
+      "enonce": "Les shareholders désignent :",
+      "propositions": [
+        "les actionnaires détenteurs d’actions ou les associés détenteurs de parts sociales",
+        "l’ensemble des parties prenantes de l’organisation",
+        "les créanciers de l’entreprise",
+        "les salariés actionnaires uniquement"
+      ],
+      "reponses": [0],
+      "explication": "Le terme vise les apporteurs de capitaux propres, quelle que soit la forme des titres détenus.",
+      "theme": "Shareholders et stakeholders"
+    },
+    {
+      "enonce": "L’approche descriptive de la théorie des parties prenantes vise à :",
+      "propositions": [
+        "comprendre les relations entre l’organisation et son environnement",
+        "intégrer les attentes des parties prenantes dans les décisions",
+        "adopter une posture éthique et désintéressée",
+        "hiérarchiser les parties prenantes selon leur pouvoir"
+      ],
+      "reponses": [0],
+      "explication": "Elle est explicative avant d’être prescriptive : elle décrit qui sont les parties prenantes et quelles relations elles entretiennent avec l’organisation.",
+      "theme": "Shareholders et stakeholders"
+    },
+    {
+      "enonce": "L’approche instrumentale de la théorie des parties prenantes consiste à :",
+      "propositions": [
+        "décrire les relations existantes sans porter de jugement",
+        "prendre en compte les attentes des parties prenantes dans les décisions",
+        "respecter les parties prenantes indépendamment de tout bénéfice attendu",
+        "réduire le nombre de parties prenantes consultées"
+      ],
+      "reponses": [1],
+      "explication": "Dans l’approche instrumentale, on respecte les parties prenantes parce que c’est efficace ; dans l’approche normative, parce que c’est juste.",
+      "theme": "Shareholders et stakeholders"
+    },
+    {
+      "enonce": "L’approche normative de la théorie des parties prenantes suppose :",
+      "propositions": [
+        "une posture éthique et désintéressée",
+        "un calcul de rentabilité des actions sociales",
+        "une description neutre des relations",
+        "l’application stricte des obligations légales"
+      ],
+      "reponses": [0],
+      "explication": "On retrouve la distinction wébérienne : rationalité en finalité (instrumentale) contre rationalité en valeur (normative).",
+      "theme": "Shareholders et stakeholders"
+    },
+    {
+      "enonce": "Qu’attendent principalement les actionnaires, qui apportent des fonds propres ?",
+      "propositions": [
+        "des dividendes, soit un retour sur investissement",
+        "le remboursement des sommes prêtées et des intérêts",
+        "le respect des délais de livraison",
+        "le paiement des cotisations sociales"
+      ],
+      "reponses": [0],
+      "explication": "Chaque partie prenante apporte une ressource et attend une contrepartie : c’est la logique d’échange du tableau des attentes.",
+      "theme": "Attentes des parties prenantes"
+    },
+    {
+      "enonce": "Les attentes des clients portent principalement sur :",
+      "propositions": [
+        "les prix, la qualité, la sécurité des biens et services et le respect des délais",
+        "la solvabilité de l’entreprise et le volume des ventes",
+        "les dividendes et la valorisation des titres",
+        "les conditions de travail et les avantages"
+      ],
+      "reponses": [0],
+      "explication": "Les clients contribuent à la réalisation des objectifs de chiffre d’affaires et attendent ces quatre contreparties.",
+      "theme": "Attentes des parties prenantes"
+    },
+    {
+      "enonce": "Les attentes des fournisseurs concernent :",
+      "propositions": [
+        "le prix, le volume des ventes et la solvabilité de l’entreprise",
+        "les dividendes et le retour sur investissement",
+        "la qualité et le respect des délais de livraison",
+        "les impôts, taxes et cotisations sociales"
+      ],
+      "reponses": [0],
+      "explication": "La solvabilité du client est pour le fournisseur une attente centrale : il supporte un risque de crédit.",
+      "theme": "Attentes des parties prenantes"
+    },
+    {
+      "enonce": "Que l’État et les collectivités locales apportent-ils à l’entreprise, selon le cours ?",
+      "propositions": [
+        "des fonds propres",
+        "des services publics : infrastructures, sécurité, éducation",
+        "des biens et services marchands",
+        "le financement de l’activité"
+      ],
+      "reponses": [1],
+      "explication": "En contrepartie, ils attendent le paiement des impôts, taxes et cotisations sociales.",
+      "theme": "Attentes des parties prenantes"
+    },
+    {
+      "enonce": "Les banques, qui assurent le financement de l’activité, attendent :",
+      "propositions": [
+        "des dividendes proportionnels aux résultats",
+        "le remboursement des sommes empruntées ainsi que le paiement d’intérêts dans les délais prévus",
+        "une participation au conseil d’administration",
+        "une baisse des prix de vente"
+      ],
+      "reponses": [1],
+      "explication": "À la différence des actionnaires, les banques attendent une rémunération contractuelle et non une part du résultat.",
+      "theme": "Attentes des parties prenantes"
+    },
+    {
+      "enonce": "Pourquoi la gouvernance est-elle rendue difficile par les attentes des parties prenantes ?",
+      "propositions": [
+        "parce que ces attentes sont toujours identiques",
+        "parce que ces attentes sont partiellement contradictoires et qu’il faut arbitrer entre elles",
+        "parce que les parties prenantes n’expriment jamais leurs attentes",
+        "parce que la loi interdit d’en tenir compte"
+      ],
+      "reponses": [1],
+      "explication": "Hausser les salaires et les dividendes, baisser les prix et payer les fournisseurs plus vite : gouverner, c’est arbitrer.",
+      "theme": "Attentes des parties prenantes"
+    },
+    {
+      "enonce": "Dans la gouvernance familiale :",
+      "propositions": [
+        "les managers sont plus puissants que les propriétaires",
+        "le management et la propriété restent intimement liés",
+        "toutes les parties prenantes participent aux décisions",
+        "les actionnaires externes imposent leurs objectifs"
+      ],
+      "reponses": [1],
+      "explication": "La gouvernance est exercée par une famille propriétaire : le problème d’agence classique est atténué, mais les enjeux de succession apparaissent.",
+      "theme": "Types de gouvernance"
+    },
+    {
+      "enonce": "Dans la gouvernance managériale :",
+      "propositions": [
+        "les actionnaires contrôlent étroitement les dirigeants",
+        "les managers sont plus puissants que les actionnaires et le management n’est pas forcément aligné avec leurs objectifs",
+        "les salariés détiennent la majorité du capital",
+        "l’État exerce une influence dominante"
+      ],
+      "reponses": [1],
+      "explication": "C’est la configuration où le problème d’agence atteint son maximum.",
+      "theme": "Types de gouvernance"
+    },
+    {
+      "enonce": "La gouvernance actionnariale se caractérise par le fait que :",
+      "propositions": [
+        "le management doit s’aligner prioritairement sur les objectifs des actionnaires, même si ceux-ci divergent de ceux de l’organisation",
+        "les parties prenantes non financières sont associées aux décisions",
+        "la propriété et la direction sont confondues",
+        "le pouvoir des managers est renforcé"
+      ],
+      "reponses": [0],
+      "explication": "La formulation du cours contient une critique implicite : un alignement sur l’actionnaire n’est pas automatiquement un alignement sur l’intérêt de l’entreprise.",
+      "theme": "Types de gouvernance"
+    },
+    {
+      "enonce": "La gouvernance partenariale est une gouvernance élargie qui intègre :",
+      "propositions": [
+        "les actionnaires",
+        "les salariés et les clients",
+        "les citoyens et, plus largement, toutes les parties prenantes",
+        "les seuls apporteurs de capitaux"
+      ],
+      "reponses": [0, 1, 2],
+      "explication": "Elle correspond à la conception qui sous-tend la performance globale et l’article 1833 du Code civil modifié en 2019.",
+      "theme": "Types de gouvernance"
+    },
+    {
+      "enonce": "Le mot « performance » tire son origine :",
+      "propositions": [
+        "du vocabulaire comptable",
+        "du vocabulaire du turf et du sport",
+        "du droit des sociétés",
+        "de la mécanique industrielle"
+      ],
+      "reponses": [1],
+      "explication": "D’où deux héritages : la performance est mesurée (chiffrée, comparée) et relative (on performe par rapport à quelque chose).",
+      "theme": "Définir la performance"
+    },
+    {
+      "enonce": "Selon Bourguignon (2000), la performance désigne :",
+      "propositions": [
+        "la maximisation du profit de l’entreprise",
+        "la réalisation des objectifs organisationnels, quelles que soient la nature et la variété de ces objectifs",
+        "le respect des obligations légales et réglementaires",
+        "la satisfaction des actionnaires"
+      ],
+      "reponses": [1],
+      "explication": "La définition est volontairement neutre quant à la nature des objectifs : elle s’applique à toute organisation.",
+      "theme": "Définir la performance"
+    },
+    {
+      "enonce": "Parmi les trois sens de la performance chez Bourguignon, lequel contient un jugement de valeur ?",
+      "propositions": [
+        "la performance est succès",
+        "la performance est résultat de l’action",
+        "la performance est action",
+        "aucun des trois"
+      ],
+      "reponses": [0],
+      "explication": "Le succès s’apprécie au regard d’un référentiel et du point de vue de l’observateur : c’est un jugement, contrairement au simple constat d’un résultat.",
+      "theme": "Définir la performance"
+    },
+    {
+      "enonce": "Le sens « la performance est action » signifie que :",
+      "propositions": [
+        "la performance est le résultat constaté à un instant donné",
+        "la performance est un processus, et non un résultat apparaissant à un moment donné dans le temps",
+        "la performance se mesure uniquement en fin d’exercice",
+        "la performance dépend du jugement de l’observateur"
+      ],
+      "reponses": [1],
+      "explication": "Bourguignon précise que ce sens est très rare en français : il vient de l’anglais to perform.",
+      "theme": "Définir la performance"
+    },
+    {
+      "enonce": "Pourquoi peut-on dire que la performance n’est jamais absolue ?",
+      "propositions": [
+        "parce qu’elle est toujours chiffrée",
+        "parce qu’elle suppose toujours un référentiel et un observateur",
+        "parce qu’elle varie d’une année sur l’autre",
+        "parce qu’elle dépend uniquement du secteur d’activité"
+      ],
+      "reponses": [1],
+      "explication": "C’est ce qui explique qu’actionnaires, salariés et ONG puissent porter trois jugements opposés sur la même entreprise.",
+      "theme": "Définir la performance"
+    },
+    {
+      "enonce": "La performance opérationnelle se définit par :",
+      "propositions": [
+        "le rapport entre les objectifs atteints et les moyens utilisés",
+        "le résultat net rapporté au chiffre d’affaires",
+        "la part de marché détenue",
+        "la satisfaction déclarée des clients"
+      ],
+      "reponses": [0],
+      "explication": "Elle reflète la capacité d’une entreprise ou d’une équipe à atteindre des objectifs avec une utilisation optimale des moyens sur une période donnée.",
+      "theme": "Performance opérationnelle"
+    },
+    {
+      "enonce": "L’efficacité est :",
+      "propositions": [
+        "l’obtention des meilleurs résultats possibles compte tenu des moyens mis en œuvre",
+        "l’atteinte des objectifs fixés par l’organisation",
+        "la réduction des coûts de production",
+        "le respect des délais de livraison"
+      ],
+      "reponses": [1],
+      "explication": "L’efficacité regarde le résultat ; l’efficience regarde le rapport résultat/moyens.",
+      "theme": "Performance opérationnelle"
+    },
+    {
+      "enonce": "L’efficience est :",
+      "propositions": [
+        "l’atteinte des objectifs fixés",
+        "l’obtention des meilleurs résultats possibles compte tenu des moyens mis en œuvre",
+        "la capacité à innover plus vite que les concurrents",
+        "la conformité aux normes de qualité"
+      ],
+      "reponses": [1],
+      "explication": "On peut être efficace sans être efficient : atteindre l’objectif au prix d’un gaspillage considérable.",
+      "theme": "Performance opérationnelle"
+    },
+    {
+      "enonce": "Une équipe qui atteint son objectif de production mais en consommant le double des ressources prévues est :",
+      "propositions": [
+        "efficace mais pas efficiente",
+        "efficiente mais pas efficace",
+        "ni efficace ni efficiente",
+        "performante"
+      ],
+      "reponses": [0],
+      "explication": "L’objectif est atteint (efficacité), mais le rapport résultat/moyens est mauvais (absence d’efficience).",
+      "theme": "Performance opérationnelle"
+    },
+    {
+      "enonce": "Une équipe qui utilise parfaitement ses ressources mais n’atteint pas la cible fixée est :",
+      "propositions": [
+        "efficace mais pas efficiente",
+        "efficiente mais pas efficace",
+        "performante",
+        "ni efficace ni efficiente"
+      ],
+      "reponses": [1],
+      "explication": "Seule la combinaison des deux constitue la performance opérationnelle.",
+      "theme": "Performance opérationnelle"
+    },
+    {
+      "enonce": "Les trois sommets du triangle d’or de la performance opérationnelle sont :",
+      "propositions": [
+        "qualité, coûts, délais",
+        "efficacité, efficience, effectivité",
+        "économique, social, environnemental",
+        "prix, innovation, image"
+      ],
+      "reponses": [0],
+      "explication": "Plus la surface couverte par le triangle est grande, plus la performance opérationnelle est élevée.",
+      "theme": "Performance opérationnelle"
+    },
+    {
+      "enonce": "Selon le schéma du triangle d’or, une production à la fois rapide et peu coûteuse sera :",
+      "propositions": [
+        "de bonne qualité",
+        "laide, c’est-à-dire de qualité dégradée",
+        "lente",
+        "utopique"
+      ],
+      "reponses": [1],
+      "explication": "Rapide + pas cher = laid ; rapide + qualité = cher ; pas cher + qualité = lent.",
+      "theme": "Performance opérationnelle"
+    },
+    {
+      "enonce": "Toujours selon ce schéma, viser simultanément la rapidité, le faible coût et la bonne qualité relève :",
+      "propositions": [
+        "de la performance globale",
+        "de l’utopie",
+        "de l’amélioration continue",
+        "de l’efficience"
+      ],
+      "reponses": [1],
+      "explication": "Le centre du diagramme porte le mot « utopie » : les trois dimensions sont antagonistes et appellent un arbitrage.",
+      "theme": "Performance opérationnelle"
+    },
+    {
+      "enonce": "Quel est l’enjeu managérial du triangle qualité-coûts-délais ?",
+      "propositions": [
+        "maximiser les trois dimensions simultanément",
+        "choisir quelle dimension sacrifier, l’amélioration continue consistant ensuite à déplacer la frontière de cet arbitrage",
+        "privilégier systématiquement la qualité",
+        "ignorer les délais au profit des coûts"
+      ],
+      "reponses": [1],
+      "explication": "Un manager ne choisit pas « la meilleure performance » dans l’absolu : il arbitre, puis cherche à repousser les limites de l’arbitrage.",
+      "theme": "Performance opérationnelle"
+    },
+    {
+      "enonce": "La compétitivité traduit :",
+      "propositions": [
+        "l’aptitude d’une organisation à faire face à la concurrence",
+        "la rentabilité des capitaux propres",
+        "la capacité à innover en permanence",
+        "le niveau de satisfaction des salariés"
+      ],
+      "reponses": [0],
+      "explication": "Elle se décline en compétitivité-prix et compétitivité hors-prix.",
+      "theme": "Performance économique"
+    },
+    {
+      "enonce": "La compétitivité-prix est la capacité :",
+      "propositions": [
+        "à imposer ses produits indépendamment de leur prix",
+        "à produire des biens et services à des prix inférieurs à ceux des concurrents, pour une qualité équivalente",
+        "à augmenter ses prix sans perdre de clients",
+        "à réduire ses coûts salariaux"
+      ],
+      "reponses": [1],
+      "explication": "La mention « pour une qualité équivalente » est essentielle : vendre moins cher un produit inférieur n’est pas de la compétitivité-prix.",
+      "theme": "Performance économique"
+    },
+    {
+      "enonce": "La compétitivité hors-prix (ou structurelle) est influencée notamment par :",
+      "propositions": [
+        "la qualité et l’innovation",
+        "le positionnement et l’image de marque",
+        "l’efficacité du réseau de commercialisation et des services après-vente",
+        "le coût unitaire de la main-d’œuvre"
+      ],
+      "reponses": [0, 1, 2],
+      "explication": "Le coût du travail joue sur la compétitivité-prix, pas sur la compétitivité hors-prix.",
+      "theme": "Performance économique"
+    },
+    {
+      "enonce": "Pourquoi la compétitivité hors-prix est-elle considérée comme plus protectrice que la compétitivité-prix ?",
+      "propositions": [
+        "parce qu’elle est plus facile à obtenir",
+        "parce qu’elle se construit lentement mais protège durablement, alors qu’un concurrent moins-disant peut toujours apparaître",
+        "parce qu’elle ne nécessite aucun investissement",
+        "parce qu’elle est garantie par la réglementation"
+      ],
+      "reponses": [1],
+      "explication": "La compétitivité-prix dépend en outre de facteurs souvent externes : coût du travail, taux de change, prix de l’énergie.",
+      "theme": "Performance économique"
+    },
+    {
+      "enonce": "Le ROI (Return On Investment) mesure :",
+      "propositions": [
+        "la rentabilité économique du capital utilisé par l’entreprise",
+        "la rentabilité financière des capitaux apportés par les propriétaires",
+        "la création de valeur pour l’actionnaire",
+        "la marge commerciale sur chaque vente"
+      ],
+      "reponses": [0],
+      "explication": "Le ROI raisonne sur l’ensemble des capitaux investis, sans distinguer leur origine : il mesure la performance de l’outil économique.",
+      "theme": "Performance financière"
+    },
+    {
+      "enonce": "Le ROE (Return On Equity) mesure :",
+      "propositions": [
+        "la rentabilité économique de l’ensemble des capitaux utilisés",
+        "la rentabilité financière des capitaux apportés par les propriétaires de l’entreprise",
+        "la création de valeur économique ajoutée",
+        "le rendement des actifs immobilisés"
+      ],
+      "reponses": [1],
+      "explication": "Le ROE porte sur les seuls capitaux propres : il est donc sensible à l’effet de levier de l’endettement.",
+      "theme": "Performance financière"
+    },
+    {
+      "enonce": "L’EVA (Economic Value Added) permet de mesurer :",
+      "propositions": [
+        "la valeur ajoutée comptable de l’exercice",
+        "la création de valeur pour l’actionnaire",
+        "le chiffre d’affaires par salarié",
+        "la rentabilité des investissements industriels"
+      ],
+      "reponses": [1],
+      "explication": "L’EVA compare le résultat dégagé au coût des capitaux employés : une entreprise peut afficher un bénéfice comptable et détruire de la valeur.",
+      "theme": "Performance financière"
+    },
+    {
+      "enonce": "Quelle différence essentielle sépare le ROI du ROE ?",
+      "propositions": [
+        "le ROI porte sur l’ensemble des capitaux investis, le ROE sur les seuls capitaux propres",
+        "le ROI est annuel, le ROE est pluriannuel",
+        "le ROI concerne les services, le ROE l’industrie",
+        "il n’y a aucune différence de périmètre"
+      ],
+      "reponses": [0],
+      "explication": "D’où la sensibilité du ROE à la structure de financement, que le ROI ignore.",
+      "theme": "Performance financière"
+    },
+    {
+      "enonce": "La performance sociale est définie comme :",
+      "propositions": [
+        "la traduction effective dans la pratique des objectifs sociaux d’une institution, conformément aux valeurs sociales reconnues",
+        "le montant des cotisations sociales versées",
+        "le niveau de satisfaction des salariés mesuré par enquête",
+        "le respect du droit du travail"
+      ],
+      "reponses": [0],
+      "explication": "Le mot « effective » est central : il s’agit de réaliser les objectifs sociaux affichés, et non de les proclamer.",
+      "theme": "Performance sociale et RSE"
+    },
+    {
+      "enonce": "La RSE est définie par la Commission européenne comme :",
+      "propositions": [
+        "l’obligation légale de publier un reporting extra-financier",
+        "l’intégration volontaire, par les entreprises, de préoccupations sociales et environnementales à leurs activités commerciales et leurs relations avec les parties prenantes",
+        "la contribution obligatoire des entreprises au financement de la transition écologique",
+        "l’ensemble des actions philanthropiques d’une entreprise"
+      ],
+      "reponses": [1],
+      "explication": "Deux mots à relever : « volontaire » (la RSE dépasse l’obligation légale) et « parties prenantes » (le lien avec la gouvernance).",
+      "theme": "Performance sociale et RSE"
+    },
+    {
+      "enonce": "Autrement dit, la RSE correspond à :",
+      "propositions": [
+        "la contribution des entreprises aux enjeux du développement durable",
+        "la seule réduction des émissions de gaz à effet de serre",
+        "la politique de ressources humaines de l’entreprise",
+        "le mécénat d’entreprise"
+      ],
+      "reponses": [0],
+      "explication": "Une entreprise qui pratique la RSE cherche un impact positif sur la société tout en restant économiquement viable.",
+      "theme": "Performance sociale et RSE"
+    },
+    {
+      "enonce": "Selon l’ISO 26000, la responsabilité sociétale se traduit par un comportement éthique et transparent qui :",
+      "propositions": [
+        "contribue au développement durable, y compris à la santé et au bien-être de la société",
+        "prend en compte les attentes des parties prenantes",
+        "respecte les lois en vigueur tout en étant cohérent avec les normes internationales de comportement",
+        "maximise le résultat distribuable aux actionnaires"
+      ],
+      "reponses": [0, 1, 2],
+      "explication": "La définition ajoute que cette responsabilité doit être intégrée dans l’ensemble de l’organisation et mise en œuvre dans ses relations.",
+      "theme": "Performance sociale et RSE"
+    },
+    {
+      "enonce": "Combien de questions centrales la norme ISO 26000 propose-t-elle pour définir le périmètre de la responsabilité sociétale ?",
+      "propositions": [
+        "cinq",
+        "six",
+        "sept",
+        "dix"
+      ],
+      "reponses": [2],
+      "explication": "Gouvernance de l’organisation ; droits de l’Homme ; relations et conditions de travail ; environnement ; loyauté des pratiques ; questions relatives aux consommateurs ; communautés et développement local.",
+      "theme": "Performance sociale et RSE"
+    },
+    {
+      "enonce": "Parmi les sept questions centrales de l’ISO 26000 figurent :",
+      "propositions": [
+        "la gouvernance de l’organisation",
+        "la loyauté des pratiques",
+        "les communautés et le développement local",
+        "la rentabilité financière"
+      ],
+      "reponses": [0, 1, 2],
+      "explication": "La rentabilité financière n’est pas une question centrale de la RSO. La gouvernance figure en tête de liste car elle conditionne toutes les autres.",
+      "theme": "Performance sociale et RSE"
+    },
+    {
+      "enonce": "Pourquoi la gouvernance figure-t-elle en première position des sept questions centrales ?",
+      "propositions": [
+        "par simple convention alphabétique",
+        "parce que c’est la seule question qui conditionne toutes les autres : sans système de décision capable de porter les engagements, les six autres restent déclaratives",
+        "parce que c’est la plus facile à mettre en œuvre",
+        "parce qu’elle est la seule obligatoire juridiquement"
+      ],
+      "reponses": [1],
+      "explication": "C’est le point de jonction entre les deux thèmes du cours.",
+      "theme": "Performance sociale et RSE"
+    },
+    {
+      "enonce": "Quelle est la différence entre RSE et RSO ?",
+      "propositions": [
+        "la RSO vise toute organisation, la RSE vise les entreprises",
+        "la RSE est obligatoire, la RSO est volontaire",
+        "la RSO ne concerne que l’environnement",
+        "les deux notions sont strictement identiques"
+      ],
+      "reponses": [0],
+      "explication": "C’est d’ailleurs pourquoi le sigle RSE se lit aujourd’hui plus volontiers « responsabilité sociétale des entreprises ».",
+      "theme": "Performance sociale et RSE"
+    },
+    {
+      "enonce": "La définition du développement durable comme « un développement qui répond aux besoins du présent sans compromettre la capacité des générations futures à répondre aux leurs » est due :",
+      "propositions": [
+        "au Sommet de la Terre de Rio en 1992",
+        "à Gro Harlem Brundtland, Premier ministre norvégien, en 1987",
+        "à l’OCDE en 2023",
+        "à la Commission européenne"
+      ],
+      "reponses": [1],
+      "explication": "Le rapport Brundtland (1987) précède de cinq ans le Sommet de Rio, qui officialisera la notion.",
+      "theme": "Développement durable et cadre international"
+    },
+    {
+      "enonce": "Qu’a officialisé le Sommet de la Terre de Rio en 1992 ?",
+      "propositions": [
+        "la notion de développement durable et celle des trois piliers",
+        "les 17 objectifs de développement durable",
+        "les dix principes du Pacte mondial",
+        "la norme ISO 26000"
+      ],
+      "reponses": [0],
+      "explication": "Les trois piliers : un développement économiquement efficace, socialement équitable et écologiquement soutenable.",
+      "theme": "Développement durable et cadre international"
+    },
+    {
+      "enonce": "Les trois piliers du développement durable sont :",
+      "propositions": [
+        "économie, écologie, social",
+        "gouvernance, éthique, transparence",
+        "qualité, coûts, délais",
+        "pouvoir, légitimité, urgence"
+      ],
+      "reponses": [0],
+      "explication": "Ce sont eux que l’on retrouve dans la performance globale et dans le triptyque ESG.",
+      "theme": "Développement durable et cadre international"
+    },
+    {
+      "enonce": "Combien d’Objectifs de Développement Durable l’ONU a-t-elle adoptés, et combien de cibles les accompagnent ?",
+      "propositions": [
+        "10 objectifs et 100 cibles",
+        "17 objectifs et 169 cibles",
+        "17 objectifs et 193 cibles",
+        "20 objectifs et 150 cibles"
+      ],
+      "reponses": [1],
+      "explication": "Chiffres à retenir : 17 – 169 – 2015 – 193 – 2030.",
+      "theme": "Développement durable et cadre international"
+    },
+    {
+      "enonce": "Les ODD ont été adoptés :",
+      "propositions": [
+        "en septembre 2015 par 193 pays aux Nations unies",
+        "en 1992 au Sommet de la Terre de Rio",
+        "en 1987 dans le rapport Brundtland",
+        "en 2023 par le G20 et l’OCDE"
+      ],
+      "reponses": [0],
+      "explication": "Ils constituent un plan d’action pour la paix, l’humanité, la planète et la prospérité, à l’horizon 2030.",
+      "theme": "Développement durable et cadre international"
+    },
+    {
+      "enonce": "Selon le cours, les ODD représentent :",
+      "propositions": [
+        "un cadre de référence pour agir et un outil de sensibilisation",
+        "une source d’opportunités économiques",
+        "un levier de collaboration multi-acteurs",
+        "une obligation juridique contraignante pour les entreprises"
+      ],
+      "reponses": [0, 1, 2],
+      "explication": "Les ODD ne sont pas contraignants juridiquement : ils constituent un cadre d’action partagé nécessitant des partenariats multi-acteurs.",
+      "theme": "Développement durable et cadre international"
+    },
+    {
+      "enonce": "Quelle est la mission du Pacte mondial des Nations unies (Global Compact) ?",
+      "propositions": [
+        "sanctionner les entreprises qui ne respectent pas les ODD",
+        "accompagner la mise en œuvre de l’Agenda 2030 et favoriser l’appropriation des ODD par le secteur privé",
+        "certifier les démarches RSE des entreprises",
+        "financer les projets de développement durable"
+      ],
+      "reponses": [1],
+      "explication": "Il propose un cadre d’engagement universel et volontaire, articulé autour de dix principes.",
+      "theme": "Développement durable et cadre international"
+    },
+    {
+      "enonce": "Les dix principes du Pacte mondial sont répartis en quatre domaines :",
+      "propositions": [
+        "droits de l’Homme, normes internationales du travail, environnement, lutte contre la corruption",
+        "économie, écologie, social, gouvernance",
+        "transparence, équité, durabilité, résilience",
+        "qualité, sécurité, environnement, éthique"
+      ],
+      "reponses": [0],
+      "explication": "Structure à mémoriser : 2 principes + 4 + 3 + 1 = 10.",
+      "theme": "Développement durable et cadre international"
+    },
+    {
+      "enonce": "Combien de principes du Pacte mondial relèvent des normes internationales du travail ?",
+      "propositions": [
+        "deux",
+        "trois",
+        "quatre",
+        "six"
+      ],
+      "reponses": [2],
+      "explication": "Liberté d’association et négociation collective ; élimination du travail forcé ; abolition du travail des enfants ; élimination des discriminations en matière d’emploi et de profession.",
+      "theme": "Développement durable et cadre international"
+    },
+    {
+      "enonce": "Parmi les principes du Pacte mondial relatifs à l’environnement figure :",
+      "propositions": [
+        "appliquer l’approche de précaution face aux problèmes touchant l’environnement",
+        "favoriser la mise au point et la diffusion de technologies respectueuses de l’environnement",
+        "compenser intégralement les émissions de carbone",
+        "prendre des initiatives tendant à promouvoir une plus grande responsabilité en matière d’environnement"
+      ],
+      "reponses": [0, 1, 3],
+      "explication": "La compensation carbone intégrale ne figure pas parmi les dix principes.",
+      "theme": "Développement durable et cadre international"
+    },
+    {
+      "enonce": "Les dix principes du Pacte mondial sont issus de quatre textes, parmi lesquels :",
+      "propositions": [
+        "la Déclaration universelle des droits de l’homme",
+        "la Déclaration de l’Organisation internationale du travail",
+        "la Convention des Nations unies contre la corruption",
+        "le Protocole de Kyoto"
+      ],
+      "reponses": [0, 1, 2],
+      "explication": "Le quatrième texte est la Déclaration de Rio sur l’environnement et le développement, et non le Protocole de Kyoto.",
+      "theme": "Développement durable et cadre international"
+    },
+    {
+      "enonce": "Selon Baret (2006), la performance globale est :",
+      "propositions": [
+        "l’agrégation des performances économiques, sociales et environnementales",
+        "la somme du résultat net et des investissements réalisés",
+        "la performance financière corrigée de l’inflation",
+        "la performance opérationnelle mesurée sur l’ensemble des sites"
+      ],
+      "reponses": [0],
+      "explication": "Elle correspond à la prise en compte de l’intérêt des parties prenantes et reprend les trois piliers de Rio.",
+      "theme": "Performance globale"
+    },
+    {
+      "enonce": "Quelle difficulté majeure soulève la mesure de la performance globale ?",
+      "propositions": [
+        "l’absence de données disponibles",
+        "l’agrégation de performances exprimées dans des unités hétérogènes (euros, accidents évités, tonnes de CO2)",
+        "l’interdiction légale de publier ces informations",
+        "le désintérêt des parties prenantes"
+      ],
+      "reponses": [1],
+      "explication": "C’est précisément l’objet des travaux sur le reporting extra-financier.",
+      "theme": "Performance globale"
+    },
+    {
+      "enonce": "Quel type de gouvernance la notion de performance globale suppose-t-elle ?",
+      "propositions": [
+        "une gouvernance actionnariale",
+        "une gouvernance partenariale",
+        "une gouvernance managériale",
+        "une gouvernance familiale"
+      ],
+      "reponses": [1],
+      "explication": "La performance globale correspond à la prise en compte de l’intérêt de toutes les parties prenantes, ce qui est la définition même de la gouvernance partenariale.",
+      "theme": "Performance globale"
+    },
+    {
+      "enonce": "Dans la version d’origine de Doran (1981), le A de SMART signifie :",
+      "propositions": [
+        "Achievable",
+        "Assignable",
+        "Ambitious",
+        "Accepted"
+      ],
+      "reponses": [1],
+      "explication": "Assignable : préciser qui le fera. Un objectif sans responsable désigné n’est pas un objectif, c’est un vœu. Les versions courantes ont glissé vers Achievable.",
+      "theme": "Piloter la performance"
+    },
+    {
+      "enonce": "Toujours dans la version d’origine, le R de SMART signifie :",
+      "propositions": [
+        "Relevant",
+        "Realistic",
+        "Rewarding",
+        "Reviewable"
+      ],
+      "reponses": [1],
+      "explication": "Realistic : indiquer quels résultats peuvent réellement être atteints compte tenu des ressources disponibles.",
+      "theme": "Piloter la performance"
+    },
+    {
+      "enonce": "Le M de SMART impose de :",
+      "propositions": [
+        "motiver les équipes concernées",
+        "quantifier l’objectif ou au moins proposer un indicateur de progression",
+        "mesurer la rentabilité de l’action",
+        "modéliser les scénarios possibles"
+      ],
+      "reponses": [1],
+      "explication": "Measurable : sans indicateur, il n’y a pas de pilotage possible.",
+      "theme": "Piloter la performance"
+    },
+    {
+      "enonce": "Le T de SMART impose de :",
+      "propositions": [
+        "définir l’équipe en charge",
+        "préciser quand le résultat peut être atteint",
+        "évaluer le coût total de l’objectif",
+        "tester l’objectif avant de le diffuser"
+      ],
+      "reponses": [1],
+      "explication": "Time-related : un objectif sans échéance ne se pilote pas davantage qu’un objectif sans responsable.",
+      "theme": "Piloter la performance"
+    },
+    {
+      "enonce": "Selon Derujinsky-Laguecir et al. (2011), les indicateurs de performance sont :",
+      "propositions": [
+        "des mesures quantifiables communément acceptées, qui doivent refléter les facteurs critiques de succès d’une organisation",
+        "des estimations qualitatives produites par la direction",
+        "les ratios financiers publiés en annexe des comptes",
+        "des objectifs chiffrés fixés par la hiérarchie"
+      ],
+      "reponses": [0],
+      "explication": "Deux conditions : être quantifiable et communément accepté, et refléter un facteur critique de succès.",
+      "theme": "Piloter la performance"
+    },
+    {
+      "enonce": "Les KPI (Key Performance Indicators) sont :",
+      "propositions": [
+        "l’ensemble des indicateurs produits par le système d’information",
+        "les indicateurs utilisés pour l’aide à la décision",
+        "les indicateurs imposés par la réglementation comptable",
+        "les indicateurs exclusivement financiers"
+      ],
+      "reponses": [1],
+      "explication": "Tous les indicateurs ne sont pas des KPI : seuls le sont ceux qui éclairent effectivement une décision.",
+      "theme": "Piloter la performance"
+    },
+    {
+      "enonce": "Quel est l’écueil classique dans le choix des indicateurs ?",
+      "propositions": [
+        "en choisir trop peu",
+        "mesurer ce qui est facile à mesurer plutôt que ce qui compte réellement",
+        "les actualiser trop souvent",
+        "les exprimer en pourcentage"
+      ],
+      "reponses": [1],
+      "explication": "L’indicateur doit refléter un facteur critique de succès, faute de quoi il détourne l’attention au lieu de l’orienter.",
+      "theme": "Piloter la performance"
+    },
+    {
+      "enonce": "Le tableau de bord poursuit un double objectif :",
+      "propositions": [
+        "prévenir les difficultés et aider à piloter en alertant sur les actions correctrices à mettre en place",
+        "informer les actionnaires et satisfaire l’administration fiscale",
+        "mesurer la rentabilité et calculer les primes",
+        "archiver les données et produire les comptes annuels"
+      ],
+      "reponses": [0],
+      "explication": "Il synthétise les points importants de l’activité, préalablement et soigneusement choisis.",
+      "theme": "Piloter la performance"
+    },
+    {
+      "enonce": "Le tableau de bord est présenté dans le cours comme :",
+      "propositions": [
+        "un document comptable obligatoire",
+        "un outil du management visuel",
+        "un rapport destiné aux parties prenantes externes",
+        "un outil de contrôle disciplinaire"
+      ],
+      "reponses": [1],
+      "explication": "Comme un tableau de bord automobile, il affiche le petit nombre d’informations nécessaires pour conduire, en temps réel, avec des alertes.",
+      "theme": "Piloter la performance"
+    },
+    {
+      "enonce": "La datavisualisation est définie comme :",
+      "propositions": [
+        "la mise en forme graphique des résultats comptables",
+        "un processus de traitement visuel des données à part entière",
+        "un logiciel de reporting",
+        "une étape finale de la production du tableau de bord"
+      ],
+      "reponses": [1],
+      "explication": "Le modèle de référence DataFlow en décrit chaque étape, de la collecte à la diffusion finale.",
+      "theme": "Datavisualisation"
+    },
+    {
+      "enonce": "Les quatre étapes du processus de datavisualisation selon le modèle DataFlow sont, dans l’ordre :",
+      "propositions": [
+        "collecte, transformation, structuration visuelle, vues finales",
+        "collecte, analyse, interprétation, diffusion",
+        "transformation, collecte, vues finales, structuration visuelle",
+        "extraction, stockage, modélisation, publication"
+      ],
+      "reponses": [0],
+      "explication": "Enchaînement à retenir : données brutes → tables → structures visuelles → vues → utilisateur.",
+      "theme": "Datavisualisation"
+    },
+    {
+      "enonce": "L’étape appelée « mapping », centre du modèle DataFlow, correspond à :",
+      "propositions": [
+        "la collecte des données",
+        "la consolidation des données dans des tables",
+        "la structuration visuelle, c’est-à-dire la mise en correspondance des tables avec des éléments visuels",
+        "la transformation des vues pour l’affichage final"
+      ],
+      "reponses": [2],
+      "explication": "C’est le moment où les données deviennent du visuel : le cœur méthodologique du processus.",
+      "theme": "Datavisualisation"
+    },
+    {
+      "enonce": "Le processus de datavisualisation est décrit par Arruabarrena (2015) comme :",
+      "propositions": [
+        "linéaire et séquentiel",
+        "non linéaire, paramétrable par l’utilisateur et faisant l’objet d’itérations successives",
+        "entièrement automatisé",
+        "réservé aux spécialistes du système d’information"
+      ],
+      "reponses": [1],
+      "explication": "Chaque étape peut être reprise et ajustée en fonction du rendu obtenu.",
+      "theme": "Datavisualisation"
+    },
+    {
+      "enonce": "Selon l’ISO 9001, l’amélioration continue est :",
+      "propositions": [
+        "une activité récurrente menée pour améliorer les performances",
+        "une refonte ponctuelle des processus de l’entreprise",
+        "une obligation réglementaire annuelle",
+        "une méthode de réduction des effectifs"
+      ],
+      "reponses": [0],
+      "explication": "C’est une pratique de gestion consistant à mettre en place des actions pour faire croître les performances et atteindre les objectifs.",
+      "theme": "Amélioration continue et PDCA"
+    },
+    {
+      "enonce": "Le cycle PDCA est également appelé :",
+      "propositions": [
+        "cycle de Shewhart ou roue de Deming",
+        "cycle de Taylor",
+        "roue de Fayol",
+        "boucle de Mintzberg"
+      ],
+      "reponses": [0],
+      "explication": "Deming (1994) le définit comme un diagramme de flux qui sert à apprendre quelque chose et à améliorer un produit ou un processus.",
+      "theme": "Amélioration continue et PDCA"
+    },
+    {
+      "enonce": "Les quatre étapes du cycle PDCA sont :",
+      "propositions": [
+        "Plan, Do, Check, Act",
+        "Prepare, Define, Control, Adjust",
+        "Plan, Deploy, Control, Audit",
+        "Prévoir, Décider, Contrôler, Ajuster"
+      ],
+      "reponses": [0],
+      "explication": "Planifier, réaliser, vérifier, agir — puis relancer un nouveau tour, d’où l’image de la roue.",
+      "theme": "Amélioration continue et PDCA"
+    },
+    {
+      "enonce": "Quelles évolutions Deming a-t-il proposées pour les étapes du PDCA ?",
+      "propositions": [
+        "Check devient Study",
+        "Act devient Adjust",
+        "Plan devient Prepare",
+        "Do devient Deploy"
+      ],
+      "reponses": [0, 1],
+      "explication": "Study insiste sur la compréhension des écarts plutôt que sur le simple constat de conformité ; Adjust sur l’ajustement plutôt que sur l’action isolée.",
+      "theme": "Amélioration continue et PDCA"
+    },
+    {
+      "enonce": "Pourquoi parle-t-on d’une « roue » de Deming ?",
+      "propositions": [
+        "parce que les quatre étapes sont indépendantes les unes des autres",
+        "parce que l’étape Act ne clôt pas la démarche mais relance un nouveau tour",
+        "parce que le cycle doit être parcouru une seule fois par an",
+        "parce que les étapes peuvent être réalisées dans n’importe quel ordre"
+      ],
+      "reponses": [1],
+      "explication": "On représente souvent la roue gravissant une pente, une cale — le système qualité — l’empêchant de redescendre.",
+      "theme": "Amélioration continue et PDCA"
+    },
+    {
+      "enonce": "Un dirigeant détient une information sur la santé réelle de l’entreprise qu’il ne transmet pas intégralement au conseil d’administration, et prend des décisions d’investissement qui servent son prestige personnel. De quoi s’agit-il ?",
+      "propositions": [
+        "d’une antisélection, car l’information est détenue avant le contrat",
+        "d’un aléa moral, car il s’agit de décisions non observables prises après la nomination et contraires à l’intérêt du principal",
+        "d’une perte résiduelle",
+        "d’un coût d’obligation"
+      ],
+      "reponses": [1],
+      "explication": "Le dirigeant est déjà en poste : le problème porte sur une action cachée, non sur une caractéristique cachée.",
+      "theme": "Questions transversales"
+    },
+    {
+      "enonce": "Une entreprise met en place un comité d’audit composé d’administrateurs indépendants. Comment analyser cette décision ?",
+      "propositions": [
+        "c’est un coût de surveillance supporté par le principal, destiné à réduire l’asymétrie d’information",
+        "c’est un coût d’obligation supporté par l’agent",
+        "c’est une perte résiduelle",
+        "c’est une mesure sans lien avec la théorie de l’agence"
+      ],
+      "reponses": [0],
+      "explication": "Le comité est créé par le conseil, émanation des propriétaires : la dépense engagée pour contrôler l’agent est un coût de surveillance.",
+      "theme": "Questions transversales"
+    },
+    {
+      "enonce": "Un atelier atteint son objectif de production dans les délais, mais avec un taux de rebut qui double le coût matière. Comment qualifier sa performance ?",
+      "propositions": [
+        "efficace mais pas efficient, donc opérationnellement non performant",
+        "efficient mais pas efficace",
+        "pleinement performant puisque l’objectif est atteint",
+        "ni efficace ni efficient"
+      ],
+      "reponses": [0],
+      "explication": "La performance opérationnelle exige la combinaison des deux : atteindre l’objectif ne suffit pas.",
+      "theme": "Questions transversales"
+    },
+    {
+      "enonce": "Une entreprise affiche un bénéfice comptable positif, mais sa rentabilité est inférieure à ce qu’exigent ses apporteurs de fonds. Quel indicateur révèle le problème ?",
+      "propositions": [
+        "le ROI",
+        "le ROE",
+        "l’EVA, qui compare le résultat au coût des capitaux employés",
+        "le chiffre d’affaires"
+      ],
+      "reponses": [2],
+      "explication": "Une entreprise peut dégager un bénéfice comptable et détruire de la valeur pour l’actionnaire : c’est précisément ce que l’EVA met en évidence.",
+      "theme": "Questions transversales"
+    },
+    {
+      "enonce": "Une direction publie une charte RSE ambitieuse, mais aucun organe n’est chargé d’en suivre la mise en œuvre. Quelle critique tirée du cours peut-on formuler ?",
+      "propositions": [
+        "la charte est illégale sans validation de l’assemblée générale",
+        "sans gouvernance capable de porter les engagements, les autres questions centrales de l’ISO 26000 restent déclaratives",
+        "la RSE est par nature une obligation réglementaire",
+        "la performance globale se mesure indépendamment de la gouvernance"
+      ],
+      "reponses": [1],
+      "explication": "C’est la raison pour laquelle la gouvernance est la première des sept questions centrales de la norme.",
+      "theme": "Questions transversales"
+    },
+    {
+      "enonce": "Un responsable fixe l’objectif suivant : « améliorer la satisfaction client cette année ». Que manque-t-il au regard des critères SMART d’origine ?",
+      "propositions": [
+        "un indicateur de mesure et un responsable désigné",
+        "uniquement une échéance",
+        "rien, l’objectif est complet",
+        "uniquement un budget"
+      ],
+      "reponses": [0],
+      "explication": "L’objectif est vaguement temporel mais ni mesurable (M), ni assignable (A) : sans indicateur ni responsable, il ne se pilote pas.",
+      "theme": "Questions transversales"
+    }
+  ]
+}
