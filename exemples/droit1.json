@@ -1,0 +1,895 @@
+{
+  "titre": "Semestre 1 - Environnement juridique",
+  "matiere": "Droit",
+  "questions": [
+    {
+      "enonce": "Selon le cours, le droit se définit comme :",
+      "propositions": ["L'ensemble des règles de conduite assorties d'une fonction contraignante de la part de l'État", "L'ensemble des règles morales partagées par une société", "L'ensemble des commandements religieux reconnus en France", "L'ensemble des usages propres à une profession"],
+      "reponses": [0],
+      "explication": "Le droit est l'ensemble des règles de conduite assorties d'une fonction contraignante de la part de l'État ; c'est cette contrainte étatique qui le distingue de la morale et de la religion.",
+      "theme": "Introduction au droit"
+    },
+    {
+      "enonce": "Sur quels critères repose la distinction entre le droit, la morale et la religion ? (plusieurs réponses possibles)",
+      "propositions": ["L'origine de la règle", "L'origine de la sanction", "Le nombre de personnes concernées", "L'ancienneté de la règle"],
+      "reponses": [0, 1],
+      "explication": "Dans le système juridique, la règle et la sanction proviennent de l'État ; pour la morale et la religion, elles n'en proviennent pas.",
+      "theme": "Introduction au droit"
+    },
+    {
+      "enonce": "Pour une règle morale, la sanction provient principalement :",
+      "propositions": ["De l'État", "D'un tribunal religieux", "De la conscience de l'individu ou du regard des autres", "Du Parlement"],
+      "reponses": [2],
+      "explication": "La morale n'est pas sanctionnée par l'État : la sanction vient de la conscience de chacun ou du regard d'autrui.",
+      "theme": "Introduction au droit"
+    },
+    {
+      "enonce": "Quelles caractéristiques font d'une norme une « règle » au sens du cours ? (plusieurs réponses possibles)",
+      "propositions": ["Elle est générale", "Elle est impersonnelle", "Elle vise des personnes précisément nommées", "Elle est permanente et stable"],
+      "reponses": [0, 1, 3],
+      "explication": "La règle est générale, impersonnelle, permanente et stable. Viser des personnes précisément nommées caractérise au contraire une norme individuelle.",
+      "theme": "Caractéristiques de la règle de droit"
+    },
+    {
+      "enonce": "Une règle relative au Président de la République ne concerne qu'une seule personne. Est-ce une règle de droit ?",
+      "propositions": ["Oui, car elle vise une fonction et s'appliquerait à toute personne qui l'occuperait", "Non, car elle n'est pas universelle", "Non, car elle n'est pas permanente", "Oui, mais seulement si elle a été adoptée par référendum"],
+      "reponses": [0],
+      "explication": "La règle reste impersonnelle : elle ne vise pas un individu déterminé mais toute personne occupant la fonction. La loi n'a pas besoin d'être universelle.",
+      "theme": "Caractéristiques de la règle de droit"
+    },
+    {
+      "enonce": "Une donation consentie à une personne précisément désignée est-elle une règle de droit ?",
+      "propositions": ["Oui, car elle produit des effets de droit", "Non, car elle n'est ni générale ni impersonnelle", "Oui, car elle est écrite", "Non, car elle n'est pas publiée au Journal officiel"],
+      "reponses": [1],
+      "explication": "Une donation vise une personne précisément désignée : elle ne présente pas le caractère général et impersonnel de la règle de droit.",
+      "theme": "Caractéristiques de la règle de droit"
+    },
+    {
+      "enonce": "Qu'est-ce qui fait qu'une règle est une règle de droit, et non une simple règle sociale ?",
+      "propositions": ["Elle est écrite", "Elle est contraignante (coercitive) : obligatoire et sanctionnée par l'État", "Elle est ancienne", "Elle s'applique à un grand nombre de personnes"],
+      "reponses": [1],
+      "explication": "Les quatre caractères de la règle (générale, impersonnelle, permanente, stable) ne suffisent pas : la règle de droit est en plus obligatoire et sanctionnée par l'État.",
+      "theme": "Caractéristiques de la règle de droit"
+    },
+    {
+      "enonce": "Que signifie l'État de droit selon le cours ? (plusieurs réponses possibles)",
+      "propositions": ["Il n'y a pas d'impunité", "Nul ne peut se faire justice à lui-même", "Le juge peut créer la loi", "Les victimes prononcent elles-mêmes les sanctions"],
+      "reponses": [0, 1],
+      "explication": "L'État de droit signifie que le droit est appliqué et que l'État sanctionne ses violations : pas d'impunité et pas de justice privée.",
+      "theme": "Caractéristiques de la règle de droit"
+    },
+    {
+      "enonce": "L'annulation d'un contrat ou la condamnation au paiement de dommages et intérêts est une sanction :",
+      "propositions": ["Pénale", "Civile", "Administrative", "Morale"],
+      "reponses": [1],
+      "explication": "Ce sont des sanctions civiles. Les sanctions pénales sont par exemple l'emprisonnement ou l'amende pénale ; les sanctions administratives, la suspension du permis.",
+      "theme": "Caractéristiques de la règle de droit"
+    },
+    {
+      "enonce": "Quelles sont les fonctions de la sanction ? (plusieurs réponses possibles)",
+      "propositions": ["Fonction punitive", "Fonction dissuasive", "Fonction législative", "Fonction interprétative"],
+      "reponses": [0, 1],
+      "explication": "La sanction punit l'auteur pour ses actes (fonction punitive) et vise à empêcher les autres de violer la règle (fonction dissuasive).",
+      "theme": "Caractéristiques de la règle de droit"
+    },
+    {
+      "enonce": "Le testament est :",
+      "propositions": ["Un contrat", "Un acte juridique unilatéral", "Une décision administrative individuelle", "Un règlement"],
+      "reponses": [1],
+      "explication": "Le testament résulte de la manifestation de volonté d'une seule personne : c'est un acte unilatéral, par opposition au contrat, qui suppose au moins deux volontés.",
+      "theme": "Caractéristiques de la règle de droit"
+    },
+    {
+      "enonce": "Une personne décède sans testament : ce sont les règles légales de succession qui s'appliquent. Ces règles sont :",
+      "propositions": ["Des règles supplétives de volonté", "Des normes individuelles", "Des règlements autonomes", "Des règles coutumières"],
+      "reponses": [0],
+      "explication": "Les règles supplétives s'appliquent à défaut de volonté exprimée : elles comblent le vide laissé par l'absence d'expression de volonté.",
+      "theme": "Caractéristiques de la règle de droit"
+    },
+    {
+      "enonce": "Dans un ordre juridique, les structures de contrôle et de sanction des règles produites correspondent au :",
+      "propositions": ["Pouvoir législatif", "Pouvoir exécutif", "Pouvoir judiciaire", "Pouvoir constituant"],
+      "reponses": [2],
+      "explication": "Production de la norme : pouvoir législatif ; exécution et application : pouvoir exécutif ; contrôle et sanction : pouvoir judiciaire.",
+      "theme": "L'ordre juridique"
+    },
+    {
+      "enonce": "Lesquelles de ces branches relèvent du droit privé ? (plusieurs réponses possibles)",
+      "propositions": ["Le droit civil", "Le droit du travail", "Le droit administratif", "Le droit des affaires (droit commercial)"],
+      "reponses": [0, 1, 3],
+      "explication": "Le droit privé régit les relations entre individus (droit civil, droit des affaires, droit du travail). Le droit administratif relève du droit public.",
+      "theme": "L'ordre juridique"
+    },
+    {
+      "enonce": "Pourquoi le droit pénal est-il présenté comme situé à la frontière entre le droit public et le droit privé ?",
+      "propositions": ["Parce qu'il est appliqué par le Conseil constitutionnel", "Parce que le procès met en jeu à la fois les intérêts collectifs (ministère public) et les intérêts individuels (partie civile)", "Parce qu'il ne s'applique qu'aux administrations", "Parce qu'il relève du droit de l'Union européenne"],
+      "reponses": [1],
+      "explication": "Le procureur de la République défend les intérêts collectifs, tandis que la partie civile, victime de l'infraction, peut demander réparation : le droit pénal touche aux droits collectifs et individuels.",
+      "theme": "L'ordre juridique"
+    },
+    {
+      "enonce": "Dans l'expression « droit positif », le terme « positif » s'oppose :",
+      "propositions": ["Au droit négatif", "Au droit ancien et au droit prospectif", "Au droit écrit", "Au droit européen"],
+      "reponses": [1],
+      "explication": "Le droit positif est le droit actuellement en vigueur, par opposition au droit ancien (qui n'est plus en vigueur) et au droit prospectif (qui n'est pas encore en vigueur).",
+      "theme": "Sources nationales du droit"
+    },
+    {
+      "enonce": "Quels textes font partie du bloc de constitutionnalité ? (plusieurs réponses possibles)",
+      "propositions": ["La Déclaration des droits de l'homme et du citoyen de 1789", "Le Préambule de la Constitution de 1946", "La Charte de l'environnement de 2004", "Le Code civil de 1804"],
+      "reponses": [0, 1, 2],
+      "explication": "Le Préambule de la Constitution de 1958 renvoie à la DDHC, au Préambule de 1946 et à la Charte de l'environnement, qui ont donc valeur constitutionnelle. Le Code civil n'en fait pas partie.",
+      "theme": "Sources nationales du droit"
+    },
+    {
+      "enonce": "Le Préambule de la Constitution de 1946 garantit notamment :",
+      "propositions": ["Des droits sociaux, comme le droit de grève et la liberté syndicale", "Le droit de vivre dans un environnement équilibré", "Le droit à un procès équitable prévu par l'article 6", "Les règles de succession"],
+      "reponses": [0],
+      "explication": "Le Préambule de 1946 consacre des droits sociaux et collectifs. Le droit à l'environnement vient de la Charte de 2004 ; le procès équitable, de la CEDH.",
+      "theme": "Sources nationales du droit"
+    },
+    {
+      "enonce": "Lequel de ces éléments est un objectif à valeur constitutionnelle (OVC) ?",
+      "propositions": ["L'accessibilité et l'intelligibilité de la loi", "Le droit de grève", "La liberté syndicale", "Le droit de propriété"],
+      "reponses": [0],
+      "explication": "Les OVC sont dégagés par le Conseil constitutionnel et doivent être pris en compte par le législateur ; l'accessibilité et l'intelligibilité de la loi en sont l'exemple du cours.",
+      "theme": "Sources nationales du droit"
+    },
+    {
+      "enonce": "Une loi qui a pour objet de modifier la Constitution est une :",
+      "propositions": ["Loi organique", "Loi constitutionnelle", "Loi ordinaire", "Loi de ratification"],
+      "reponses": [1],
+      "explication": "La loi constitutionnelle modifie la Constitution ; la loi organique la précise et la complète ; la loi ordinaire intervient dans le domaine du législateur.",
+      "theme": "Sources nationales du droit"
+    },
+    {
+      "enonce": "Quel article de la Constitution fixe le domaine réglementaire ?",
+      "propositions": ["L'article 34", "L'article 37", "L'article 38", "L'article 1240"],
+      "reponses": [1],
+      "explication": "L'article 34 fixe le domaine de la loi ; tout ce qui n'en relève pas appartient au domaine réglementaire, prévu par l'article 37.",
+      "theme": "Sources nationales du droit"
+    },
+    {
+      "enonce": "Un texte de loi dont l'initiative revient au Gouvernement s'appelle :",
+      "propositions": ["Une proposition de loi", "Un projet de loi", "Une ordonnance", "Un décret"],
+      "reponses": [1],
+      "explication": "Projet de loi : initiative du Gouvernement. Proposition de loi : initiative d'un député ou d'un sénateur.",
+      "theme": "Sources nationales du droit"
+    },
+    {
+      "enonce": "Par quelles autorités les arrêtés peuvent-ils être pris ? (plusieurs réponses possibles)",
+      "propositions": ["Les ministres", "Les préfets", "Les maires", "Le Parlement"],
+      "reponses": [0, 1, 2],
+      "explication": "Les arrêtés sont pris par différentes autorités administratives (ministres, préfets, maires). Le Parlement vote les lois ; il ne prend pas d'arrêtés.",
+      "theme": "Sources nationales du droit"
+    },
+    {
+      "enonce": "Un règlement pris dans une matière qui ne relève pas du domaine de la loi est :",
+      "propositions": ["Un règlement d'application", "Un règlement autonome", "Une ordonnance", "Une loi organique"],
+      "reponses": [1],
+      "explication": "Le règlement autonome intervient hors du domaine de la loi (article 37) ; le règlement d'application précise les modalités d'application d'une loi.",
+      "theme": "Sources nationales du droit"
+    },
+    {
+      "enonce": "Dans quel ordre se déroule la procédure des ordonnances ?",
+      "propositions": ["Ordonnance → loi d'habilitation → loi de ratification", "Loi d'habilitation → ordonnance → loi de ratification", "Loi de ratification → loi d'habilitation → ordonnance", "Décret → ordonnance → loi d'habilitation"],
+      "reponses": [1],
+      "explication": "Le Parlement habilite le Gouvernement par une loi d'habilitation, le Gouvernement adopte l'ordonnance, puis le Parlement la ratifie pour lui donner valeur législative.",
+      "theme": "Sources nationales du droit"
+    },
+    {
+      "enonce": "Quelles conditions un traité doit-il remplir pour s'appliquer en France ? (plusieurs réponses possibles)",
+      "propositions": ["Être signé par le Président de la République ou une personne compétente pour engager l'État", "Être ratifié", "Être publié au Journal officiel", "Être approuvé par référendum"],
+      "reponses": [0, 1, 2],
+      "explication": "Le traité doit être signé, ratifié (consentement officiel de l'État à être lié) et publié au Journal officiel. Un référendum n'est pas exigé.",
+      "theme": "Sources internationales du droit"
+    },
+    {
+      "enonce": "Les Conventions de Genève sont un exemple de traité :",
+      "propositions": ["Bilatéral", "Multilatéral", "Unilatéral", "Européen dérivé"],
+      "reponses": [1],
+      "explication": "Elles sont conclues entre plusieurs États. Les accords entre la France et le Saint-Siège sont, eux, un exemple de traité bilatéral.",
+      "theme": "Sources internationales du droit"
+    },
+    {
+      "enonce": "Quel droit est protégé par l'article 6 de la Convention européenne des droits de l'homme ?",
+      "propositions": ["La liberté d'expression", "Le droit à un procès équitable", "La liberté de pensée, de conscience et de religion", "Le droit à la liberté et à la sûreté"],
+      "reponses": [1],
+      "explication": "Article 5 : liberté et sûreté ; article 6 : procès équitable ; article 9 : liberté de pensée, de conscience et de religion ; article 10 : liberté d'expression.",
+      "theme": "Sources internationales du droit"
+    },
+    {
+      "enonce": "Que faut-il avoir fait avant de saisir la Cour européenne des droits de l'homme ?",
+      "propositions": ["Obtenir l'accord du Gouvernement", "Épuiser toutes les voies de recours internes", "Saisir le Conseil constitutionnel", "Payer une caution"],
+      "reponses": [1],
+      "explication": "Il faut d'abord avoir utilisé les recours disponibles dans son propre pays avant de pouvoir saisir la Cour.",
+      "theme": "Sources internationales du droit"
+    },
+    {
+      "enonce": "La procédure de requête interétatique devant la Cour européenne des droits de l'homme permet :",
+      "propositions": ["À un particulier de saisir la Cour contre son propre État", "À un État de saisir la Cour lorsqu'il estime qu'un autre État a violé la Convention", "À l'Union européenne de condamner un État membre", "Au Conseil constitutionnel de saisir la Cour"],
+      "reponses": [1],
+      "explication": "La requête interétatique permet à un État d'agir contre un autre État qui aurait violé les dispositions de la Convention.",
+      "theme": "Sources internationales du droit"
+    },
+    {
+      "enonce": "Quelle est la différence entre une directive et un règlement européen ?",
+      "propositions": ["Le règlement doit être transposé, pas la directive", "La directive fixe un objectif et doit être transposée en droit national ; le règlement s'applique directement", "Les deux doivent être ratifiés par référendum", "Il n'y a aucune différence"],
+      "reponses": [1],
+      "explication": "La directive laisse aux États le choix des moyens et nécessite une transposition ; le règlement est directement applicable dans tous les États membres.",
+      "theme": "Sources internationales du droit"
+    },
+    {
+      "enonce": "Le TUE et le TFUE font partie :",
+      "propositions": ["Du droit dérivé de l'Union européenne", "Du droit primaire de l'Union européenne", "Du bloc réglementaire", "Des sources non écrites"],
+      "reponses": [1],
+      "explication": "Les traités fondateurs (TUE, TFUE) constituent le droit primaire : ils donnent ses compétences à l'Union et créent ses institutions.",
+      "theme": "Sources internationales du droit"
+    },
+    {
+      "enonce": "Le RGPD est :",
+      "propositions": ["Une directive européenne", "Un règlement européen", "Une loi française", "Un traité bilatéral"],
+      "reponses": [1],
+      "explication": "Le RGPD est un règlement européen : il s'applique directement dans tous les États membres sans loi de transposition.",
+      "theme": "Sources internationales du droit"
+    },
+    {
+      "enonce": "Quels éléments sont nécessaires à la reconnaissance d'une coutume ?",
+      "propositions": ["Un élément matériel (pratique ancienne et constante) et un élément psychologique (sentiment d'obligation)", "Un vote du Parlement et une publication au Journal officiel", "Un écrit signé et un témoin", "Une décision du juge et un avis de la doctrine"],
+      "reponses": [0],
+      "explication": "La coutume suppose la répétition ancienne et constante d'une pratique, et le sentiment que cette pratique est obligatoire.",
+      "theme": "Sources non écrites du droit"
+    },
+    {
+      "enonce": "Lesquelles sont des sources non écrites indirectes du droit ? (plusieurs réponses possibles)",
+      "propositions": ["La jurisprudence", "La pratique", "La doctrine", "La coutume"],
+      "reponses": [0, 1, 2],
+      "explication": "Jurisprudence, pratique et doctrine influencent l'évolution du droit sans le créer directement. La coutume est une source non écrite directe, comme les PGD et les usages.",
+      "theme": "Sources non écrites du droit"
+    },
+    {
+      "enonce": "La doctrine désigne :",
+      "propositions": ["L'ensemble des décisions rendues par les juridictions", "L'ensemble des opinions et analyses émises par les théoriciens du droit", "Les façons de faire habituelles des notaires et avocats", "Les principes dégagés par le juge"],
+      "reponses": [1],
+      "explication": "La doctrine regroupe les analyses des professeurs et chercheurs en droit, qui peuvent être prises en compte par le législateur.",
+      "theme": "Sources non écrites du droit"
+    },
+    {
+      "enonce": "En cas de conflit entre deux normes de valeurs différentes :",
+      "propositions": ["La norme la plus récente l'emporte", "La norme supérieure l'emporte sur la norme inférieure", "Le juge choisit librement", "Les deux normes s'annulent"],
+      "reponses": [1],
+      "explication": "C'est le principe de la hiérarchie des normes : la norme supérieure prévaut.",
+      "theme": "Hiérarchie des normes et contrôles"
+    },
+    {
+      "enonce": "Que contient le bloc de légalité (3e échelon de la hiérarchie des normes) ?",
+      "propositions": ["Les décrets et les arrêtés", "Les lois ordinaires et les ordonnances ratifiées", "Les traités internationaux", "La Constitution et son Préambule"],
+      "reponses": [1],
+      "explication": "Ordre : bloc de constitutionnalité, bloc de conventionnalité, bloc de légalité (lois et ordonnances ratifiées), bloc réglementaire (décrets, arrêtés, ordonnances non ratifiées).",
+      "theme": "Hiérarchie des normes et contrôles"
+    },
+    {
+      "enonce": "Une ordonnance qui n'a pas encore été ratifiée appartient :",
+      "propositions": ["Au bloc de constitutionnalité", "Au bloc de conventionnalité", "Au bloc de légalité", "Au bloc réglementaire"],
+      "reponses": [3],
+      "explication": "Tant qu'elle n'est pas ratifiée, l'ordonnance a une valeur réglementaire ; elle n'acquiert valeur législative qu'avec la loi de ratification.",
+      "theme": "Hiérarchie des normes et contrôles"
+    },
+    {
+      "enonce": "Qui exerce le contrôle de légalité des actes réglementaires ?",
+      "propositions": ["Le Conseil constitutionnel", "Le juge administratif", "La Cour européenne des droits de l'homme", "Le Parlement"],
+      "reponses": [1],
+      "explication": "Le juge administratif vérifie qu'un acte administratif respecte les normes supérieures, en particulier la loi.",
+      "theme": "Hiérarchie des normes et contrôles"
+    },
+    {
+      "enonce": "Le contrôle de constitutionnalité des lois est exercé par :",
+      "propositions": ["Le Conseil d'État", "La Cour de cassation", "Le Conseil constitutionnel", "Le tribunal judiciaire"],
+      "reponses": [2],
+      "explication": "Le Conseil constitutionnel vérifie la conformité des lois au bloc de constitutionnalité.",
+      "theme": "Hiérarchie des normes et contrôles"
+    },
+    {
+      "enonce": "Pour un acte juridique (un contrat) conclu avant l'entrée en vigueur d'une loi nouvelle, le principe est :",
+      "propositions": ["L'application immédiate de la loi nouvelle", "La survie de la loi ancienne", "La nullité automatique du contrat", "Le choix libre du juge"],
+      "reponses": [1],
+      "explication": "Les effets de l'acte restent en principe soumis à la loi en vigueur au moment de sa conclusion.",
+      "theme": "Application de la loi dans le temps"
+    },
+    {
+      "enonce": "Dans quels cas la loi nouvelle peut-elle s'appliquer à un acte juridique conclu sous la loi ancienne ? (plusieurs réponses possibles)",
+      "propositions": ["Lorsque la loi nouvelle le prévoit explicitement", "Lorsqu'il existe un motif d'intérêt général particulièrement important, notamment l'urgence", "Lorsqu'il s'agit d'une loi interprétative", "Lorsque l'une des parties le souhaite"],
+      "reponses": [0, 1, 2],
+      "explication": "Ce sont les trois exceptions à la survie de la loi ancienne. La seule volonté d'une partie ne suffit pas.",
+      "theme": "Application de la loi dans le temps"
+    },
+    {
+      "enonce": "En principe, une loi entre en vigueur :",
+      "propositions": ["Le jour de son vote", "Le lendemain de sa publication au Journal officiel", "Un mois après sa promulgation", "Dès son dépôt au Parlement"],
+      "reponses": [1],
+      "explication": "Sauf date différente prévue par la loi, décret d'application nécessaire ou urgence, la loi entre en vigueur le lendemain de sa publication au JORF.",
+      "theme": "Application de la loi dans le temps"
+    },
+    {
+      "enonce": "La promulgation d'une loi est :",
+      "propositions": ["Le vote du texte par l'Assemblée nationale", "L'acte par lequel le Président de la République constate l'adoption de la loi et ordonne son exécution", "La publication de la loi au Journal officiel", "L'examen de la loi par le Conseil d'État"],
+      "reponses": [1],
+      "explication": "La promulgation intervient après l'adoption définitive et avant la publication au Journal officiel.",
+      "theme": "Application de la loi dans le temps"
+    },
+    {
+      "enonce": "La « summa divisio » désigne la distinction entre :",
+      "propositions": ["Le droit public et le droit privé", "Les personnes et les choses", "Les droits patrimoniaux et extrapatrimoniaux", "L'ordre judiciaire et l'ordre administratif"],
+      "reponses": [1],
+      "explication": "La summa divisio, « la plus grande des divisions », oppose les personnes, sujets de droit, et les choses.",
+      "theme": "Droits subjectifs et patrimoine"
+    },
+    {
+      "enonce": "Les animaux, en droit français :",
+      "propositions": ["Ont la personnalité juridique", "N'ont pas la personnalité juridique mais bénéficient d'une protection juridique particulière", "Sont des personnes morales", "Sont titulaires de droits subjectifs comme les personnes"],
+      "reponses": [1],
+      "explication": "Les animaux ne sont pas titulaires de droits subjectifs, mais le droit les protège de manière particulière.",
+      "theme": "Droits subjectifs et patrimoine"
+    },
+    {
+      "enonce": "Une personne qui ne possède aucun bien a-t-elle un patrimoine ?",
+      "propositions": ["Non, le patrimoine suppose au moins un bien", "Oui, car le patrimoine est le « sac » juridique et non uniquement son contenu", "Seulement si elle a des dettes", "Seulement à sa majorité"],
+      "reponses": [1],
+      "explication": "Le patrimoine est une universalité juridique, une enveloppe : toute personne en a un, même vide.",
+      "theme": "Droits subjectifs et patrimoine"
+    },
+    {
+      "enonce": "Quelles sont les règles relatives au patrimoine ? (plusieurs réponses possibles)",
+      "propositions": ["Toute personne a un patrimoine", "Seules les personnes peuvent avoir un patrimoine", "Chaque personne n'a en principe qu'un seul patrimoine", "Une personne a autant de patrimoines que de biens"],
+      "reponses": [0, 1, 2],
+      "explication": "Principes de nécessité, d'exclusivité et d'unité. Des distinctions restent possibles, par exemple pour une activité professionnelle.",
+      "theme": "Droits subjectifs et patrimoine"
+    },
+    {
+      "enonce": "Parmi les attributs du droit de propriété, l'abusus est :",
+      "propositions": ["Le droit d'utiliser le bien", "Le droit d'en percevoir les fruits", "Le droit de disposer du bien (le vendre, le détruire)", "Le droit de le louer"],
+      "reponses": [2],
+      "explication": "Usus : utiliser ; fructus : percevoir les fruits (par exemple les loyers) ; abusus : disposer du bien.",
+      "theme": "Droits patrimoniaux"
+    },
+    {
+      "enonce": "L'usufruitier dispose :",
+      "propositions": ["De l'usus, du fructus et de l'abusus", "De l'usus et du fructus, mais pas de l'abusus", "De l'abusus seulement", "Du fructus seulement"],
+      "reponses": [1],
+      "explication": "L'usufruitier peut utiliser le bien et en percevoir les revenus, mais il ne peut pas en disposer comme le propriétaire.",
+      "theme": "Droits patrimoniaux"
+    },
+    {
+      "enonce": "Quels éléments composent un droit personnel ? (plusieurs réponses possibles)",
+      "propositions": ["Un sujet actif : le créancier", "Un sujet passif : le débiteur", "Une prestation, objet de l'obligation", "Une chose sur laquelle s'exerce un pouvoir direct"],
+      "reponses": [0, 1, 2],
+      "explication": "Le droit personnel unit deux personnes autour d'une prestation. Le pouvoir direct sur une chose caractérise le droit réel.",
+      "theme": "Droits patrimoniaux"
+    },
+    {
+      "enonce": "Quels sont les caractères des droits patrimoniaux ? (plusieurs réponses possibles)",
+      "propositions": ["Cessibles et transmissibles", "Saisissables", "Prescriptibles", "Imprescriptibles"],
+      "reponses": [0, 1, 2],
+      "explication": "Les droits patrimoniaux peuvent passer d'un patrimoine à un autre, être saisis par les créanciers et être acquis ou perdus par l'écoulement du temps.",
+      "theme": "Droits patrimoniaux"
+    },
+    {
+      "enonce": "Une personne occupe un bien immobilier pendant une longue période et en devient propriétaire. Il s'agit :",
+      "propositions": ["D'une prescription extinctive", "D'une prescription acquisitive", "D'une donation", "D'un usufruit"],
+      "reponses": [1],
+      "explication": "La prescription acquisitive permet d'acquérir un droit par un usage prolongé ; la prescription extinctive fait perdre un droit non exercé.",
+      "theme": "Droits patrimoniaux"
+    },
+    {
+      "enonce": "Une atteinte au droit à l'image peut-elle donner lieu à indemnisation, alors que ce droit est extrapatrimonial ?",
+      "propositions": ["Non, car il n'a pas de valeur pécuniaire", "Oui, la violation d'un droit extrapatrimonial peut être réparée par des dommages et intérêts", "Seulement si la victime est une personne morale", "Seulement si l'atteinte est pénale"],
+      "reponses": [1],
+      "explication": "Les droits extrapatrimoniaux sont incessibles, insaisissables et imprescriptibles, mais leur violation peut être réparée par des dommages et intérêts.",
+      "theme": "Droits extrapatrimoniaux"
+    },
+    {
+      "enonce": "Lequel de ces droits est un droit de la personnalité ?",
+      "propositions": ["Le droit de propriété", "Le droit au respect de la vie privée", "Le droit de créance", "L'usufruit"],
+      "reponses": [1],
+      "explication": "Les droits de la personnalité ont pour objet la personne elle-même et ses attributs (vie privée, image, honneur).",
+      "theme": "Droits extrapatrimoniaux"
+    },
+    {
+      "enonce": "À quelle condition la personnalité juridique est-elle acquise à la naissance ?",
+      "propositions": ["L'enfant doit être déclaré à la mairie dans l'heure", "L'enfant doit être né vivant et viable", "L'enfant doit avoir la nationalité française", "Les parents doivent être mariés"],
+      "reponses": [1],
+      "explication": "Vivant : l'enfant a manifesté des signes de vie (respiration). Viable : il dispose des fonctions nécessaires à la vie.",
+      "theme": "La personne physique"
+    },
+    {
+      "enonce": "L'embryon et le fœtus :",
+      "propositions": ["Ont la personnalité juridique dès la conception", "N'ont pas la personnalité juridique mais bénéficient d'une protection particulière", "Sont des personnes morales", "N'ont aucune protection juridique"],
+      "reponses": [1],
+      "explication": "Ils ne sont pas des personnes juridiques, mais le droit les protège de manière particulière.",
+      "theme": "La personne physique"
+    },
+    {
+      "enonce": "Une personne disparaît lors du crash d'un avion et son corps n'est pas retrouvé. Quelle situation juridique s'applique ?",
+      "propositions": ["L'absence, avec un délai d'attente de plusieurs années", "La disparition : le décès peut être déclaré judiciairement sans attendre les délais de l'absence", "Aucune : la personne reste vivante juridiquement indéfiniment", "Le décès est automatique, sans jugement"],
+      "reponses": [1],
+      "explication": "La disparition concerne une personne dont le décès est très probable compte tenu des circonstances ; le décès peut alors être déclaré judiciairement sans les délais de l'absence.",
+      "theme": "La personne physique"
+    },
+    {
+      "enonce": "Quels éléments font partie de l'état civil d'une personne physique ? (plusieurs réponses possibles)",
+      "propositions": ["Le nom de famille", "La date et le lieu de naissance", "La nationalité", "Le montant de ses revenus"],
+      "reponses": [0, 1, 2],
+      "explication": "L'état civil comprend notamment le nom, les prénoms, la nationalité, le sexe, la date et le lieu de naissance et la situation familiale.",
+      "theme": "La personne physique"
+    },
+    {
+      "enonce": "Le domicile d'une personne physique est :",
+      "propositions": ["Chacune de ses résidences", "Le lieu où elle a son principal établissement", "Le lieu de sa naissance", "Le lieu où elle travaille"],
+      "reponses": [1],
+      "explication": "Une personne n'a en principe qu'un seul domicile, quel que soit le nombre de ses résidences.",
+      "theme": "La personne physique"
+    },
+    {
+      "enonce": "Le domicile d'un mineur est en principe :",
+      "propositions": ["Celui qu'il choisit librement", "Celui de ses parents (représentants légaux)", "Celui de son établissement scolaire", "La mairie de sa commune de naissance"],
+      "reponses": [1],
+      "explication": "Le domicile des mineurs est fixé par la loi : c'est celui de leurs représentants légaux.",
+      "theme": "La personne physique"
+    },
+    {
+      "enonce": "Lesquelles sont des personnes morales de droit privé ? (plusieurs réponses possibles)",
+      "propositions": ["Les sociétés", "Les associations", "Les syndicats", "Les communes"],
+      "reponses": [0, 1, 2],
+      "explication": "Sociétés, associations, syndicats et fondations sont de droit privé. Les communes, comme l'État et les établissements publics, sont de droit public.",
+      "theme": "La personne morale"
+    },
+    {
+      "enonce": "Une fondation est une personne morale qui repose sur :",
+      "propositions": ["Un groupement de salariés", "L'affectation de biens à une œuvre ou un intérêt général", "Une collectivité territoriale", "Un contrat entre deux commerçants"],
+      "reponses": [1],
+      "explication": "La fondation est un groupement de biens et non de personnes (exemple du cours : la Fondation Brigitte Bardot).",
+      "theme": "La personne morale"
+    },
+    {
+      "enonce": "Une société acquiert la personnalité juridique :",
+      "propositions": ["Dès la signature des statuts", "Lors de son immatriculation au registre du commerce et des sociétés (RCS)", "Lors de sa première vente", "Après un an d'activité"],
+      "reponses": [1],
+      "explication": "C'est l'immatriculation au RCS qui confère la personnalité juridique à la société.",
+      "theme": "La personne morale"
+    },
+    {
+      "enonce": "Pour une société, l'équivalent du domicile est :",
+      "propositions": ["Le nom commercial", "Le siège social", "La dénomination sociale", "Le lieu de résidence du gérant"],
+      "reponses": [1],
+      "explication": "La société s'identifie par sa dénomination sociale (à distinguer du nom commercial), sa nationalité et son siège social, qui tient lieu de domicile.",
+      "theme": "La personne morale"
+    },
+    {
+      "enonce": "Sur qui repose en principe la charge de la preuve ?",
+      "propositions": ["Sur le défendeur", "Sur le demandeur, celui qui réclame l'exécution d'une obligation", "Sur le juge", "Sur le procureur de la République"],
+      "reponses": [1],
+      "explication": "C'est la règle actori incumbit probatio : celui qui réclame doit prouver. Une fois cette preuve faite, le défendeur peut devoir prouver qu'il s'est acquitté de son obligation.",
+      "theme": "La preuve des droits subjectifs"
+    },
+    {
+      "enonce": "Une présomption irréfragable :",
+      "propositions": ["Peut être renversée par tout moyen", "Ne peut pas être combattue par une preuve contraire", "N'existe qu'en droit pénal", "Est toujours favorable au demandeur"],
+      "reponses": [1],
+      "explication": "Certaines présomptions sont irréfragables : aucune preuve contraire n'est admise.",
+      "theme": "La preuve des droits subjectifs"
+    },
+    {
+      "enonce": "Un acte authentique est :",
+      "propositions": ["Un acte rédigé et signé par les parties seules", "Un acte établi par un officier public, comme un notaire", "Un témoignage écrit", "Un aveu fait devant le juge"],
+      "reponses": [1],
+      "explication": "L'acte authentique est établi par un officier public dans les formes légales ; l'acte sous signature privée est rédigé et signé par les seules parties.",
+      "theme": "La preuve des droits subjectifs"
+    },
+    {
+      "enonce": "L'aveu judiciaire :",
+      "propositions": ["Peut être librement retiré par son auteur", "Est fait devant le juge et est en principe irrévocable", "Est fait en dehors de la présence du juge", "N'a aucune valeur probante"],
+      "reponses": [1],
+      "explication": "L'aveu judiciaire fait foi contre son auteur et est en principe irrévocable, contrairement à l'aveu extrajudiciaire.",
+      "theme": "La preuve des droits subjectifs"
+    },
+    {
+      "enonce": "Pour être retenus dans le cadre d'une preuve par indices, les indices doivent être :",
+      "propositions": ["Écrits, signés et datés", "Graves, précis et concordants", "Nombreux, anciens et publics", "Confirmés par un notaire"],
+      "reponses": [1],
+      "explication": "Le juge déduit un fait inconnu de faits connus ; les indices doivent être graves, précis et concordants, et le juge reste libre de les apprécier.",
+      "theme": "La preuve des droits subjectifs"
+    },
+    {
+      "enonce": "La preuve d'un fait juridique est :",
+      "propositions": ["Exclusivement écrite", "Libre, à condition que les preuves soient obtenues de manière licite et loyale", "Interdite", "Réservée à l'aveu"],
+      "reponses": [1],
+      "explication": "Les faits juridiques se prouvent par tout moyen, sans violer la loi pour obtenir la preuve. Les actes juridiques, eux, exigent en principe un écrit.",
+      "theme": "La preuve des droits subjectifs"
+    },
+    {
+      "enonce": "En dessous de quel montant l'écrit n'est-il pas exigé pour prouver un acte juridique ?",
+      "propositions": ["150 euros", "1 500 euros", "15 000 euros", "Aucun : l'écrit est toujours exigé"],
+      "reponses": [1],
+      "explication": "En raison de la faible valeur de l'acte, l'écrit n'est pas exigé pour les actes portant sur une somme inférieure à 1 500 euros.",
+      "theme": "La preuve des droits subjectifs"
+    },
+    {
+      "enonce": "Le Président de la République est élu :",
+      "propositions": ["Au suffrage universel indirect pour 7 ans", "Au suffrage universel direct pour 5 ans, et ne peut exercer plus de deux mandats consécutifs", "Par le Parlement pour 5 ans", "Au suffrage universel direct pour 6 ans"],
+      "reponses": [1],
+      "explication": "Le Président est élu au suffrage universel direct pour 5 ans, dans la limite de deux mandats consécutifs.",
+      "theme": "Institutions étatiques"
+    },
+    {
+      "enonce": "Lesquels sont des pouvoirs propres du Président de la République ? (plusieurs réponses possibles)",
+      "propositions": ["Nommer le Premier ministre", "Dissoudre l'Assemblée nationale", "Recourir au référendum législatif", "Voter les lois"],
+      "reponses": [0, 1, 2],
+      "explication": "Le Président nomme le Premier ministre, peut dissoudre l'Assemblée et recourir au référendum. Le vote des lois appartient au Parlement.",
+      "theme": "Institutions étatiques"
+    },
+    {
+      "enonce": "Le contreseing est :",
+      "propositions": ["Le vote d'une loi par les deux chambres", "La signature supplémentaire apposée sur un acte du Président, notamment par le Premier ministre", "La signature d'un traité par deux États", "L'approbation d'une ordonnance par le Parlement"],
+      "reponses": [1],
+      "explication": "Le contreseing est une seconde signature, notamment du Premier ministre, sur un acte présidentiel lorsque la Constitution le prévoit.",
+      "theme": "Institutions étatiques"
+    },
+    {
+      "enonce": "Quelle affirmation sur le Parlement est exacte ?",
+      "propositions": ["L'Assemblée nationale compte 577 députés élus au suffrage universel direct pour 5 ans", "Les sénateurs sont élus au suffrage universel direct pour 5 ans", "Le Parlement représente le pouvoir exécutif", "Le Sénat compte 577 sénateurs"],
+      "reponses": [0],
+      "explication": "Les 577 députés sont élus au suffrage universel direct pour 5 ans ; les sénateurs, au suffrage universel indirect pour 6 ans, notamment par des élus locaux.",
+      "theme": "Institutions étatiques"
+    },
+    {
+      "enonce": "Si l'Assemblée nationale et le Sénat ne parviennent pas à adopter un texte identique, on peut réunir :",
+      "propositions": ["Le Conseil constitutionnel", "Une commission mixte paritaire", "Le Conseil d'État", "Le Tribunal des conflits"],
+      "reponses": [1],
+      "explication": "Après la navette parlementaire, une commission mixte paritaire, composée à parité de députés et de sénateurs, recherche un texte de compromis.",
+      "theme": "Institutions étatiques"
+    },
+    {
+      "enonce": "Combien de parlementaires faut-il au minimum pour saisir le Conseil constitutionnel ?",
+      "propositions": ["30 députés ou 30 sénateurs", "60 députés ou 60 sénateurs", "100 députés", "La majorité de chaque chambre"],
+      "reponses": [1],
+      "explication": "Peuvent saisir le Conseil constitutionnel : le Président de la République, le Premier ministre, les présidents des deux chambres, ou 60 députés ou 60 sénateurs.",
+      "theme": "Institutions étatiques"
+    },
+    {
+      "enonce": "Comment est composé le Conseil constitutionnel ?",
+      "propositions": ["9 membres élus par le peuple", "9 membres nommés : 3 par le Président de la République, 3 par le président du Sénat, 3 par le président de l'Assemblée nationale", "12 magistrats professionnels", "577 membres"],
+      "reponses": [1],
+      "explication": "Les 9 membres sont renouvelés par tiers tous les trois ans ; les anciens Présidents de la République sont en principe membres de droit.",
+      "theme": "Institutions étatiques"
+    },
+    {
+      "enonce": "La question prioritaire de constitutionnalité (QPC) permet un contrôle de constitutionnalité :",
+      "propositions": ["A priori, avant l'entrée en vigueur de la loi", "A posteriori, après l'entrée en vigueur de la loi", "Uniquement sur les traités", "Uniquement sur les règlements"],
+      "reponses": [1],
+      "explication": "Le contrôle a priori intervient avant l'entrée en vigueur de la loi ; la QPC permet un contrôle a posteriori.",
+      "theme": "Institutions étatiques"
+    },
+    {
+      "enonce": "Par quel moyen l'Assemblée nationale peut-elle mettre en cause la responsabilité du Gouvernement ?",
+      "propositions": ["La dissolution", "La motion de censure", "La promulgation", "Le contreseing"],
+      "reponses": [1],
+      "explication": "La motion de censure est l'outil de contrôle du Gouvernement par l'Assemblée nationale. La dissolution est un pouvoir du Président.",
+      "theme": "Institutions étatiques"
+    },
+    {
+      "enonce": "Quelle collectivité territoriale adopte le plan local d'urbanisme (PLU) ?",
+      "propositions": ["La commune", "Le département", "La région", "L'État"],
+      "reponses": [0],
+      "explication": "La commune, administrée par le maire et le conseil municipal, est notamment compétente en matière d'urbanisme.",
+      "theme": "Institutions locales"
+    },
+    {
+      "enonce": "Quelle collectivité gère les collèges ?",
+      "propositions": ["La commune", "Le département", "La région", "L'Union européenne"],
+      "reponses": [1],
+      "explication": "Le département gère les collèges ; la région gère les lycées.",
+      "theme": "Institutions locales"
+    },
+    {
+      "enonce": "Quelle juridiction est compétente pour un litige relevant du droit du travail ?",
+      "propositions": ["Le tribunal de commerce", "Le conseil de prud'hommes", "Le tribunal administratif", "Le tribunal de police"],
+      "reponses": [1],
+      "explication": "Le conseil de prud'hommes juge les litiges relevant du droit du travail.",
+      "theme": "Institutions juridictionnelles"
+    },
+    {
+      "enonce": "Associez correctement l'infraction et la juridiction : les délits, comme le vol, sont jugés par :",
+      "propositions": ["La cour d'assises", "Le tribunal correctionnel", "Le tribunal de police", "Le conseil de prud'hommes"],
+      "reponses": [1],
+      "explication": "Crimes : cour d'assises ; délits : tribunal correctionnel ; contraventions : tribunal de police.",
+      "theme": "Institutions juridictionnelles"
+    },
+    {
+      "enonce": "La Cour de cassation :",
+      "propositions": ["Rejuge entièrement les faits de l'affaire", "Vérifie que les règles de droit ont été correctement appliquées, sans rejuger les faits", "Juge les litiges entre l'administration et les administrés", "Juge les crimes en premier ressort"],
+      "reponses": [1],
+      "explication": "Elle peut rejeter le pourvoi ou casser la décision en cas d'erreur de droit ; l'affaire peut alors être rejugée.",
+      "theme": "Institutions juridictionnelles"
+    },
+    {
+      "enonce": "Une décision de cour d'appel qui modifie ou annule le jugement de première instance est dite :",
+      "propositions": ["Confirmative", "Infirmative", "Interprétative", "Supplétive"],
+      "reponses": [1],
+      "explication": "La décision confirmative maintient le jugement de première instance ; la décision infirmative le modifie ou l'annule.",
+      "theme": "Institutions juridictionnelles"
+    },
+    {
+      "enonce": "Quelle est la juridiction suprême de l'ordre administratif ?",
+      "propositions": ["La Cour de cassation", "Le Conseil d'État", "Le Conseil constitutionnel", "La cour administrative d'appel"],
+      "reponses": [1],
+      "explication": "Tribunal administratif (1re instance), cour administrative d'appel (2e instance), Conseil d'État (juridiction suprême).",
+      "theme": "Institutions juridictionnelles"
+    },
+    {
+      "enonce": "Le Tribunal des conflits intervient :",
+      "propositions": ["Lorsqu'il existe une difficulté de compétence entre l'ordre judiciaire et l'ordre administratif", "Pour juger les conflits entre États", "Pour juger les crimes de guerre", "Pour contrôler la constitutionnalité des lois"],
+      "reponses": [0],
+      "explication": "Il détermine quelle juridiction, judiciaire ou administrative, est compétente pour juger un litige.",
+      "theme": "Institutions juridictionnelles"
+    },
+    {
+      "enonce": "Quelle juridiction est compétente pour juger les personnes responsables de génocides ?",
+      "propositions": ["La Cour de justice de l'Union européenne", "La Cour pénale internationale", "La Cour européenne des droits de l'homme", "La cour d'assises d'appel"],
+      "reponses": [1],
+      "explication": "La CPI, créée par un traité international, juge les personnes responsables des crimes internationaux les plus graves, notamment les génocides.",
+      "theme": "Institutions juridictionnelles"
+    },
+    {
+      "enonce": "Lequel de ces éléments n'est pas une source d'obligations selon le cours ?",
+      "propositions": ["La loi", "Les faits juridiques", "La doctrine", "Les actes juridiques"],
+      "reponses": [2],
+      "explication": "Les obligations naissent de la loi, des actes juridiques, des faits juridiques et des obligations naturelles. La doctrine n'en est pas une source.",
+      "theme": "Le droit des obligations"
+    },
+    {
+      "enonce": "L'obligation alimentaire (fournir le logement, la nourriture, les vêtements à un proche dans le besoin) s'applique :",
+      "propositions": ["Entre parents et enfants, mais pas entre frères et sœurs", "Entre frères et sœurs uniquement", "Entre toutes les personnes d'une même famille", "Uniquement entre époux"],
+      "reponses": [0],
+      "explication": "La loi impose aux enfants de fournir des aliments à leurs parents dans le besoin, et inversement ; cette obligation ne s'applique pas entre frères et sœurs.",
+      "theme": "Le droit des obligations"
+    },
+    {
+      "enonce": "Un contrat dans lequel les deux parties ont des obligations l'une envers l'autre est :",
+      "propositions": ["Unilatéral", "Synallagmatique", "Aléatoire", "Réel"],
+      "reponses": [1],
+      "explication": "Dans le contrat synallagmatique, les obligations sont réciproques ; dans le contrat unilatéral, une seule partie est obligée.",
+      "theme": "Classifications des contrats"
+    },
+    {
+      "enonce": "La vente en viager est un exemple de contrat :",
+      "propositions": ["Commutatif", "Aléatoire", "Réel", "D'adhésion"],
+      "reponses": [1],
+      "explication": "La durée pendant laquelle le vendeur percevra les sommes dépend de la durée de sa vie : il existe un aléa.",
+      "theme": "Classifications des contrats"
+    },
+    {
+      "enonce": "Un contrat qui nécessite la remise d'une chose pour être conclu, comme le contrat de dépôt, est :",
+      "propositions": ["Consensuel", "Réel", "Solennel", "Innommé"],
+      "reponses": [1],
+      "explication": "Contrat consensuel : seul échange des consentements ; réel : remise d'une chose ; solennel : formalités obligatoires.",
+      "theme": "Classifications des contrats"
+    },
+    {
+      "enonce": "Un contrat d'électricité est à la fois : (plusieurs réponses possibles)",
+      "propositions": ["Un contrat d'adhésion", "Un contrat à exécution successive", "Un contrat réel", "Un contrat à titre gratuit"],
+      "reponses": [0, 1],
+      "explication": "Ses clauses ne sont pas négociables (adhésion) et les prestations s'échelonnent dans le temps (exécution successive). Les classifications se cumulent.",
+      "theme": "Classifications des contrats"
+    },
+    {
+      "enonce": "La réforme du droit des contrats a été réalisée en :",
+      "propositions": ["1804, avec la loi de ratification en 1810", "2016, avec une loi de ratification entrée en vigueur en 2018", "2024, avec une loi de ratification en 2025", "1958, avec la Constitution"],
+      "reponses": [1],
+      "explication": "Le Code civil ayant vieilli en matière de contrats, une importante réforme est intervenue en 2016, ratifiée par une loi entrée en vigueur en 2018.",
+      "theme": "Principes directeurs du droit des contrats"
+    },
+    {
+      "enonce": "Le principe selon lequel « les contrats légalement formés tiennent lieu de loi à ceux qui les ont faits » est :",
+      "propositions": ["La liberté contractuelle", "La force obligatoire des contrats", "La bonne foi", "L'effet relatif des contrats"],
+      "reponses": [1],
+      "explication": "Les parties doivent respecter leurs engagements ; à défaut, elles peuvent être condamnées à verser des dommages et intérêts.",
+      "theme": "Principes directeurs du droit des contrats"
+    },
+    {
+      "enonce": "Quelles sont les limites de la liberté contractuelle ? (plusieurs réponses possibles)",
+      "propositions": ["Certains contrats sont interdits (exemple : un contrat de prostitution)", "Certains contrats sont obligatoires (exemple : l'assurance pour conduire une voiture)", "Certaines clauses peuvent ne pas être négociables", "La liberté contractuelle n'a aucune limite"],
+      "reponses": [0, 1, 2],
+      "explication": "La liberté de contracter, de choisir son cocontractant et le contenu du contrat connaît des limites fixées par le droit.",
+      "theme": "Principes directeurs du droit des contrats"
+    },
+    {
+      "enonce": "Quelles caractéristiques doit présenter une offre de contrat ? (plusieurs réponses possibles)",
+      "propositions": ["Être ferme", "Être précise et comporter les éléments essentiels du contrat", "Être obligatoirement faite devant notaire", "Respecter parfois certaines formes"],
+      "reponses": [0, 1, 3],
+      "explication": "L'offre doit être ferme et précise (pour une vente : la chose et le prix). Le principe reste la liberté de forme, même si certaines offres doivent être écrites.",
+      "theme": "Formation du contrat"
+    },
+    {
+      "enonce": "Une proposition qui ne manifeste pas la volonté de son auteur d'être lié en cas d'acceptation constitue :",
+      "propositions": ["Une offre ferme", "De simples pourparlers", "Une acceptation tacite", "Un contrat unilatéral"],
+      "reponses": [1],
+      "explication": "Sans fermeté, il ne s'agit pas d'une offre mais de pourparlers.",
+      "theme": "Formation du contrat"
+    },
+    {
+      "enonce": "En droit civil, le silence vaut-il acceptation ?",
+      "propositions": ["Oui, toujours", "Non en principe, sauf dans certaines situations, notamment les relations entre fournisseurs et clients", "Oui, sauf en matière immobilière", "Non, jamais"],
+      "reponses": [1],
+      "explication": "L'acceptation doit en principe être manifestée ; le silence peut toutefois valoir acceptation dans certaines situations.",
+      "theme": "Formation du contrat"
+    },
+    {
+      "enonce": "L'offrant a fixé un délai à son offre. Peut-il se rétracter avant la fin de ce délai ?",
+      "propositions": ["Oui, à tout moment", "Non, il doit attendre l'expiration du délai", "Oui, s'il prévient le bénéficiaire la veille", "Seulement avec l'accord du juge"],
+      "reponses": [1],
+      "explication": "Avec délai, l'offrant doit attendre son expiration ; sans délai, il doit respecter un délai raisonnable.",
+      "theme": "Formation du contrat"
+    },
+    {
+      "enonce": "Les négociations précontractuelles doivent être conduites et rompues :",
+      "propositions": ["Par écrit uniquement", "De bonne foi", "Devant un notaire", "Dans un délai de cinq ans"],
+      "reponses": [1],
+      "explication": "Les pourparlers ne doivent notamment pas servir à obtenir des informations secrètes de l'autre partie.",
+      "theme": "Formation du contrat"
+    },
+    {
+      "enonce": "Quels sont les vices du consentement étudiés dans le cours ? (plusieurs réponses possibles)",
+      "propositions": ["La violence", "L'erreur", "Le dol", "La caducité"],
+      "reponses": [0, 1, 2],
+      "explication": "Le consentement doit être libre et éclairé, donc exempt de violence, d'erreur et de dol. La caducité est un mode de disparition du contrat.",
+      "theme": "Validité du contrat"
+    },
+    {
+      "enonce": "Abuser de l'état de dépendance d'une personne pour lui faire conclure un contrat qu'elle n'aurait pas conclu autrement constitue :",
+      "propositions": ["Une erreur", "Une forme de violence", "Une lésion", "Une simple maladresse sans conséquence"],
+      "reponses": [1],
+      "explication": "Le législateur a ajouté l'abus de l'état de dépendance aux formes de violence viciant le consentement.",
+      "theme": "Validité du contrat"
+    },
+    {
+      "enonce": "Pour être prise en compte, l'erreur doit être : (plusieurs réponses possibles)",
+      "propositions": ["Substantielle, c'est-à-dire porter sur un élément essentiel du contrat", "Excusable", "Provoquée par un tiers", "Portant sur un élément accessoire"],
+      "reponses": [0, 1],
+      "explication": "L'erreur doit porter sur un élément essentiel (par nature ou pour les parties) et ne pas résulter d'une faute du contractant.",
+      "theme": "Validité du contrat"
+    },
+    {
+      "enonce": "Le dol désigne :",
+      "propositions": ["Une erreur spontanée du contractant", "Une erreur provoquée par le cocontractant ou un tiers de connivence, par mensonge ou silence volontaire", "Une menace physique", "Un déséquilibre de prix"],
+      "reponses": [1],
+      "explication": "L'erreur provoquée par un dol est toujours considérée comme excusable.",
+      "theme": "Validité du contrat"
+    },
+    {
+      "enonce": "Un contenu contractuel est « déterminable » lorsque :",
+      "propositions": ["Les parties l'ont fixé précisément dès la conclusion", "On peut déduire des clauses du contrat ce à quoi les parties se sont engagées", "Le juge le fixe librement après coup", "Il est illicite"],
+      "reponses": [1],
+      "explication": "Le contenu doit être certain : déterminé (connu en lisant les engagements) ou déterminable (déductible des clauses du contrat).",
+      "theme": "Validité du contrat"
+    },
+    {
+      "enonce": "Quels mécanismes permettent de corriger un déséquilibre dans le contrat ? (plusieurs réponses possibles)",
+      "propositions": ["Les clauses abusives", "La lésion", "Le défaut de contrepartie", "La force majeure"],
+      "reponses": [0, 1, 2],
+      "explication": "Clauses abusives, lésion et défaut de contrepartie servent à corriger l'équilibre du contrat. La force majeure concerne l'inexécution.",
+      "theme": "Validité du contrat"
+    },
+    {
+      "enonce": "Quelle affirmation sur la nullité est exacte ?",
+      "propositions": ["La nullité absolue peut être confirmée par les parties", "La nullité relative peut être confirmée par les parties, contrairement à la nullité absolue", "La nullité ne peut être demandée que par le juge", "L'action en nullité est imprescriptible"],
+      "reponses": [1],
+      "explication": "La nullité relative, qui protège certaines personnes, est confirmable ; la nullité absolue, qui peut être invoquée par toute personne intéressée et le procureur, ne l'est pas.",
+      "theme": "Validité du contrat"
+    },
+    {
+      "enonce": "Dans quel délai l'action en nullité peut-elle être exercée ?",
+      "propositions": ["1 an", "2 ans", "5 ans", "30 ans"],
+      "reponses": [2],
+      "explication": "Cinq ans à partir du moment où le titulaire de l'action aurait dû connaître les faits justifiant la nullité.",
+      "theme": "Validité du contrat"
+    },
+    {
+      "enonce": "Quelle est la différence entre nullité et caducité ?",
+      "propositions": ["Il n'y en a aucune", "La nullité anéantit le contrat comme s'il n'avait jamais existé ; la caducité y met fin pour l'avenir quand un élément nécessaire disparaît", "La caducité anéantit le contrat rétroactivement, la nullité seulement pour l'avenir", "La caducité ne concerne que les contrats administratifs"],
+      "reponses": [1],
+      "explication": "Avec la caducité, le contrat a bien existé ; il cesse seulement de produire ses effets à partir de la disparition de l'un de ses éléments.",
+      "theme": "Validité du contrat"
+    },
+    {
+      "enonce": "Le principe d'intangibilité du contrat signifie que :",
+      "propositions": ["Le contrat ne peut jamais être modifié", "Une partie ne peut pas modifier seule le contrat, mais les deux parties d'accord le peuvent", "Le juge peut modifier librement le contrat", "Le contrat est automatiquement renouvelé"],
+      "reponses": [1],
+      "explication": "La modification unilatérale est interdite ; une modification d'un commun accord reste possible.",
+      "theme": "Exécution du contrat"
+    },
+    {
+      "enonce": "Dans un contrat à durée indéterminée, une partie peut-elle y mettre fin seule ?",
+      "propositions": ["Non, jamais", "Oui, dans les conditions prévues", "Seulement par décision du juge", "Seulement après 30 ans"],
+      "reponses": [1],
+      "explication": "C'est une exception à l'interdiction de la révocation unilatérale (exemple du cours : un contrat de fourniture téléphonique).",
+      "theme": "Exécution du contrat"
+    },
+    {
+      "enonce": "Dans la révision pour imprévision, quelle est la première étape ?",
+      "propositions": ["La saisine immédiate du juge", "Une renégociation entre les parties", "La résolution automatique du contrat", "La mise en demeure par huissier"],
+      "reponses": [1],
+      "explication": "Les parties renégocient d'abord ; à défaut d'accord, elles peuvent demander au juge de décider du maintien ou de la modification du contrat.",
+      "theme": "Exécution du contrat"
+    },
+    {
+      "enonce": "À l'égard des tiers, le contrat :",
+      "propositions": ["Crée des obligations à leur charge", "A un effet relatif mais leur est opposable : ils doivent respecter la situation juridique qu'il crée", "Ne produit aucune conséquence", "Leur permet de le modifier"],
+      "reponses": [1],
+      "explication": "Le contrat ne crée ni droits ni obligations pour les tiers, mais ceux-ci doivent respecter la situation qu'il crée ; un tiers complice d'une violation peut engager sa responsabilité.",
+      "theme": "Exécution du contrat"
+    },
+    {
+      "enonce": "Quelles conditions caractérisent la force majeure ? (plusieurs réponses possibles)",
+      "propositions": ["Un événement imprévisible", "Un événement irrésistible", "Un événement extérieur aux parties", "Un événement causé par le débiteur"],
+      "reponses": [0, 1, 2],
+      "explication": "L'événement ne doit pas pouvoir être prévu, ni évité, et ne doit pas résulter de l'action de l'une des parties.",
+      "theme": "Inexécution du contrat"
+    },
+    {
+      "enonce": "Quel est l'effet d'un empêchement définitif dû à la force majeure ?",
+      "propositions": ["L'exécution est simplement retardée", "Le contrat est résolu de plein droit", "Le débiteur doit des dommages et intérêts", "Le prix est réduit de moitié"],
+      "reponses": [1],
+      "explication": "Empêchement temporaire : l'exécution est retardée ; empêchement définitif : le contrat est résolu de plein droit.",
+      "theme": "Inexécution du contrat"
+    },
+    {
+      "enonce": "Lequel de ces mécanismes n'est pas une sanction de l'inexécution du contrat vue dans le cours ?",
+      "propositions": ["L'exception d'inexécution", "La réduction du prix", "La résolution du contrat", "La caducité"],
+      "reponses": [3],
+      "explication": "Les sanctions de l'article 1217 du Code civil sont : exception d'inexécution, exécution forcée, résolution, réduction du prix, dommages et intérêts.",
+      "theme": "Inexécution du contrat"
+    },
+    {
+      "enonce": "Avant de mettre en œuvre certaines sanctions de l'inexécution, le créancier doit d'abord :",
+      "propositions": ["Saisir la Cour de cassation", "Mettre en demeure le débiteur de s'exécuter", "Obtenir l'accord du débiteur", "Publier sa demande au Journal officiel"],
+      "reponses": [1],
+      "explication": "La mise en demeure invite le débiteur à exécuter son obligation avant que le créancier n'engage certaines sanctions.",
+      "theme": "Inexécution du contrat"
+    },
+    {
+      "enonce": "L'exception d'inexécution permet au créancier :",
+      "propositions": ["De ne pas exécuter sa propre obligation en réponse à l'inexécution de l'autre partie", "De faire annuler le contrat rétroactivement", "D'obtenir l'exécution par la force publique", "De modifier seul le contrat"],
+      "reponses": [0],
+      "explication": "Cette solution peut être risquée si les conditions permettant de l'utiliser ne sont pas réunies.",
+      "theme": "Inexécution du contrat"
+    },
+    {
+      "enonce": "Selon l'article 1240 du Code civil, quels éléments doivent être réunis pour engager la responsabilité civile ? (plusieurs réponses possibles)",
+      "propositions": ["Un dommage", "Une faute", "Un lien de causalité entre la faute et le dommage", "Un contrat entre l'auteur et la victime"],
+      "reponses": [0, 1, 2],
+      "explication": "Tout fait de l'homme causant un dommage à autrui oblige celui par la faute duquel il est arrivé à le réparer : dommage, faute, lien de causalité. Aucun contrat n'est exigé (responsabilité extracontractuelle).",
+      "theme": "Responsabilité extracontractuelle"
+    },
+    {
+      "enonce": "Vous bousculez quelqu'un dans un escalier, mais il est démontré qu'une autre personne avait mis du savon sur les marches. Quelle conséquence ?",
+      "propositions": ["Aucune : vous restez entièrement responsable", "Cela peut avoir une incidence sur votre responsabilité, car le dommage peut résulter d'un autre élément", "La victime perd tout droit à réparation", "Le savon constitue un cas de force majeure contractuelle"],
+      "reponses": [1],
+      "explication": "C'est la question du lien de causalité : si le dommage résulte d'un autre élément, la personne mise en cause peut ne pas être responsable, ou seulement en partie.",
+      "theme": "Responsabilité extracontractuelle"
+    },
+    {
+      "enonce": "Dans la responsabilité du fait des choses, le gardien de la chose est :",
+      "propositions": ["Toujours son propriétaire", "Celui qui en a le contrôle (direction, vitesse, usage), souvent le propriétaire mais parfois un possesseur", "Celui qui l'a fabriquée", "La victime du dommage"],
+      "reponses": [1],
+      "explication": "Être gardien signifie avoir le contrôle de la chose ; lorsqu'elle cause un dommage, le gardien peut être tenu de verser des dommages et intérêts.",
+      "theme": "Responsabilité extracontractuelle"
+    },
+    {
+      "enonce": "Lesquelles sont des responsabilités spécifiques étudiées dans le cours ? (plusieurs réponses possibles)",
+      "propositions": ["La responsabilité des parents du fait de leur enfant", "La responsabilité du fait des choses", "La responsabilité du conducteur d'un véhicule terrestre à moteur", "La responsabilité du juge du fait de ses décisions"],
+      "reponses": [0, 1, 2],
+      "explication": "À côté du principe général de l'article 1240, le cours présente ces trois responsabilités spécifiques.",
+      "theme": "Responsabilité extracontractuelle"
+    }
+  ]
+}
