@@ -1,0 +1,255 @@
+{
+  "titre": "Gouvernance et performance — Test bloc 3",
+  "matiere": "Management d’activités (BUT GEA, semestre 1)",
+  "questions": [
+    {
+      "enonce": "Que peut-on dire des différents types de gouvernance des entreprises ?",
+      "propositions": [
+        "Avec une gouvernance familiale, le management doit s’aligner sur les objectifs de la famille",
+        "Avec une gouvernance managériale, le management doit s’aligner sur les objectifs des actionnaires",
+        "La gouvernance managériale privilégie les intérêts des managers",
+        "La gouvernance partenariale privilégie les intérêts des partenaires",
+        "La gouvernance actionnariale privilégie les intérêts des managers"
+      ],
+      "reponses": [
+        0,
+        2,
+        3
+      ],
+      "explication": "Familiale : management et propriété intimement liés. Managériale : managers plus puissants que les actionnaires. Actionnariale : alignement sur les actionnaires.",
+      "theme": "Gouvernance"
+    },
+    {
+      "enonce": "Que peut-on dire de la gouvernance partenariale ?",
+      "propositions": [
+        "Elle consiste en la réunion des différents partenaires de l’organisation",
+        "Elle cherche à intégrer les intérêts des actionnaires dans la gouvernance",
+        "Elle désigne un mode de gouvernance élargi",
+        "Elle cherche à intégrer les intérêts des citoyens dans la gouvernance",
+        "Elle cherche à intégrer les intérêts des salariés dans la gouvernance"
+      ],
+      "reponses": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "explication": "Gouvernance élargie qui intègre les actionnaires, mais aussi les salariés, les clients et les citoyens.",
+      "theme": "Gouvernance"
+    },
+    {
+      "enonce": "Que met en évidence la théorie de l’agence concernant les coûts d’agence ?",
+      "propositions": [
+        "Le principal supporte les coûts d’obligation",
+        "Il existe des coûts d’obligation",
+        "Le principal supporte les coûts de surveillance",
+        "Il existe des coûts de surveillance",
+        "Il existe des pertes résiduelles"
+      ],
+      "reponses": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "explication": "Surveillance : supportés par le principal. Obligation : supportés par l’agent. Les pertes résiduelles subsistent malgré tout.",
+      "theme": "Gouvernance"
+    },
+    {
+      "enonce": "Selon l’OCDE, quels sont les principes d’une « bonne » gouvernance ?",
+      "propositions": [
+        "L’autonomie des dirigeants",
+        "Le respect des droits et le traitement équitable des actionnaires",
+        "La mise en place d’un cadre de gouvernance efficace",
+        "La protection de l’information",
+        "La performance financière de l’entreprise"
+      ],
+      "reponses": [
+        1,
+        2
+      ],
+      "explication": "Le principe porte sur la diffusion de l’information et la transparence, pas sur sa protection.",
+      "theme": "Gouvernance"
+    },
+    {
+      "enonce": "Que peut-on dire sur les relations d’agence suivantes ?",
+      "propositions": [
+        "Dans la relation franchisé – franchiseur, le franchisé est le principal",
+        "Dans la relation employeur – salarié, l’employeur est le principal",
+        "Dans la relation assureur – assuré, l’assureur est le principal",
+        "Dans la relation garagiste – client, le garagiste est le principal",
+        "Dans la relation banque – épargnant, la banque est le principal"
+      ],
+      "reponses": [
+        1,
+        2
+      ],
+      "explication": "Le principal est celui qui délègue : franchiseur, employeur, assureur, client, épargnant.",
+      "theme": "Gouvernance"
+    },
+    {
+      "enonce": "Que peut-on dire de la relation actionnaires – gestionnaires ?",
+      "propositions": [
+        "La structuration des conseils d’administration vise à aligner les intérêts des actionnaires sur ceux des gestionnaires",
+        "La définition des modalités de rémunération des gestionnaires vise à aligner les intérêts des actionnaires sur ceux des gestionnaires",
+        "Dans cette relation les actionnaires sont le principal",
+        "Dans cette relation les gestionnaires sont le principal",
+        "Les actionnaires disposent d’informations pertinentes dont ne disposent pas les gestionnaires"
+      ],
+      "reponses": [
+        0,
+        1,
+        2
+      ],
+      "explication": "Conseils d’administration et rémunération des dirigeants sont les mécanismes d’alignement des intérêts. L’asymétrie d’information joue au profit des gestionnaires.",
+      "theme": "Gouvernance"
+    },
+    {
+      "enonce": "Quelles sont les attentes des différentes parties prenantes d’une entreprise ?",
+      "propositions": [
+        "Les attentes des actionnaires portent principalement sur le remboursement des sommes empruntées et le paiement des intérêts afférents",
+        "Les attentes des fournisseurs portent principalement sur le prix, le volume de vente et la solvabilité de l’entreprise",
+        "Les attentes de l’État et des collectivités locales portent principalement sur les prix, la qualité et la sécurité des biens et services",
+        "Les attentes des salariés portent principalement sur la défense des consommateurs et la protection de l’environnement",
+        "Les attentes des clients portent principalement sur le retour sur investissement"
+      ],
+      "reponses": [
+        1
+      ],
+      "explication": "Remboursement : banques. Prix, qualité, sécurité : clients. Défense des consommateurs : associations et ONG. ROI : actionnaires.",
+      "theme": "Gouvernance"
+    },
+    {
+      "enonce": "Que peut-on dire de la performance au sein des organisations ?",
+      "propositions": [
+        "La performance-action entraîne la performance-résultat",
+        "La performance-résultat est porteuse d’un jugement de valeur",
+        "La performance-succès entraîne la performance-action",
+        "La performance-résultat est l’aboutissement du processus",
+        "La performance-résultat est la vision de la performance la plus restrictive"
+      ],
+      "reponses": [
+        0,
+        3,
+        4
+      ],
+      "explication": "Sens strict : résultat, aboutissement. Sens large : processus (action). Le jugement de valeur relève de la performance-succès.",
+      "theme": "Performance"
+    },
+    {
+      "enonce": "Que peut-on dire de la performance opérationnelle ?",
+      "propositions": [
+        "L’efficience est l’atteinte des objectifs fixés par l’organisation",
+        "L’efficacité est l’obtention des meilleurs résultats possibles en fonction des moyens mis en œuvre",
+        "La performance opérationnelle est la combinaison de l’efficacité et de l’efficience",
+        "Dans le triangle qualité-coûts-délais, la hausse de la qualité entraîne nécessairement une hausse des coûts et/ou une hausse des délais",
+        "Dans le triangle qualité-coûts-délais, la baisse des coûts peut entraîner une hausse de la qualité"
+      ],
+      "reponses": [
+        2,
+        3
+      ],
+      "explication": "Les définitions a et b sont inversées. Triangle : qualité + rapide = cher, qualité + pas cher = lent.",
+      "theme": "Performance"
+    },
+    {
+      "enonce": "Que peut-on dire de la performance économique ?",
+      "propositions": [
+        "L’image de marque contribue à la compétitivité-prix",
+        "La compétitivité-prix contribue à la performance économique",
+        "La performance économique contribue à la compétitivité hors-prix",
+        "L’innovation contribue à la compétitivité hors-prix",
+        "La compétitivité-prix est la capacité à vendre à un prix plus élevé que les concurrents"
+      ],
+      "reponses": [
+        1,
+        3
+      ],
+      "explication": "Image de marque et innovation : compétitivité hors-prix. Compétitivité-prix : prix inférieurs pour une qualité équivalente.",
+      "theme": "Performance"
+    },
+    {
+      "enonce": "Que peut-on dire de la Responsabilité Sociétale des Entreprises (RSE) ?",
+      "propositions": [
+        "La RSE ne s’intéresse pas à la viabilité économique des entreprises",
+        "La RSE répond avant tout aux préoccupations des actionnaires",
+        "La RSE est une démarche volontaire",
+        "La RSE intègre les préoccupations sociales dans les activités commerciales des entreprises",
+        "La RSE s’oppose à une démarche de développement durable"
+      ],
+      "reponses": [
+        2,
+        3
+      ],
+      "explication": "Intégration volontaire de préoccupations sociales et environnementales ; impact positif tout en restant économiquement viable ; contribution au développement durable.",
+      "theme": "Performance"
+    },
+    {
+      "enonce": "Que peut-on dire de la performance sociale ?",
+      "propositions": [
+        "La performance sociale et la performance sociétale désignent deux choses différentes",
+        "La performance sociale s’intéresse uniquement aux salariés de l’organisation",
+        "La performance sociale est mesurée par le bilan social",
+        "La performance sociale ne concerne pas les entreprises",
+        "La performance sociale s’intéresse aux objectifs sociaux de l’organisation"
+      ],
+      "reponses": [
+        4
+      ],
+      "explication": "Traduction effective des objectifs sociaux d’une institution ; le cours traite ensemble performance sociale/sociétale.",
+      "theme": "Performance"
+    },
+    {
+      "enonce": "Que peut-on dire du pacte mondial des Nations unies ?",
+      "propositions": [
+        "Le pacte mondial traite de la lutte contre la corruption",
+        "Le pacte mondial est directement lié aux Objectifs de Développement Durable de l’ONU",
+        "Le pacte mondial traite des normes internationales comptables",
+        "Le pacte mondial s’articule autour de dix principes",
+        "Le pacte mondial s’adresse principalement aux gouvernements"
+      ],
+      "reponses": [
+        0,
+        1,
+        3
+      ],
+      "explication": "Dix principes : droits de l’Homme, travail, environnement, corruption. Il vise l’appropriation des ODD par le secteur privé.",
+      "theme": "Performance"
+    },
+    {
+      "enonce": "Que peut-on dire du pilotage de la performance ?",
+      "propositions": [
+        "Un tableau de bord vise à prévenir les difficultés",
+        "Il est souhaitable de définir des objectifs SMART",
+        "Le pilotage porte nécessairement sur la performance globale",
+        "Il est souhaitable de choisir des indicateurs adaptés",
+        "Un tableau de bord vise à alerter sur les opérations correctrices à mettre en place"
+      ],
+      "reponses": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "explication": "Double objectif du tableau de bord : prévenir les difficultés et alerter sur les actions correctrices.",
+      "theme": "Performance"
+    },
+    {
+      "enonce": "Que peut-on dire de l’amélioration continue ?",
+      "propositions": [
+        "L’amélioration continue vise à améliorer les performances",
+        "Dans le cycle PDCA, le P fait référence au fait de planifier l’amélioration (Plan)",
+        "L’amélioration continue est une pratique de conception",
+        "Dans le cycle PDCA, le D fait référence au fait de détailler l’amélioration (Detail)",
+        "Le cycle PDCA permet la mise en œuvre progressive d’une amélioration"
+      ],
+      "reponses": [
+        0,
+        1,
+        4
+      ],
+      "explication": "Pratique de gestion. D = Do.",
+      "theme": "Performance"
+    }
+  ]
+}
